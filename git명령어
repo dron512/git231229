@@ -1,0 +1,7 @@
+# git 변경된 파일을 올릴 계획이다.
+git add .
+# git 메모로 승인하겠다..
+git commit -m "메모"
+# main 브랜치로 서버에 올려라
+git push origin main
+

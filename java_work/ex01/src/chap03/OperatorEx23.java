@@ -1,3 +1,4 @@
+package chap03;
 class OperatorEx23 {
 	public static void main(String[] args) {
 		String str1 = "abc";

@@ -1,21 +1,22 @@
-import java.util.*;  // ScannerÅ¬·¡½º¸¦ »ç¿ëÇÏ±â À§ÇØ Ãß°¡
+package chap03;
+import java.util.*;  // ScannerÅ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
 
 class OperatorEx25 {
 	public static void main(String args[]) { 
 		Scanner scanner = new Scanner(System.in);
 		char ch = ' ';
 
-		System.out.printf("¹®ÀÚ¸¦ ÇÏ³ª ÀÔ·ÂÇÏ¼¼¿ä.>");
+		System.out.printf("ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ï³ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.>");
 
 		String input = scanner.nextLine();
 		ch = input.charAt(0);
 
 		if('0'<= ch && ch <= '9') {
-			System.out.printf("ÀÔ·ÂÇÏ½Å ¹®ÀÚ´Â ¼ýÀÚÀÔ´Ï´Ù.\n");
+			System.out.printf("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½Ú´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.\n");
 		}
 
 		if(('a'<= ch && ch <= 'z') || ('A'<= ch && ch <= 'Z')) {
-			System.out.printf("ÀÔ·ÂÇÏ½Å ¹®ÀÚ´Â ¿µ¹®ÀÚÀÔ´Ï´Ù.\n");
+			System.out.printf("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½Ú´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.\n");
 		}
 	} // main
 }

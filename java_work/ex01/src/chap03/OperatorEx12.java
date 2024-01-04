@@ -1,14 +1,18 @@
+package chap03;
+
+// ì˜ˆì œ ë³´ê³  ì´í•´í•˜ê³ ..
+// ì•ˆë³´ê³  ì¨ë³´ë©´ ëœë‹¤..
 class OperatorEx12 { 
       public static void main(String[] args) { 
-            char c1 = 'a';        // c1¿¡´Â ¹®ÀÚ 'a'ÀÇ ÄÚµå°ªÀÎ 97ÀÌ ÀúÀåµÈ´Ù. 
-            char c2 = c1;         // c1¿¡ ÀúÀåµÇ¾î ÀÖ´Â °ªÀÌ c2¿¡ ÀúÀåµÈ´Ù. 
-            char c3 =' ';         // c3¸¦ °ø¹éÀ¸·Î ÃÊ±âÈ­ ÇÑ´Ù. 
+            char c1 = 'a';         
+            char c2 = c1;          
+            char c3 =' ';          
 
-            int i = c1 + 1;       // 'a'+1 ¡æ 97+1 ¡æ 98
+            int i = c1 + 1;       
 
             c3 = (char)(c1 + 1); 
-            c2++; 
-            c2++; 
+            c2++; // c2 = c2+1; c2 = 97+1; -> c2= 98 
+            c2++; // c2 = c2+1;   c2 = 98+1 -> c2= 99
 
             System.out.println("i=" + i); 
             System.out.println("c2=" + c2); 

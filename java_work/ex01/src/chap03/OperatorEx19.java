@@ -1,9 +1,10 @@
+package chap03;
 class OperatorEx19 {
 	public static void main(String args[]) { 
 		int x = 10;
 		int y = 8;
 
-		System.out.printf("%dÀ» %d·Î ³ª´©¸é, \n", x, y); 
-		System.out.printf("¸òÀº %dÀÌ°í, ³ª¸ÓÁö´Â %dÀÔ´Ï´Ù.\n", x / y, x % y); 
+		System.out.printf("%dï¿½ï¿½ %dï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, \n", x, y); 
+		System.out.printf("ï¿½ï¿½ï¿½ï¿½ %dï¿½Ì°ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ %dï¿½Ô´Ï´ï¿½.\n", x / y, x % y); 
 	}
 }

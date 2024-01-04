@@ -1,3 +1,4 @@
+package chap03;
 class OperatorEx11 {
 	public static void main(String args[]) { 
 		char a = 'a';
@@ -5,7 +6,7 @@ class OperatorEx11 {
 
 		char zero = '0';
 		char two  = '2';
-
+		
 		System.out.printf("'%c' - '%c' = %d\n", d, a, d - a); // 'd' - 'a' = 3
 		System.out.printf("'%c' - '%c' = %d\n", two, zero, two - zero);
 		System.out.printf("'%c'=%d\n", a, (int)a);
@@ -14,3 +15,4 @@ class OperatorEx11 {
 		System.out.printf("'%c'=%d\n", two,  (int)two);
 	}
 }
+
