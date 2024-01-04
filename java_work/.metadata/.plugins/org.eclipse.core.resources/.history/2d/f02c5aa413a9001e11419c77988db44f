@@ -1,0 +1,15 @@
+package ex02;
+
+public class Ex03 {
+	
+	public static void main(String[] args) {
+		
+		// 정수 선언
+		int a = 10;
+		// 실수 선언
+		float b = 20.2f;
+		double c = 20.33d;
+		
+	}
+
+}

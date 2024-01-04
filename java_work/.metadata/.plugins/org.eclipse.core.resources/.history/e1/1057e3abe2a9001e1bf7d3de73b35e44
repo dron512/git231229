@@ -1,0 +1,26 @@
+package ex03;
+
+import java.util.Scanner;
+
+/*
+ * 실수는 소수 두번쨰 
+ * 
+ * 숫자를 입력받아 소수 둘째짜리까지만 보여주세요...
+ * 
+ * ex)
+ * 23.456
+ * 23.45
+ * 
+ * ex)
+ * 11.1356712
+ * 11.13
+ */
+public class Ex12 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		
+	}
+}

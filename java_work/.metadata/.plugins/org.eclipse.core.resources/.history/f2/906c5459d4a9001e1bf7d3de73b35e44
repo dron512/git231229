@@ -1,0 +1,21 @@
+package ex03;
+
+
+class AA{
+	public void doA() {
+		System.out.println("doA");
+	}
+}
+// 미안해요.. 어려워요...
+// ㅠㅠ 좀 쉬워야 하는데...
+public class Ex04 {
+
+	public static void main(String[] args) {
+		AA a2 = new AA();
+		a2.doA();
+		
+		String a = new String("abcd");
+		System.out.println(a.toUpperCase());
+	}
+	
+}

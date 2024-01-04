@@ -1,0 +1,18 @@
+package ex03_1;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		// && || ! & | ^ ~
+
+		int a = 10;
+		int b = 20;
+		int c = 30;
+
+		// 입력받은 값이 a와 b 사이인지 확인하는 것 출력하세요
+		// a<15<b
+		int input = 15;
+		System.out.println(a < input && input < b);
+
+	}
+}

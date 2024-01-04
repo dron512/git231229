@@ -1,0 +1,9 @@
+package ex03;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		System.out.print("ln이 없으면 줄바꿈이 안됩니다.");
+		System.out.println("줄이 바뀝니다.");
+	}
+}

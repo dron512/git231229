@@ -1,0 +1,12 @@
+package ex02;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		// int double String boolean 4개기억 하도록 합시다..
+		
+		boolean a = true;
+		boolean b = false;
+		
+	}
+}

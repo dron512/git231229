@@ -1,0 +1,10 @@
+package ex03;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		String a = new String("abcd");
+		System.out.println(a.toUpperCase());
+	}
+	
+}

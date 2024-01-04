@@ -1,0 +1,20 @@
+package ex02;
+
+public class Ex01 {
+
+	// ctrl + d 한줄삭제
+	// ctrl + z 뒤로 돌아가기
+	// ctrl + y 앞으로 가기
+	// ctrl + w 현재 창 닫기
+	// ctrl + m 화면 최대화, 최소화
+	// ctrl + f11 실행
+	
+	public static void main(String[] args) {
+	
+		
+		
+		
+	}
+	
+	
+}

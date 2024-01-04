@@ -1,0 +1,12 @@
+package ex03_1;
+
+class Solution {
+	public double solution(int[] numbers) {
+		double answer = 0;
+		return answer;
+	}
+
+	public static void main(String[] args) {
+		
+	}
+}

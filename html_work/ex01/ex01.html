@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ctrl + z 뒤로 돌아가기 ctrl + y 앞으로 가기 */
+        body{ background-color: lightblue;}
+        h1{ text-align: center; color: white;}
+        p{ font-size: 30px; font-family: '궁서'; }
+    </style>
+</head>
+<body>
+    <h1>안녕하세요 HTML 입니다.</h1>
+    <p id="aaa">여기는 문단입니다.</p>
+</body>
+</html>
+<script>
+    document.getElementById('aaa').onclick = function(){
+        let a = 10;
+        let b = 20;
+        alert('test = '+(a+b));
+    }        
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex04.css">
+    <style>
+        /*
+            주석은 실행과 상관없이 설명을 적어 놓는 부분입니다.
+        */
+        div{
+            background-color: aqua;
+        }
+        .aa{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myh1">h1 제목</h1>
+    <button id="btn">버튼</button>
+    <div style="background-color: black;">구역</div>
+</body>
+</html>
+<script>
+    document.getElementById('btn').onclick = ()=>{
+        alert('test');
+        document.getElementById('myh1').classList.add('aa');
+    }
+</script>
