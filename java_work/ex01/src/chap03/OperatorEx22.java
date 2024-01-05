@@ -4,6 +4,9 @@ class OperatorEx22 {
 		float  f  = 0.1f;
 		double d  = 0.1;
 		double d2 = (double)f;
+		
+		// int a = 10;
+		// 10.02
 
 		System.out.printf("10.0==10.0f  %b\n", 10.0==10.0f);
 		System.out.printf("0.1==0.1f    %b\n",  0.1==0.1f);

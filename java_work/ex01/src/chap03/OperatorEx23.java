@@ -1,6 +1,26 @@
 package chap03;
+
+/*
+ * 클래스는... 메서드로... 이루어져있습니다..
+ * 
+ * 메서드 
+ * int a = 10;
+ * system.out.println();
+ * 수행문으로 이루어져있습니다.
+ */
+
+class AA{
+	public void doA() {
+		int a= 10;
+		System.out.println("a = "+a++);
+	}
+}
 class OperatorEx23 {
 	public static void main(String[] args) {
+		AA aa1 = new AA();
+		aa1.doA();
+		aa1.doA();
+		
 		String str1 = "abc";
 		String str2 = new String("abc");
 
