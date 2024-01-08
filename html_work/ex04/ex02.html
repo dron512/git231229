@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+
+        #header {
+            margin: 10px auto;
+            width: 800px;
+            /* background-color: red; */
+            height: 100px;
+        }
+
+        #wrap {
+            overflow: hidden;
+            min-height: 500px;
+            margin: 0 auto;
+            width: 800px;
+            background-color: yellow;
+        }
+
+        #aside {
+            float: left;
+            width: 200px;
+            /* background-color: green; */
+        }
+
+        #content {
+            float: left;
+            width: 400px;
+            /* background-color: aqua; */
+        }
+        #footer{
+            clear: both;
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- alt + shift + f 자동정렬 -->
+    <div id="header">
+        <h1>Header</h1>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>asdie</h1>
+        </div>
+        <div id="content">
+            <h1>content</h1>
+        </div>
+    </div>
+    <div id="footer">
+        <h1>footer</h1>
+    </div>
+</body>
+
+</html>
