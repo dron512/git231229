@@ -6,8 +6,6 @@ class FlowEx10 {
 		int score  = 0;
 		char grade = ' ';
 
-		System.out.print("����� ������ �Է��ϼ���.(1~100)>");
-
 		Scanner scanner = new Scanner(System.in);
 		String tmp = scanner.nextLine(); // ȭ���� ���� �Է¹��� ������ tmp�� ����
 		score = Integer.parseInt(tmp);   // �Է¹��� ���ڿ�(tmp)�� ���ڷ� ��ȯ
@@ -26,7 +24,6 @@ class FlowEx10 {
 			default :
 				grade = 'F';
 		} // end of switch
-
-		System.out.println("����� ������ "+ grade +"�Դϴ�.");
+		System.out.println(" "+ grade +"");
 	} // main�� ��
 }
