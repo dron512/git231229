@@ -3,13 +3,12 @@ import java.util.*;
 
 class FlowEx27 {
 	public static void main(String[] args) { 
-		int num;
+		int num = 0;
 		int sum = 0;
-		boolean flag = true;   // while���� ���ǽ����� ���� ����
-
-		System.out.println("�հ踦 ���� ���ڸ� �Է��ϼ���.(�������� 0�� �Է�)");
-
-		while(flag) {    // flag�� ���� true�̹Ƿ� ���ǽ��� ���� �ȴ�.
+		boolean flag = true;   
+		
+		// 증가대입연산자 만듬..
+		while(flag) {    
 			System.out.print(">>");
 
 			Scanner scanner = new Scanner(System.in);
@@ -17,12 +16,12 @@ class FlowEx27 {
 			num = Integer.parseInt(tmp);  
 
 			if(num!=0) {  
-				sum += num; // num�� 0�� �ƴϸ�, sum�� ���Ѵ�.
+				sum =sum+ num;
 			} else {
-				flag = false;   // num�� 0�̸�, flag�� ���� false�� ����.
+				flag = false;
 			}
-		} // while���� ��
+		} 
 
-		System.out.println("�հ�:"+ sum);
+		System.out.println("sum:"+ sum);
 	}
 }
