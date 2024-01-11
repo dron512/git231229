@@ -18,6 +18,8 @@ public class Ex02 {
 		else
 			answer = 1;
 		
+		System.out.println(answer);
+		
 		return answer;
 	}
 	
