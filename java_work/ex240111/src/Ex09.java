@@ -4,7 +4,6 @@ public class Ex09 {
 
         for (int i = 0; i < queries.length; i++) {
             int [] query = queries[i];
-            int s = ;
         }
 
         return answer;

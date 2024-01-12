@@ -20,11 +20,22 @@ public class Ex06 {
         for (int i = l; i < r+1; i++) {
             String value = String.valueOf(i);
 
-            if(value.contains("0") && value.contains("5")) {
-                list.add(Integer.parseInt(value));
+            if(value.contains("0") || value.contains("5")) {
+                if( !value.contains("1") && !value.contains("2")
+                        && !value.contains("3")
+                        && !value.contains("4")
+                        && !value.contains("6")
+                        && !value.contains("7")
+                        && !value.contains("8")
+                        && !value.contains("9")
+                        ) {
+                    list.add(Integer.parseInt(value));
+                }
+
             }
         }
         int[] answer = list.stream().mapToInt(Integer::intValue).toArray();
+        System.out.println(Arrays.toString(answer));
         return answer;
     }
 
@@ -32,3 +43,4 @@ public class Ex06 {
         new Ex06();
     }
 }
+
