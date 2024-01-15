@@ -31,7 +31,6 @@ public class Ex06 {
                         ) {
                     list.add(Integer.parseInt(value));
                 }
-
             }
         }
         int[] answer = list.stream().mapToInt(Integer::intValue).toArray();

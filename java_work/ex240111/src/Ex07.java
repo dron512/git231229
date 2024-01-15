@@ -1,13 +1,17 @@
 public class Ex07 {
-    public static String solution(String my_string, String overwrite_string, int s) {
-        String answer ="";
+    public static int[] solution(int[] arr) {
+        int[] stk = {};
 
+        int i = 0;
+        if (i < arr.length) {
+            
+        }
 
-        return answer;
+        return stk;
     }
 
     public static void main(String[] args) {
-        solution("He11oWor1d","lloWorl",2);
+        solution(new int[]{1, 4, 2, 5, 3});
     }
 
 }
