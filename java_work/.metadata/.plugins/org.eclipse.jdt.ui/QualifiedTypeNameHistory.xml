@@ -26,4 +26,6 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="ex12.Accumulator"/>
+    <fullyQualifiedTypeName name="ex12.Circle"/>
 </qualifiedTypeNameHistroy>

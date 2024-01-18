@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test1?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+  jpa:
+    show-sql: true
+    generate-ddl: false
+
+    properties:
+      hibernate:
+        format_sql: true
