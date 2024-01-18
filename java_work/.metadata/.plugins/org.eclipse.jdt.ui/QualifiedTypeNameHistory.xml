@@ -28,4 +28,7 @@
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="ex12.Accumulator"/>
     <fullyQualifiedTypeName name="ex12.Circle"/>
+    <fullyQualifiedTypeName name="ex13.InstClass"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,34 @@
+
+SELECT * FROM todo;
+
+-- sql 구문 쿼리다..
+-- todo 테이블 생성
+CREATE TABLE `todo` (
+	`idx` INT NOT NULL AUTO_INCREMENT,
+	`할일` VARCHAR(50) NULL DEFAULT NULL,
+	`상태` VARCHAR(50) NULL DEFAULT NULL,
+	PRIMARY KEY (`idx`)
+)
+COLLATE='utf8mb4_general_ci';
+
+-- todo 테이블 삭제
+DROP TABLE `todo`;
+
+-- todo 테이블 행 삽입
+INSERT INTO `PMH`.`todo` 
+(`idx`, `할일`, `상태`) 
+VALUES 
+(1, '피아노치기', 'C');
+
+-- todo 테이블 행 삽입
+INSERT INTO `PMH`.`todo` 
+(`idx`, `할일`, `상태`) 
+VALUES 
+(4, '영화보기', 'N');
+
+-- todo 테이블 행 삽입
+INSERT INTO `PMH`.`todo` 
+(`idx`, `할일`, `상태`) 
+VALUES 
+(3, '밥먹기', 'Y');
+
