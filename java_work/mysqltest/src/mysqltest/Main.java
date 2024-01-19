@@ -5,10 +5,9 @@ import java.util.Scanner;
 public class Main {
 	
 	public static void main(String[] args) {
-
+		
 		DB db = new DB();
 		Scanner scan = new Scanner(System.in);
-		
 		while(true) {
 			System.out.println("1. 할일입력");
 			System.out.println("2. 할일목록");
@@ -18,7 +17,9 @@ public class Main {
 			String input = scan.nextLine();
 			
 			if(input.equals("1")) {
-				db.insert();
+				System.out.println("뭐할래?");
+				String todo = scan.nextLine();
+				db.insert(todo);
 			}
 			else if(input.equals("2")) {
 				db.select();
@@ -28,7 +29,6 @@ public class Main {
 				break;
 			}
 		}
-		
 		
 	}
 }

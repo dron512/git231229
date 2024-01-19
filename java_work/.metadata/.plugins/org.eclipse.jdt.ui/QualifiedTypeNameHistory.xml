@@ -15,7 +15,6 @@
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="ex11.ArrayU"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="ex11.MyClass"/>
     <fullyQualifiedTypeName name="aa.AAA"/>
     <fullyQualifiedTypeName name="ex11.BankAccount"/>
@@ -31,4 +30,6 @@
     <fullyQualifiedTypeName name="ex13.InstClass"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="ex14.Person"/>
 </qualifiedTypeNameHistroy>
