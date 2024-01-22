@@ -5,6 +5,8 @@ public class AA {
 
     private int a = 10;
 
+    private int b = 20;
+
     // alt + shift + s -> r 이클립스
     // alt + insert
 
