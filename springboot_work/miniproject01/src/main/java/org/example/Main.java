@@ -20,7 +20,6 @@ public class Main {
         String password = scan.nextLine();
 
         Member member = new Member(email,name,addr,password);
-
         md.insert(member);
     }
 }
