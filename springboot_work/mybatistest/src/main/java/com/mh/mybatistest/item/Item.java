@@ -8,7 +8,6 @@ import lombok.*;
 @Setter
 @Getter
 @ToString
-@NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
 public class Item {
