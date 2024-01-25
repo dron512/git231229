@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         MemberDB md = new MemberDB();
 
         while(true) {
@@ -18,7 +17,8 @@ public class Main {
                 md.insert();
             }
             else if(select ==2){
-                md.login();
+                Member dbMember = md.login();
+                System.out.println("dbMember = "+dbMember);
             }
             else if(select ==6) {
                 System.out.println("종료됩니다.");
@@ -27,6 +27,9 @@ public class Main {
 
         }
     }
+    // user 로 로그인 하면 상품 등록 X
+    // admin으로 로그인하면 상품 등록 O, 회원목록
+
     public static int printMenu() {
         System.out.println("1.회원가입");
         System.out.println("2.로그인");
@@ -34,6 +37,20 @@ public class Main {
         System.out.println("4.장바구니");
         System.out.println("5.주문목록");
         System.out.println("6.종료");
+        Scanner scanner = new Scanner(System.in);
+        int menu = scanner.nextInt();
+        return menu;
+    }
+
+    public static int printMenuAdmin() {
+        System.out.println("1.회원가입");
+        System.out.println("2.로그인");
+        System.out.println("3.물품보기");
+        System.out.println("4.장바구니");
+        System.out.println("5.주문목록");
+        System.out.println("6.종료");
+        System.out.println("7.상품등록");
+        System.out.println("8.회원목록");
         Scanner scanner = new Scanner(System.in);
         int menu = scanner.nextInt();
         return menu;

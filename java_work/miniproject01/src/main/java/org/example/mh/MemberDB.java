@@ -78,7 +78,7 @@ public class MemberDB {
         return false;
     }
 
-    public void login() {
+    public Member login() {
         Member member = cli.loginMember();
         try{
             Connection con
@@ -86,14 +86,18 @@ public class MemberDB {
             PreparedStatement pstmt = con.prepareStatement(
                     "SELECT * FROM member " +
                          "WHERE email=? AND PASSWORD=?");
+            System.out.println(member.getEmail());
+            System.out.println(member.getPassword());
             pstmt.setString(1, member.getEmail());
             pstmt.setString(2, member.getPassword());
             ResultSet rs = pstmt.executeQuery();
-
-
-
+            if(rs.next()){
+                System.out.println(rs.getString("role"));
+                return member;
+            }
         }catch (Exception e){
             e.printStackTrace();
         }
+        return null;
     }
 }
