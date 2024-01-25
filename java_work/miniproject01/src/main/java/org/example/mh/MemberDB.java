@@ -86,13 +86,11 @@ public class MemberDB {
             PreparedStatement pstmt = con.prepareStatement(
                     "SELECT * FROM member " +
                          "WHERE email=? AND PASSWORD=?");
-            System.out.println(member.getEmail());
-            System.out.println(member.getPassword());
             pstmt.setString(1, member.getEmail());
             pstmt.setString(2, member.getPassword());
             ResultSet rs = pstmt.executeQuery();
             if(rs.next()){
-                System.out.println(rs.getString("role"));
+                member.setRole(rs.getString("role"));
                 return member;
             }
         }catch (Exception e){
