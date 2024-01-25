@@ -13,6 +13,7 @@ public class Main {
 
         while(true) {
             int select = printMenu();
+
             if (select == 1) {
                 md.insert();
             }
@@ -23,6 +24,7 @@ public class Main {
                 System.out.println("종료됩니다.");
                 System.exit(0);
             }
+
         }
     }
     public static int printMenu() {

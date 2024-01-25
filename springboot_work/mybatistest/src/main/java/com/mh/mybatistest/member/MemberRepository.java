@@ -5,6 +5,6 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface MemberRepository {
 
-    public void insert();
+    public Member insert(Member member);
 
 }

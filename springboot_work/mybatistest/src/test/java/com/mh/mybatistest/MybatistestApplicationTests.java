@@ -2,6 +2,7 @@ package com.mh.mybatistest;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mh.mybatistest.member.Member;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -31,12 +32,12 @@ class MybatistestApplicationTests {
 	@Test
 	void contextLoads() {
 
-		User user = User.builder()
+		Member member = Member.builder()
 				.name("홍길동")
 				.password("password")
 				.build();
 
-		assertThat(user).isNotNull();
+		assertThat(member).isNotNull();
 	}
 
 

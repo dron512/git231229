@@ -3,11 +3,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mh.mybatistest.member.MemberRepository">
 
-    <insert id="insert">
+    <insert id="insert" parameterType="com.mh.mybatistest.member.Member">
         insert into member
         (reg_time, update_time, created_by, modified_by, address, email, name, password, role)
         values
-        (now(),now(),'','','대구','aaa@naver.com','박명회','password','admin');
+        (now(),now(),'','','대구',
+         #{email},'박명회',#{password},'admin');
     </insert>
 
 </mapper>
