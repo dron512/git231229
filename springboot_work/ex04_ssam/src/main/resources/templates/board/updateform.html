@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/common :: head('board')}">
+</head>
+<body>
+<nav th:replace="~{layout/common :: nav('board')}"></nav>
+<div class="container p-3">
+    <h1>Board > updateForm</h1>
+    <div class="row">
+        <div class="col">
+            <form action="/board/updateproc" method="post" th:object="${boardReq}" enctype="multipart/form-data">
+                <input type="hidden" th:field="*{idx}"/>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="title" id="title" placeholder="title"
+                           th:field="*{title}"
+                           th:class="${#fields.hasErrors('title')}? 'form-control is-invalid':'form-control' "
+                           th:classappend="${first != 'true'} ? 'is-valid'"
+                           />
+                    <p th:if="${#fields.hasErrors('title')}" th:errors="*{title}" class="invalid-feedback"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="content" class="form-label">Content</label>
+                    <textarea name="content" class="form-control fieldError" id="content" rows="3"
+                              th:field="*{content}"
+                              th:class="${#fields.hasErrors('content')}? 'form-control is-invalid':'form-control' "
+                              th:classappend="${first != 'true'} ? 'is-valid'" ></textarea>
+                    <p th:if="${#fields.hasErrors('content')}" th:errors="*{content}" class="invalid-feedback"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">name</label>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="name"
+                           th:field="*{name}"
+                           th:class="${#fields.hasErrors('name')}? 'form-control is-invalid':'form-control' "
+                           th:classappend="${first != 'true'} ? 'is-valid'" />
+                    <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="invalid-feedback"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="file" class="form-label">file</label>
+                    <input name="file" type="file" class="form-control" id="file" placeholder="file"/>
+                </div>
+                <div class="mb-3 row justify-content-between">
+                    <div class="col-3">
+                        <input type="submit" class="btn btn-dark" value="저장"/>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end">
+                        <a th:href="@{/board/list(pageNum=1)}" class="btn btn-dark">목록</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

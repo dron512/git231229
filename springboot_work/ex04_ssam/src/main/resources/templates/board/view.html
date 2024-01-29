@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/common :: head('board')}">
+</head>
+<body>
+<nav th:replace="~{layout/common :: nav('board')}"></nav>
+<div class="container p-3">
+    <h1>Board > view</h1>
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <label class="form-label">Title</label>
+                <p class="border p-2 m-3" th:text="${board.title}"></p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Content</label>
+                <p class="border p-3 m-3" th:text="${board.content}"></p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">name</label>
+                <p class="border p-2 m-3" th:text="${board.name}"></p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">file</label>
+                <a th:href="@{'/board/attach/'+${board.originalfilename}}" th:text="${board.originalfilename}"></a>
+            </div>
+            <div class="mb-3 row justify-content-between">
+                <div class="col-3 d-flex">
+                    <a th:href="@{/board/updateform(idx=${board.idx})}" class="btn btn-dark">수정</a>
+                </div>
+                <div class="col-3 d-flex justify-content-end">
+                    <a th:href="@{/board/list(pageNum=1)}" class="btn btn-dark">목록</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

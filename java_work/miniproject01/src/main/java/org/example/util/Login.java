@@ -1,6 +1,6 @@
 package org.example.util;
 
-import org.example.mh.Member;
+import org.example.member.Member;
 
 public class Login {
     // DBmember 내용을 저장

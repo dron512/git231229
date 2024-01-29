@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="student_posts">
+    <select id="select" resultType="com.example.mateproject.proc_test.dto.StudentPost">
+        select * from student_posts
+    </select>
+    <insert id="insert" parameterType="com.example.mateproject.proc_test.dto.StudentPost">
+        INSERT INTO student_posts
+        (post_idx,post_content,post_writer)
+        VALUES
+        (#{post_idx}, #{post_content}, #{post_writer});
+    </insert>
+</mapper>
+

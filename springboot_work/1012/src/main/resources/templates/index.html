@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+KR:wght@700&display=swap');
+        *{
+            font-family: 'Archivo Black','Noto Sans KR', sans-serif;
+        }
+        a{
+            color: #e3dbab;
+            text-decoration: none;
+        }
+        .ahref{
+            cursor:pointer;
+        }
+        .ahref:hover{
+            background-color: #aad9c2;
+        }
+    </style>
+    <script>
+
+        function doDelete(obj){
+            const idx = $(obj).attr('idx');
+            $.ajax( {
+                url:"/product/delete",
+                data : { idx },
+                type:"post",
+                //dataType: 'json',
+                async: true,
+                success:function(result){
+                    console.log(result);
+                    location.reload();
+                },
+                error:function(err){
+                    console.log(err);
+                }
+            } );
+        }
+
+        window.onload = function(){
+            document.getElementById('btn').onclick = ()=>{
+                if ( document.getElementById('showhide').style.display == 'none')
+                    document.getElementById('showhide').style.display = 'block';
+                else
+                    document.getElementById('showhide').style.display = 'none';
+            }
+        }
+
+        /*
+        function doProductView(){
+            alert('test');
+        }
+        */
+
+    </script>
+</head>
+<body>
+    <button id="btn">버튼</button>
+    <div id="showhide"><h1>보여주기 안보여주기</h1></div>
+    <div style="background-color:#ffd2ba">
+        <h1>index</h1>
+    </div>
+    <div style="width:800px; margin:0 auto;display:flex;">
+        <div style="width:380px">
+            <h1>people테이블내용</h1>
+            <table style="border:1px solid #bebfff">
+                <thead>
+                    <th>순번</th>
+                    <th>이름</th>
+                    <th>나이</th>
+                </thead>
+                <tbody>
+                    <tr th:each="s : ${st}">
+                        <td th:text="${s.student_id}"></td>
+                        <td th:text="${s.student_name}"></td>
+                        <td th:text="${s.student_age}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="width:380px">
+            <h1>products테이블내용</h1>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal">
+                글쓰기
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form method="post" action="/product/insert">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="productModalLabel">글쓰기</h1>
+                                <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group">
+                                    <span class="input-group-text">name</span>
+                                    <input name="name" class="form-control"/>
+                                    <span class="input-group-text">price</span>
+                                    <input name="price"
+                                           class="form-control" type="number"/>
+                                    <span class="input-group-text">quantity</span>
+                                    <input name="quantity" type="number"
+                                           class="form-control" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <table style="border:1px solid #c3ffc8">
+                <thead>
+                    <th>순번</th>
+                    <th>이름</th>
+                    <th>가격</th>
+                    <th>수량</th>
+                    <th>버튼</th>
+                </thead>
+                <tbody>
+                    <tr th:each="p : ${products}">
+                        <td th:text="${p.idx}"></td>
+                        <td class="ahref">
+                            <a th:href="@{/product/view(idx=${p.idx})}" th:text="${p.name}"></a>
+                        </td>
+                        <td th:text="${p.price}"></td>
+                        <td th:text="${p.quantity}"></td>
+                        <td>
+                            <button type="button" class="btn btn-primary"
+                                    th:attrappend="idx=${p.idx}"
+                                    onclick="doDelete(this);">
+                                삭제
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container m-3 p-3" style="background-color:#ffbbff">
+        <h1>글목록입니다</h1>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            글쓰기
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form method="post" action="/post">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">글쓰기</h1>
+                            <button type="button" class="btn-close"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-group">
+                                <span class="input-group-text">With textarea</span>
+                                <textarea
+                                    name="post_content"
+                                    class="form-control"
+                                    aria-label="With textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>posts테이블내용</h1>
+                <table style="border:1px solid #ffe2ff">
+                    <thead>
+                    <th>순번</th>
+                    <th>이름</th>
+                    <th>작성자</th>
+                    </thead>
+                    <tbody>
+                    <tr th:each="p : ${posts}">
+                        <td th:text="${p.post_idx}"></td>
+                        <td th:text="${p.post_content}"></td>
+                        <td th:text="${p.post_writer}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

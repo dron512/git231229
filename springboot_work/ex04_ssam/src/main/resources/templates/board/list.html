@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/common :: head('board')}">
+</head>
+<body>
+<nav th:replace="~{layout/common :: nav('board')}"></nav>
+<div class="container p-3">
+    <h1>Board > list</h1>
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped">
+                <tr>
+                    <th></th>
+                    <th>idx</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                </tr>
+                <tr th:each="board : ${list}">
+                    <td class="text-center">
+                        <input type="checkbox" name="idx" id="" th:value="${board.idx}" class="form-check-input" onclick="addIdx(this);">
+                    </td>
+                    <td th:text="${board.idx}"></td>
+                    <td>
+                        <a th:href="@{/board/view(idx=${board.idx})}" th:text="${board.title}"></a>
+                    </td>
+                    <td th:text="${board.name}"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <h1>총 페이지 개수 = [[ ${countPage} ]]</h1>
+        <h1>총 행 개수 = [[ ${countRow} ]]</h1>
+        <h1>현재 페이지 [[${pageNum}]]</h1>
+        <div class="col d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" th:href="@{/board/list(pageNum=${pageNum-1})}"
+                                th:classappend="${pageNum} == 1 ? 'disabled'"
+                        >Previous</a>
+                    </li>
+                    <li th:each="i:${#numbers.sequence(1,countPage)}" class="page-item">
+                        <a class="page-link" th:href="@{/board/list(pageNum=${i})}"
+                                            th:classappend="${#strings.replace(param.pageNum,' ','')} == ${i} ? 'active' : ''"
+                        >[[ ${i} ]]</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" th:href="@{/board/list(pageNum=${pageNum+1})}"
+                                th:classappend="${pageNum} == ${countPage} ? 'disabled'"
+                        >Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <a href="/board/writeform" class="btn btn-dark">글쓰기</a>
+            <button onclick="doDelete()" class="btn btn-dark">삭제</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    let idx = [];
+    var a = 10;
+    var b = "10";
+
+    function addIdx(obj){
+        let temp = $(obj).val();
+        if ( idx.indexOf(temp) !== -1){
+            let index = idx.indexOf(temp);
+            if (index !== -1) {
+                idx.splice(index, 1);
+            }
+        }else{
+            idx.push(temp);
+        }
+    }
+
+    function doDelete(){
+        const aa = {
+            url:'/board/delete',
+            type:'post',
+            contentType: "application/json",
+            dataType: 'json', // 추가
+            data: JSON.stringify({idx:idx}),
+            success:function(res){
+                window.location.href='/board/list';
+            },
+            error:function(e){
+                console.log(e);
+            }
+        }
+        $.ajax( aa );
+    }
+
+
+</script>

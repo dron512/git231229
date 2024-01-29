@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.domain.file.FileMapper">
+
+    <!-- tb_file 테이블 전체 컬럼 -->
+    <sql id="fileColumns">
+          id
+        , post_id
+        , original_name
+        , save_name
+        , size
+        , delete_yn
+        , created_date
+        , deleted_date
+    </sql>
+
+
+    <!-- 파일 정보 저장 -->
+    <insert id="saveAll" parameterType="list">
+        INSERT INTO tb_file (
+            <include refid="fileColumns" />
+        ) VALUES
+        <foreach item="file" collection="list" separator=",">
+        (
+              #{file.id}
+            , #{file.postId}
+            , #{file.originalName}
+            , #{file.saveName}
+            , #{file.size}
+            , 0
+            , NOW()
+            , NULL
+        )
+        </foreach>
+    </insert>
+
+</mapper>

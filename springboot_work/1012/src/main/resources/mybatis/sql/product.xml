@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="product">
+    <select id="select" resultType="com.example.mateproject.proc_test.dto.Product">
+        select * from products
+    </select>
+    <insert id="insert" parameterType="com.example.mateproject.proc_test.dto.Product">
+        INSERT INTO products
+        (name, price, quantity)
+        VALUES
+        (#{name}, #{price}, #{quantity});
+    </insert>
+    <select id="selectrow" parameterType="com.example.mateproject.proc_test.dto.Product"
+            resultType="com.example.mateproject.proc_test.dto.Product">
+        select * from products
+        where idx=#{idx}
+    </select>
+    <delete id="delete" parameterType="com.example.mateproject.proc_test.dto.Product">
+        delete from products
+        where idx=#{idx}
+    </delete>
+</mapper>

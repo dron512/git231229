@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+    <select id="select" resultType="com.example.mateproject.dto.Member">
+        select * from member
+    </select>
+    <select id="selectByMemId" resultType="com.example.mateproject.dto.Member">
+        SELECT * FROM member WHERE mem_id = #{mem_id}
+    </select>
+    <insert id="insert" parameterType="com.example.mateproject.dto.Member">
+        INSERT INTO member
+        (mem_id,mem_pw,mem_name)
+        VALUES
+        (#{mem_id}, #{mem_pw}, #{mem_name});
+    </insert>
+    <select id="selectrow" parameterType="com.example.mateproject.dto.Member"
+            resultType="com.example.mateproject.dto.Member">
+        select * from member
+        where mem_id=#{mem_id}
+    </select>
+    <delete id="delete" parameterType="com.example.mateproject.dto.Member">
+        delete from member
+        where mem_id=#{mem_id}
+    </delete>
+</mapper>

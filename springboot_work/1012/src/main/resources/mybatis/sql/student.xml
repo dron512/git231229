@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="student">
+    <select id="select" resultType="com.example.mateproject.proc_test.dto.Student">
+        select * from student
+    </select>
+    <insert id="insert" parameterType="com.example.mateproject.proc_test.dto.Student">
+        INSERT INTO student
+        (student_name,student_age)
+        VALUES
+        (#{student_name}, #{student_age});
+    </insert>
+</mapper>

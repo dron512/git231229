@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/common::head('home')}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <nav th:replace="~{layout/common::nav('home')}"></nav>
+    <div class="container p-3">
+        <h1>Index</h1>
+        <div class="slider">
+            <div>
+                <h1>영어번역사이트</h1>
+                <p>번역하고 싶은 문장이나 문단을 넣어주세요</p>
+            </div>
+            <div>
+                <h1>홈페이지설명</h1>
+                <p>회원가입, 게시판, 영어번역을 할 수있도록 홈페이지를 구현하였습니다.</p>
+            </div>
+            <div>
+                <h1>스프링부트</h1>
+                <p>springboot, mybatis, thymeleaf, validation 을 사용하였습니다.</p>
+            </div>
+        </div>
+        <div class="row">
+            <h1>물고기데이터예측해보기</h1>
+            <img id="img1" src="http://127.0.0.1:5000/img1/33/img1/500">
+            <div>
+                <label for="length">length:</label>
+                <input type="text" id="length" class="form-control"/>
+                <label for="weight">weight:</label>
+                <input type="text" id="weight" class="form-control"/>
+            </div>
+            <div class="mt-3">
+                <button id="predict" class="btn btn-dark">예측</button>
+            </div>
+            <div><h1 id="print"></h1></div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+      $(".slider").bxSlider();
+
+      $("#predict").click( ()=>{
+        let len = $("#length").val();
+        let wei = $("#weight").val();
+        $("#img1").attr("src", `http://localhost:5000/img1/${len}/img1/${wei}`);
+
+        $.ajax( {
+            url: 'http://127.0.0.1:5000',
+            data: JSON.stringify({ len, wei }),
+            type: 'post',
+            contentType: 'application/json',
+            success:function(res){
+                $("#print").text(res.msg);
+            }
+        });
+      });
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

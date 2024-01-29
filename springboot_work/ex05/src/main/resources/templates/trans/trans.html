@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{common/common::chead('Translation')}">
+</head>
+<body class="sb-nav-fixed">
+<nav th:replace="~{common/common::cnav('Translation')}">
+</nav>
+<div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+        <nav th:replace="~{common/common::snav('dark')}" class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        </nav>
+    </div>
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid px-4">
+                <h1 class="mt-4">Translation</h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a th:href="@{/}">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Translation</li>
+                </ol>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="mb-0">
+                            <form>
+                                <input type="text" name="transText" class="form-control mb-3" id="inputText">
+                                <button type="button" class="btn btn-dark" id="req">번역</button>
+                            </form>
+                        </p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div id="printTrans"></div>
+                        <div th:each="trans: ${list}" class="mb-0" th:id="printTrans">
+                            <div class="card bg-primary text-white my-4" >
+                                <div class="card-body" th:text="${trans.source}"></div>
+                                <div class="card-footer bg-success" th:text="${trans.target}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer th:replace="~{common/common::cfooter('GuestBook')}">
+        </footer>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="/js/scripts.js"></script>
+</body>
+</html>
+<script>
+    $('#req').click(()=>{
+        let source = $('#inputText').val();
+        $.ajax({
+            url: '/trans/req',
+            type: 'post',
+            data: JSON.stringify(  {
+                    "text": source,
+                    "text2":"text2"
+                    }   ),
+            contentType: 'application/json',
+            success:function(res){
+                let prependTag = `<div class="card bg-primary text-white my-4">
+                                        <div class="card-body">${source}</div>
+                                        <div class="card-footer bg-success">${res}</div>
+                                    </div>`;
+                $("#printTrans").prepend(prependTag);
+                $('#inputText').val('');
+            },
+            error:function(e){
+                console.log("e"+e);
+            }
+        });
+    });
+</script>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mh.ex04.board.BoardRepository">
+
+    <select id="selectRow" parameterType="Integer" resultType="Board">
+        select * from board where idx = #{idx}
+    </select>
+
+    <select id="list" resultType="Board" parameterType="Integer">
+        SELECT * FROM board
+        ORDER BY idx desc
+        LIMIT #{pageNum},5;
+    </select>
+
+    <select id="countRow" resultType="Integer">
+        select count(*) from board
+    </select>
+
+    <insert id="insert" parameterType="Board">
+        insert into board
+        (title, content, name, originalfilename)
+        values
+        ( #{title}, #{content}, #{name}, #{originalfilename} )
+    </insert>
+
+    <update id="update" parameterType="Board">
+        UPDATE board
+            SET name = #{name},
+                title = #{title},
+                content = #{content},
+                originalfilename = #{originalfilename}
+        WHERE idx = #{idx}
+    </update>
+
+    <delete id="delete" parameterType="java.util.List">
+        delete from board
+        WHERE idx in
+        <foreach item="idx" collection="idxList" open="(" separator="," close=")">
+            #{idx}
+        </foreach>
+    </delete>
+
+</mapper>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/layout :: head('home')}">
+</head>
+<body>
+    <nav th:replace="~{layout/layout :: nav('home')}"></nav>
+    <div class="container p-3">
+        <h1>Index</h1>
+        <div class="slider">
+            <div>
+                <h1>영어번역사이트</h1>
+                <p>번역하고 싶은 문장이나 문단을 넣어주세요</p>
+            </div>
+            <div>
+                <h1>홈페이지설명</h1>
+                <p>회원가입, 게시판, 영어번역을 할 수있도록 홈페이지를 구현하였습니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+      $(".slider").bxSlider();
+    });
+</script>

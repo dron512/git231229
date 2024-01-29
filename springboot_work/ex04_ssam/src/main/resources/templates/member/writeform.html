@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/common :: head('member')}">
+</head>
+<body>
+<nav th:replace="~{layout/common :: nav('member')}"></nav>
+<div class="container p-3">
+    <h1>Member > writeForm</h1>
+    <!-- th:field 방금전에 적었던내용 커맨드객체에서 가져오기  -->
+    <div class="row">
+        <div class="col">
+            <form action="/member/writeproc" method="post" th:object="${memberReq}" onSubmit="return mySubmit()">
+                <div class="mb-3">
+                    <label for="email" class="form-label">email</label>
+                    <div>
+                        <input type="text" name="email" id="email" placeholder="title"
+                               th:field="*{email}"
+                               th:class="${#fields.hasErrors('email')}? 'form-control is-invalid':'form-control' "
+                               th:classappend="${ first != 'true' } ? 'is-valid'"
+                               style="width:79%;display:inline;"
+                               />
+                        <input type="button" class="btn btn-dark" value="중복체크" onclick="emailcheck()"/>
+                        <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="text-danger"></p>
+                        <p th:if="${ret eq 'duplicate' }" class="text-danger" >email 중복입니다.</p>
+                        <div id="info"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">password</label>
+                    <textarea name="password" class="form-control fieldError" id="password" rows="3"
+                              th:field="*{password}"
+                              th:class="${#fields.hasErrors('password')}? 'form-control is-invalid':'form-control' "
+                              th:classappend="${first != 'true'} ? 'is-valid'" ></textarea>
+                    <p th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="invalid-feedback"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">gender</label>
+                    <input name="gender" type="text" class="form-control" id="gender" placeholder="gender"
+                           th:field="*{gender}"
+                           th:class="${#fields.hasErrors('gender')}? 'form-control is-invalid':'form-control' "
+                           th:classappend="${first != 'true'} ? 'is-valid'" />
+                    <p th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}" class="invalid-feedback"></p>
+                </div>
+                <div class="mb-3 row justify-content-between">
+                    <div class="col-3">
+                        <input type="submit" class="btn btn-dark" value="저장"/>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end">
+                        <a href="/member/list" class="btn btn-dark">목록</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var onsub = false;
+    function emailcheck(){
+        $.ajax( {
+            url:'/member/emailcheck',
+            data: { email: $('#email').val() },
+            success:function(res){
+                if(res =='suc')
+                    onsub = true;
+                else
+                    onsub = false;
+                $('#info').text(res);
+            }
+        } );
+    }
+    function mySubmit(){
+        if( onsub == false)
+            alert('아이디 중복체크 해야 합니다.');
+        return onsub;
+    }
+</script>
+
+
+
+
+
+
+
+
+

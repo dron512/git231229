@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.domain.comment.CommentMapper">
+
+    <!-- tb_comment 테이블 전체 컬럼 -->
+    <sql id="commentColumns">
+          id
+        , post_id
+        , content
+        , writer
+        , delete_yn
+        , created_date
+        , modified_date
+    </sql>
+
+
+    <!-- 댓글 저장 -->
+    <insert id="save" parameterType="com.study.domain.comment.CommentRequest" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO tb_comment (
+            <include refid="commentColumns" />
+        ) VALUES (
+              #{id}
+            , #{postId}
+            , #{content}
+            , #{writer}
+            , 0
+            , NOW()
+            , NULL
+        )
+    </insert>
+
+
+    <!-- 댓글 상세정보 조회 -->
+    <select id="findById" parameterType="long" resultType="com.study.domain.comment.CommentResponse">
+        SELECT
+            <include refid="commentColumns" />
+        FROM
+            tb_comment
+        WHERE
+            id = #{value}
+    </select>
+
+
+    <!-- 댓글 수정 -->
+    <update id="update" parameterType="com.study.domain.comment.CommentRequest">
+        UPDATE tb_comment
+        SET
+              modified_date = NOW()
+            , content = #{content}
+            , writer = #{writer}
+        WHERE
+            id = #{id}
+    </update>
+
+
+    <!-- 댓글 삭제 -->
+    <delete id="deleteById" parameterType="long">
+        UPDATE tb_comment
+        SET
+            delete_yn = 1
+        WHERE
+            id = #{id}
+    </delete>
+
+
+    <!-- 댓글 리스트 조회 -->
+    <select id="findAll" parameterType="com.study.domain.comment.CommentSearchDto" resultType="com.study.domain.comment.CommentResponse">
+        SELECT
+            <include refid="commentColumns" />
+        FROM
+            tb_comment
+        WHERE
+            delete_yn = 0
+            AND post_id = #{postId}
+        ORDER BY
+            id DESC
+        LIMIT #{pagination.limitStart}, #{recordSize}
+    </select>
+
+
+    <!-- 댓글 수 카운팅 -->
+    <select id="count" parameterType="com.study.domain.comment.CommentSearchDto" resultType="int">
+        SELECT
+            COUNT(*)
+        FROM
+            tb_comment
+        WHERE
+            delete_yn = 0
+            AND post_id = #{postId}
+    </select>
+
+</mapper>

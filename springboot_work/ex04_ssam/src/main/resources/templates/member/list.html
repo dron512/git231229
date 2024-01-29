@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/common::head('member')}">
+</head>
+<body>
+<nav th:replace="~{layout/common::nav('member')}"></nav>
+<h1>Member>List</h1>
+<div th:replace="~{layout/common::commondiv('hihi')}">
+</div>
+<span th:text="${hi}"></span>
+
+<div th:each="temp : ${slist}">
+    <div th:text="${temp}"></div>
+</div>
+<div class="container">
+    <table class="table table-dark">
+        <tr>
+            <th>idx</th>
+            <th>email</th>
+            <th>password</th>
+            <th>gender</th>
+        </tr>
+        <tr th:each="member : ${mlist}">
+            <td th:text="${member.idx}"></td>
+            <td th:text="${member.email}"></td>
+            <td th:text="${member.password}"></td>
+            <td th:text="${member.gender}"></td>
+        </tr>
+    </table>
+    <a th:href="@{/member/writeform}" class="btn btn-dark">회원추가</a>
+</div>
+
+</body>
+</html>

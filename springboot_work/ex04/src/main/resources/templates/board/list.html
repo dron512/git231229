@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/common :: head('board')}">
+</head>
+<body>
+<nav th:replace="~{layout/common :: nav('board')}"></nav>
+<div class="container p-3">
+    <h1>Board > list</h1>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <tr>
+                    <th>idx</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                </tr>
+                <tr th:each="board : ${list}">
+                    <td th:text="${board.idx}"></td>
+                    <td th:text="${board.title}"></td>
+                    <td th:text="${board.name}"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <a href="/board/writeform" class="btn btn-dark">글쓰기</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
