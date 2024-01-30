@@ -31,6 +31,9 @@ public class SecurityConfig {
 //    @Autowired
 //    MemberRepository memberRepository;
 
+    public WebSecurityCustomizer webSecurityCustomizer() {
+        return (web) -> web.ignoring().requestMatchers("/guestbookapi/**");
+    }
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
@@ -39,12 +42,17 @@ public class SecurityConfig {
                 .csrf(csrf->csrf.disable())
                 .authorizeRequests(
                           req ->
-                             req
-                                     .requestMatchers("/css/**", "/js/**", "/img/**","/assets/**").permitAll()
-                                     .requestMatchers("/auth/**").permitAll()
-                                     .requestMatchers("/").permitAll()
-                                     .requestMatchers("/guestbookapi/**").permitAll()
-                                     .requestMatchers("/h2-console/**").permitAll()
+                             req.requestMatchers(
+                                             "/css/**",
+                                             "/js/**",
+                                             "/img/**",
+                                             "/assets/**",
+                                             "/auth/**",
+                                             "/guestbook/**",
+                                             "/error/**",
+                                             "/guestbookapi/**",
+                                             "/h2-console/**",
+                                             "/").permitAll()
 //                                     .requestMatchers("/member").hasRole("ADMIN")
                                 .anyRequest().authenticated()
                      )

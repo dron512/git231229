@@ -11,15 +11,20 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("guestbookapi")
+@RequestMapping("/guestbookapi")
 public class GuestBookApiController {
 
-    private GuestBookRepository guestBookRepository;
+    private final GuestBookRepository guestBookRepository;
 
-    @GetMapping("list")
+    @GetMapping("/list")
     public ResponseEntity<List<GuestBook>> list(){
         List<GuestBook> list = guestBookRepository.findAll();
         return ResponseEntity.ok(list);
+    }
+
+    @GetMapping("test")
+    public String test(){
+        return "test";
     }
 
 }
