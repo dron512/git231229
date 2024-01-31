@@ -7,8 +7,6 @@ import java.util.List;
 //속도가 느리다는.. 말을... 너무 많이 들어서.. 그래요..
 // 1.4 1.5 1.6 1.8
 
-
-
 public class Main5 {
 
     public static void main(String[] args) {
