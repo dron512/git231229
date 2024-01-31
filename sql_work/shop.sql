@@ -1,4 +1,4 @@
--- 상품 등록 및 쇼핑몰 운영을 위한 테이블생성 SQL 구문 필수
+--1. 상품 등록 및 쇼핑몰 운영을 위한 테이블생성 SQL 구문 필수
 create table item
 (
     item_id          bigint                    not null        primary key auto_increment,
@@ -103,14 +103,12 @@ create table order_item
 -- 상품 검색을 위한 SQL 구문 필수
 -- 회원가입 INSERT
 insert into member
-(reg_time, update_time, created_by, modified_by, 
- address, email, name, password, role)
+(reg_time, update_time, created_by, modified_by, address, email, name, password, role)
 values
 (now(),now(),'','','대구','dron512@naver.com','박명회','password','admin');
 
 insert into member
-(reg_time, update_time, created_by, modified_by, 
- address, email, name, password, role)
+(reg_time, update_time, created_by, modified_by, address, email, name, password, role)
 values
 (now(),now(),'','','대구','abc@naver.com','고찬우','password','user');
 
@@ -163,3 +161,24 @@ into
     ( order_item_id, order_id, item_id, order_price, count, created_by, modified_by, reg_time, update_time)
 values
     ( 1, 1, 1, 2000, 100, '박명회','박명회',now(),now());
+
+-- 상품검색을 위한 SQL 구문
+SELECT * FROM item;
+
+-- 상품검색을 위한 SQL 구문( 상품 이름이 사과 인것 검색)
+SELECT * FROM item i
+WHERE i.item_nm LIKE '%사과%';
+
+-- 장바구니 테이블과 Item 테이블 조회 join 적용
+SELECT * FROM cart c
+LEFT OUTER JOIN cart_item ci 
+ON c.cart_id = ci.cart_id
+LEFT OUTER JOIN item i
+ON ci.item_id = i.item_id;
+
+-- order 테이블과 Item 테이블 조회 join 적용
+SELECT * FROM orders o
+LEFT OUTER JOIN order_item oi 
+ON o.order_id = oi.order_id
+LEFT OUTER JOIN item i
+ON oi.item_id = i.item_id;

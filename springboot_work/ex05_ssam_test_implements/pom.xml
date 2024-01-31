@@ -17,9 +17,16 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
+		<!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
+			<version>2.3.0</version>
+		</dependency>
 
 
-<!--		<dependency>-->
+		<!--		<dependency>-->
 <!--			<groupId>com.h2database</groupId>-->
 <!--			<artifactId>h2</artifactId>-->
 <!--			<scope>runtime</scope>-->

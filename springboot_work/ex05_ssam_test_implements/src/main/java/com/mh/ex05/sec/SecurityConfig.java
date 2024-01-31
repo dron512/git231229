@@ -73,6 +73,8 @@ public class SecurityConfig {
                                              "/error/**",
                                              "/guestbookapi/**",
                                              "/h2-console/**",
+                                             "/swagger-ui/**",
+                                             "/pet/**",
                                              "/").permitAll()
 //                                     .requestMatchers("/member").hasRole("ADMIN")
                                 .anyRequest().authenticated()
