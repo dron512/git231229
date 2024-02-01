@@ -1831,3 +1831,74 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-02-01 12:31:55.305 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-01 12:32:22.213
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-01 12:32:47.158
+!MESSAGE Logback config file: D:\Students\java_work\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.1.20231030-1438.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-01 12:32:52.930
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-01 12:32:52.930
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-01 12:33:01.515
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.core 4 0 2024-02-01 12:34:33.643
+!MESSAGE An exception occurred during push on URI https://github.com/dron512/git231229.git: HEAD is detached
+!STACK 0
+org.eclipse.jgit.api.errors.DetachedHeadException: HEAD is detached
+	at org.eclipse.jgit.api.PushCommand.getCurrentBranch(PushCommand.java:229)
+	at org.eclipse.jgit.api.PushCommand.determineDefaultRefSpecs(PushCommand.java:239)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:130)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:315)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-02-01 12:34:33.646
+!MESSAGE Can't connect to any repository: https://github.com/dron512/git231229.git (HEAD is detached)
+
+!ENTRY org.eclipse.egit.core 4 0 2024-02-01 12:35:24.766
+!MESSAGE An exception occurred during push on URI https://github.com/dron512/git231229.git: HEAD is detached
+!STACK 0
+org.eclipse.jgit.api.errors.DetachedHeadException: HEAD is detached
+	at org.eclipse.jgit.api.PushCommand.getCurrentBranch(PushCommand.java:229)
+	at org.eclipse.jgit.api.PushCommand.determineDefaultRefSpecs(PushCommand.java:239)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:130)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:315)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-02-01 12:35:24.766
+!MESSAGE Can't connect to any repository: https://github.com/dron512/git231229.git (HEAD is detached)
