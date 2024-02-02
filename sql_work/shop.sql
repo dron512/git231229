@@ -65,10 +65,8 @@ create table cart_item
     count        int          not null,
     cart_id      bigint       null,
     item_id      bigint       null,
-    constraint cart_item_cart_fk1
-        foreign key (cart_id) references cart (cart_id),
-    constraint cart_item_item_fk2
-        foreign key (item_id) references item (item_id)
+    constraint cart_item_cart_fk1 foreign key (cart_id) references cart (cart_id),
+    constraint cart_item_item_fk2 foreign key (item_id) references item (item_id)
 );
 
 create table orders

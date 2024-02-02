@@ -90,6 +90,9 @@ public class MemberDB {
             ResultSet rs = pstmt.executeQuery();
             if(rs.next()){
                 member.setRole(rs.getString("role"));
+                member.setMember_id(rs.getLong("member_id"));
+                member.setAddr(rs.getString("address"));
+                member.setName(rs.getString("name"));
                 return member;
             }else{
                 System.out.println("로그인실패 이메일과 패스워드를 확인하세요...");
