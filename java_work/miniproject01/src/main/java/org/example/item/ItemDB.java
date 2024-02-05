@@ -71,7 +71,12 @@ public class ItemDB {
                             rs.getInt("stock_number"))
                 );
             }
-            System.out.println(list);
+            for ( int i =0; i<list.size(); i++) {
+                System.out.print(list.get(i).getItem_id()+"\t");
+                System.out.print(list.get(i).getItem_nm()+"\t");
+                System.out.print(list.get(i).getItem_sell_status()+"\t");
+                System.out.print(list.get(i).getItem_detail()+"\n");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
