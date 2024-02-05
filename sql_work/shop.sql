@@ -180,3 +180,15 @@ LEFT OUTER JOIN order_item oi
 ON o.order_id = oi.order_id
 LEFT OUTER JOIN item i
 ON oi.item_id = i.item_id;
+
+
+-- 5번 사용자가 장바구니 확인..
+SELECT c.cart_id, ci.item_id, ci.count,
+	i.item_nm, i.item_detail, i.price,
+	c.member_id
+FROM cart c
+LEFT OUTER JOIN cart_item ci
+ON c.cart_id = ci.cart_id
+LEFT OUTER JOIN item i
+ON ci.item_id = i.item_id
+WHERE c.member_id=5;

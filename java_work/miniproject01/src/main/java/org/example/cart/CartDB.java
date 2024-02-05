@@ -41,6 +41,44 @@ public class CartDB {
     }
 
     public void insertItem(){
+        // 상품 아이템 입력...
+        int item_id = cartCLI.inputItem();
 
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        try {
+            con = DriverManager.getConnection(DBINFO.url, DBINFO.user, DBINFO.password);
+            pstmt = con.prepareStatement("INSERT INTO cart_item " +
+                                             "(COUNT,cart_id,item_id) " +
+                                             "VALUES " +
+                                             "(10,17,?)");
+            pstmt.setLong(1,item_id);
+            pstmt.executeUpdate();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                pstmt.close();
+                con.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
