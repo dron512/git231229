@@ -52,13 +52,18 @@ insert into 학생(학번,이름,학년,신장,소속) values ('07033','이길동','3',175,'ID'
 insert into 학생(학번,이름,학년,신장,소속) values ('05014','최길동','4',183,'ED');
 insert into 학생(학번,이름,학년,신장,소속) values ('06032','정길동','3',165,'ED');
 
+insert into 설강 (번호, 교수명, 과목명, 소속) values ('101', '김일삼', 'SE', 'CD');
+insert into 설강 (번호, 교수명, 과목명, 소속) values ('102', '권오영', 'DB', 'CD');
+insert into 설강 (번호, 교수명, 과목명, 소속) values ('103', '김소월', 'DG', 'MD');
+insert into 설강 (번호, 교수명, 과목명, 소속) values ('104', '이상', 'FP', 'CD');
+insert into 설강 (번호, 교수명, 과목명, 소속) values ('105', '이석영', 'CS', 'ED');
+
 insert into 수강(학번,번호,성적) values ('08001','101','95');
 insert into 수강(학번,번호,성적) values ('08001','102','80');
 insert into 수강(학번,번호,성적) values ('08001','103','60');
 insert into 수강(학번,번호,성적) values ('08001','104','80');
 insert into 수강(학번,번호,성적) values ('08001','105','85');
 insert into 수강(학번,번호,성적) values ('07002','101','80');
-
 insert into 수강(학번,번호,성적) values ('07002','104','95');
 insert into 수강(학번,번호,성적) values ('07012','102','70');
 insert into 수강(학번,번호,성적) values ('07012','103','80');
@@ -66,11 +71,7 @@ insert into 수강(학번,번호,성적) values ('07033','102','85');
 insert into 수강(학번,번호,성적) values ('05014','104','90');
 
 
-insert into 설강 (번호, 교수명, 과목명, 소속) values ('101', '김일삼', 'SE', 'CD');
-insert into 설강 (번호, 교수명, 과목명, 소속) values ('102', '권오영', 'DB', 'CD');
-insert into 설강 (번호, 교수명, 과목명, 소속) values ('103', '김소월', 'DG', 'MD');
-insert into 설강 (번호, 교수명, 과목명, 소속) values ('104', '이상', 'FP', 'CD');
-insert into 설강 (번호, 교수명, 과목명, 소속) values ('105', '이석영', 'CS', 'ED');
+
 
 set linesize 120;
 
