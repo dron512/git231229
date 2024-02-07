@@ -23,6 +23,7 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("test");
             try
             {
                 conn = new OracleConnection(connectionString);
@@ -53,8 +54,40 @@ namespace WinFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            listView1.Items.Clear();
+
+            conn = new OracleConnection(connectionString);
+            conn.Open();
+
+            string sql = "select * from emp";
+            DataSet dataSet = new DataSet();
+            OracleDataAdapter dataAdapter = new OracleDataAdapter();
+            dataAdapter.SelectCommand = new OracleCommand(sql, conn);
+
+            dataAdapter.Fill(dataSet);
+
+            foreach (DataRow row in dataSet.Tables[0].Rows)
+            {
+                ListViewItem item = new ListViewItem(row["ename"].ToString());
+                listView1.Items.Add(item);
+                listBox1.Items.Add(row["ename"].ToString());
+            }
 
 
+            /*
+
+            OracleCommand cmd = new OracleCommand(sql,conn);
+            OracleDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                ListViewItem item = new ListViewItem(new String[] { dr["ename"].ToString() });
+                listView1.Items.Add(item);
+                listBox1.Items.Add(dr["ename"].ToString());
+            }
+            dr.Close();
+            */
+
+            conn.Close();
         }
     }
 }

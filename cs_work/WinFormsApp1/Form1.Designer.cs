@@ -32,6 +32,7 @@
             button2 = new Button();
             listBox1 = new ListBox();
             dataGridView1 = new DataGridView();
+            listView1 = new ListView();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -63,7 +64,7 @@
             listBox1.ItemHeight = 15;
             listBox1.Location = new Point(50, 18);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(350, 349);
+            listBox1.Size = new Size(174, 349);
             listBox1.TabIndex = 2;
             // 
             // dataGridView1
@@ -74,11 +75,20 @@
             dataGridView1.Size = new Size(354, 350);
             dataGridView1.TabIndex = 3;
             // 
+            // listView1
+            // 
+            listView1.Location = new Point(251, 12);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(173, 355);
+            listView1.TabIndex = 4;
+            listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(843, 475);
+            Controls.Add(listView1);
             Controls.Add(dataGridView1);
             Controls.Add(listBox1);
             Controls.Add(button2);
@@ -95,5 +105,6 @@
         private Button button2;
         private ListBox listBox1;
         private DataGridView dataGridView1;
+        private ListView listView1;
     }
 }
