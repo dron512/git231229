@@ -72,8 +72,6 @@ namespace WinFormsApp1
                 listView1.Items.Add(item);
                 listBox1.Items.Add(row["ename"].ToString());
             }
-
-
             /*
 
             OracleCommand cmd = new OracleCommand(sql,conn);
