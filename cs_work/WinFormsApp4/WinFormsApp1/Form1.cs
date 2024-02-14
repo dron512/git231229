@@ -1,3 +1,6 @@
+using System.Diagnostics;
+
+
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -11,6 +14,21 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                //Dispose();
+                Hide();
+                new Form2().ShowDialog();
+                Show();
+
+                System.Diagnostics.Process.Start("https://ko-kr.facebook.com/");
+            }
+            catch (Exception ae)
+            {
+                Console.WriteLine(  ae.ToString);
+            }
+            
+
             // 자동 정렬 ctrl + k -> f
             for (int i =0; i<10; i++) {
                 Button btn1 = new Button();

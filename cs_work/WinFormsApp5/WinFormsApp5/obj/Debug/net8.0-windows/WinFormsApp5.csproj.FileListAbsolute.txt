@@ -1,0 +1,17 @@
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\bin\Debug\net8.0-windows\WinFormsApp5.exe
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\bin\Debug\net8.0-windows\WinFormsApp5.deps.json
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\bin\Debug\net8.0-windows\WinFormsApp5.runtimeconfig.json
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\bin\Debug\net8.0-windows\WinFormsApp5.dll
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\bin\Debug\net8.0-windows\WinFormsApp5.pdb
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\WinFormsApp5.Form1.resources
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\WinFormsApp5.csproj.GenerateResource.cache
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\WinFormsApp5.GeneratedMSBuildEditorConfig.editorconfig
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\WinFormsApp5.AssemblyInfoInputs.cache
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\WinFormsApp5.AssemblyInfo.cs
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\WinFormsApp5.csproj.CoreCompileInputs.cache
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\WinFormsApp5.sourcelink.json
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\WinFormsApp5.dll
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\refint\WinFormsApp5.dll
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\WinFormsApp5.pdb
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\WinFormsApp5.genruntimeconfig.cache
+D:\Students\cs_work\WinFormsApp5\WinFormsApp5\obj\Debug\net8.0-windows\ref\WinFormsApp5.dll

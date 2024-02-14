@@ -15,3 +15,4 @@ D:\Students\cs_work\WinFormsApp4\WinFormsApp1\obj\Debug\net8.0-windows\refint\Wi
 D:\Students\cs_work\WinFormsApp4\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
 D:\Students\cs_work\WinFormsApp4\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 D:\Students\cs_work\WinFormsApp4\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+D:\Students\cs_work\WinFormsApp4\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Form2.resources
