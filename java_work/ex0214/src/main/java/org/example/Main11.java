@@ -9,5 +9,5 @@ public class Main11 {
         System.out.println(LocalDate.now());
         System.out.println(LocalDateTime.now());
     }
-    
+
 }
