@@ -6,7 +6,7 @@ namespace WinFormsApp6
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new MusicLogin());
+            Application.Run(new Form1());
         }
     }
 }

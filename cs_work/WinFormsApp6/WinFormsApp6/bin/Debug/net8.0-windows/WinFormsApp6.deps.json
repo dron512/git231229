@@ -7,27 +7,8 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "WinFormsApp6/1.0.0": {
-        "dependencies": {
-          "MetroModernUI": "1.4.0"
-        },
         "runtime": {
           "WinFormsApp6.dll": {}
-        }
-      },
-      "MetroModernUI/1.4.0": {
-        "runtime": {
-          "lib/net/MetroFramework.Design.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
-          },
-          "lib/net/MetroFramework.Fonts.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
-          },
-          "lib/net/MetroFramework.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
-          }
         }
       }
     }
@@ -37,13 +18,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "MetroModernUI/1.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-p2F3w8bF1tb0tpkDceEVO65UYMKnJxdQyNxVyl/OjrFZHighicLYZDppKkiqmvBZ10XUi2mqHiIJUzXBP3GElQ==",
-      "path": "metromodernui/1.4.0",
-      "hashPath": "metromodernui.1.4.0.nupkg.sha512"
     }
   }
 }

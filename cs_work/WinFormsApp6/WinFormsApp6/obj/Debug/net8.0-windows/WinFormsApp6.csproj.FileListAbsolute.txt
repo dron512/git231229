@@ -3,12 +3,7 @@ D:\Students\cs_work\WinFormsApp6\WinFormsApp6\bin\Debug\net8.0-windows\WinFormsA
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\bin\Debug\net8.0-windows\WinFormsApp6.runtimeconfig.json
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\bin\Debug\net8.0-windows\WinFormsApp6.dll
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\bin\Debug\net8.0-windows\WinFormsApp6.pdb
-D:\Students\cs_work\WinFormsApp6\WinFormsApp6\bin\Debug\net8.0-windows\MetroFramework.Design.dll
-D:\Students\cs_work\WinFormsApp6\WinFormsApp6\bin\Debug\net8.0-windows\MetroFramework.Fonts.dll
-D:\Students\cs_work\WinFormsApp6\WinFormsApp6\bin\Debug\net8.0-windows\MetroFramework.dll
-D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.csproj.AssemblyReference.cache
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.aaa.Form3.resources
-D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.Form1.resources
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.Form2.resources
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.Login.resources
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.member.MainForm.resources
@@ -22,9 +17,9 @@ D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsA
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.AssemblyInfo.cs
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.csproj.CoreCompileInputs.cache
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.sourcelink.json
-D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.csproj.CopyComplete
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.dll
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\refint\WinFormsApp6.dll
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.pdb
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.genruntimeconfig.cache
 D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\ref\WinFormsApp6.dll
+D:\Students\cs_work\WinFormsApp6\WinFormsApp6\obj\Debug\net8.0-windows\WinFormsApp6.Person.resources
