@@ -24,3 +24,4 @@ D:\Students\cs_work\WinFormsApp7\WinFormsApp7\obj\Debug\net8.0-windows\refint\Wi
 D:\Students\cs_work\WinFormsApp7\WinFormsApp7\obj\Debug\net8.0-windows\WinFormsApp7.pdb
 D:\Students\cs_work\WinFormsApp7\WinFormsApp7\obj\Debug\net8.0-windows\WinFormsApp7.genruntimeconfig.cache
 D:\Students\cs_work\WinFormsApp7\WinFormsApp7\obj\Debug\net8.0-windows\ref\WinFormsApp7.dll
+D:\Students\cs_work\WinFormsApp7\WinFormsApp7\obj\Debug\net8.0-windows\WinFormsApp7.Form2.resources
