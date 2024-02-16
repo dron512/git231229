@@ -8,7 +8,13 @@ namespace WinFormsApp8
         {
             InitializeComponent();
 
-            this.Font = new Font(FontLibrary.Families[0], 12);
+            // ÆùÆ®
+            //this.Font = new Font(FontLibrary.Families[0], 12);
+
+            foreach (Control control in this.Controls)
+            {
+                Console.WriteLine(control);
+            }
         }
     }
 }

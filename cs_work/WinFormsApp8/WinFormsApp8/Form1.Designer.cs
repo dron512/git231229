@@ -32,10 +32,10 @@
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
+            label3 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            label3 = new Label();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -69,12 +69,23 @@
             panel3.Size = new Size(143, 141);
             panel3.TabIndex = 2;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("배달의민족 도현", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(14, 103);
+            label3.Name = "label3";
+            label3.Size = new Size(48, 23);
+            label3.TabIndex = 3;
+            label3.Text = "식당";
+            // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(14, 89);
+            label2.Location = new Point(14, 80);
             label2.Name = "label2";
             label2.Size = new Size(92, 23);
             label2.TabIndex = 3;
@@ -99,17 +110,6 @@
             label1.Size = new Size(69, 23);
             label1.TabIndex = 3;
             label1.Text = "label1";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("휴먼둥근헤드라인", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(14, 112);
-            label3.Name = "label3";
-            label3.Size = new Size(49, 19);
-            label3.TabIndex = 3;
-            label3.Text = "식당";
             // 
             // Form1
             // 
