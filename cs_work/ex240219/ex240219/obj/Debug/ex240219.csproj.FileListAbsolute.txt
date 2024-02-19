@@ -1,0 +1,10 @@
+D:\Students\cs_work\ex240219\ex240219\bin\Debug\ex240219.exe.config
+D:\Students\cs_work\ex240219\ex240219\bin\Debug\ex240219.exe
+D:\Students\cs_work\ex240219\ex240219\bin\Debug\ex240219.pdb
+D:\Students\cs_work\ex240219\ex240219\obj\Debug\ex240219.csproj.AssemblyReference.cache
+D:\Students\cs_work\ex240219\ex240219\obj\Debug\ex240219.Form1.resources
+D:\Students\cs_work\ex240219\ex240219\obj\Debug\ex240219.Properties.Resources.resources
+D:\Students\cs_work\ex240219\ex240219\obj\Debug\ex240219.csproj.GenerateResource.cache
+D:\Students\cs_work\ex240219\ex240219\obj\Debug\ex240219.csproj.CoreCompileInputs.cache
+D:\Students\cs_work\ex240219\ex240219\obj\Debug\ex240219.exe
+D:\Students\cs_work\ex240219\ex240219\obj\Debug\ex240219.pdb
