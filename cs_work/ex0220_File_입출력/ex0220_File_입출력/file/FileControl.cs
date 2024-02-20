@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace ex0220_File_입출력.file
@@ -7,17 +8,24 @@ namespace ex0220_File_입출력.file
     {
         string filepath = "data.txt";
 
-        public void write(string text)
+        public void write(string text, List<string> list)
         {
-            Console.WriteLine($"write {text}");
-            File.WriteAllText(filepath, text);
+            //Console.WriteLine($"write {text}");
+            //File.WriteAllText(filepath, text);
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+            File.WriteAllLines(filepath, list);
         }
 
-        public void read()
+        public List<string> read()
         {
-            Console.WriteLine("read");
-            string text = File.ReadAllText(filepath);
-            Console.WriteLine($"text = {text}");
+            List<string> list = new List<string>(File.ReadAllLines(filepath));
+            return list;
+            //Console.WriteLine("read");
+            //string text = File.ReadAllText(filepath);
+            //Console.WriteLine($"text = {text}");
         }
     }
 }
