@@ -1,0 +1,10 @@
+D:\Students\cs_work\ex0220_File_입출력\ex0220_File_입출력\bin\Debug\ex0220_File_입출력.exe.config
+D:\Students\cs_work\ex0220_File_입출력\ex0220_File_입출력\bin\Debug\ex0220_File_입출력.exe
+D:\Students\cs_work\ex0220_File_입출력\ex0220_File_입출력\bin\Debug\ex0220_File_입출력.pdb
+D:\Students\cs_work\ex0220_File_입출력\ex0220_File_입출력\obj\Debug\ex0220_File_입출력.csproj.AssemblyReference.cache
+D:\Students\cs_work\ex0220_File_입출력\ex0220_File_입출력\obj\Debug\ex0220_File_입출력.Form1.resources
+D:\Students\cs_work\ex0220_File_입출력\ex0220_File_입출력\obj\Debug\ex0220_File_입출력.Properties.Resources.resources
+D:\Students\cs_work\ex0220_File_입출력\ex0220_File_입출력\obj\Debug\ex0220_File_입출력.csproj.GenerateResource.cache
+D:\Students\cs_work\ex0220_File_입출력\ex0220_File_입출력\obj\Debug\ex0220_File_입출력.csproj.CoreCompileInputs.cache
+D:\Students\cs_work\ex0220_File_입출력\ex0220_File_입출력\obj\Debug\ex0220_File_입출력.exe
+D:\Students\cs_work\ex0220_File_입출력\ex0220_File_입출력\obj\Debug\ex0220_File_입출력.pdb

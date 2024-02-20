@@ -18,6 +18,14 @@ namespace WinFormsApp6.member
 
             label1.Text = id;
             label2.Text = password;
+
+            Button btn = userControl11.GetButton();
+            btn.Click += Btn_Click;
+        }
+
+        private void Btn_Click(object? sender, EventArgs e)
+        {
+            Console.WriteLine( "테스트");
         }
 
         private void button1_Click(object sender, EventArgs e)

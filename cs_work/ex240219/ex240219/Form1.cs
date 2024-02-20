@@ -99,8 +99,6 @@ namespace ex240219
             {
                 Console.WriteLine( i );
             }
-
-
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -116,6 +114,39 @@ namespace ex240219
             personlist.Add(new Person() { name = "이길동", age = 30 });
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = personlist;
+        }
+
+        List<int> ints = new List<int>() { 11, 22, };
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int temp = new Random().Next(100);
+            
+            Button btn = new Button();
+            btn.Text = temp.ToString();
+            btn.Click += Btn_Click;
+            btn.Location = new Point(0, 0);
+            Controls.Add(btn);
+
+            ints.Add(temp);
+
+            string result = "";
+            foreach (int i in ints)
+            {
+                result += i+" ";
+            }
+            label1.Text = result;
+        }
+
+        private void Btn_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            ints.Remove(int.Parse(btn.Text));
+            string result = "";
+            foreach (int i in ints)
+            {
+                result += i + " ";
+            }
+            label1.Text = result;
         }
     }
 }

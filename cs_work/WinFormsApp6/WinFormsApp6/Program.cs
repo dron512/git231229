@@ -1,3 +1,5 @@
+using WinFormsApp6.member;
+
 namespace WinFormsApp6
 {
     internal static class Program
@@ -6,7 +8,7 @@ namespace WinFormsApp6
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new MainForm("Å×½ºÆ®","1234"));
         }
     }
 }

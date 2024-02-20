@@ -37,9 +37,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button6 = new System.Windows.Forms.Button();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +59,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(221, 22);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 117);
+            this.button2.Size = new System.Drawing.Size(43, 117);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -89,9 +90,9 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(469, 22);
+            this.listBox1.Location = new System.Drawing.Point(656, 22);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(308, 184);
+            this.listBox1.Size = new System.Drawing.Size(121, 184);
             this.listBox1.TabIndex = 4;
             // 
             // dataGridView1
@@ -102,10 +103,10 @@
             this.nameDataGridViewTextBoxColumn,
             this.ageDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.personBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(469, 216);
+            this.dataGridView1.Location = new System.Drawing.Point(656, 216);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(311, 201);
+            this.dataGridView1.Size = new System.Drawing.Size(124, 201);
             this.dataGridView1.TabIndex = 5;
             // 
             // button4
@@ -130,9 +131,15 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // personBindingSource
+            // button6
             // 
-            this.personBindingSource.DataSource = typeof(ex240219.Person);
+            this.button6.Location = new System.Drawing.Point(313, 22);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(136, 117);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -146,11 +153,16 @@
             this.ageDataGridViewTextBoxColumn.HeaderText = "age";
             this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
             // 
+            // personBindingSource
+            // 
+            this.personBindingSource.DataSource = typeof(ex240219.Person);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.dataGridView1);
@@ -181,6 +193,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource personBindingSource;
+        private System.Windows.Forms.Button button6;
     }
 }
 

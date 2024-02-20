@@ -16,5 +16,10 @@ namespace WinFormsApp6.member
         {
             InitializeComponent();
         }
+
+        public Button GetButton()
+        {
+            return button1 ?? (button1 = new Button());
+        }
     }
 }
