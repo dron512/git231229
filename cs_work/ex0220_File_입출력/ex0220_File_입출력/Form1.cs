@@ -8,6 +8,8 @@ namespace ex0220_File_입출력
 {
     public partial class Form1 : Form
     {
+
+
         FileControl fc = new FileControl();
         FileTBDataBase ftdb = new FileTBDataBase();
 
