@@ -28,6 +28,7 @@ namespace ex0220_File_입출력.database
 
         public void insert(string text)
         {
+            // DB 연결
             OracleConnection con = connect();
 
             string sql = "insert into FILETB values (:value1)";
@@ -55,7 +56,7 @@ namespace ex0220_File_입출력.database
                 OracleDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    list.Add(reader.GetString(0));
+                    list.Add(reader["str"].ToString());
                 }
             }
 
@@ -63,5 +64,25 @@ namespace ex0220_File_입출력.database
 
             return list;
         }
+    
+        public void update(string org,string dst)
+        {
+            string connectionString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)" +
+            "(HOST=192.168.0.38)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=xe)));" +
+            "User Id=hr;Password=1234;";
+
+            // DB 연결...
+            OracleConnection con = new OracleConnection(connectionString);
+            con.Open();  // db 열기
+
+            // sql 구문 만들기
+            OracleCommand oracleCommand = new OracleCommand($" update filetb set str='{dst}' " +
+                                                             $" where str='{org}' ", con);
+            // 실행하기
+            oracleCommand.ExecuteNonQuery();
+
+            con.Close();  // db 닫기
+        }
+    
     }
 }
