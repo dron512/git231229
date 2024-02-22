@@ -1,0 +1,10 @@
+D:\Students\cs_work\labeladddelbutton\labeladddelbutton\bin\Debug\labeladddelbutton.exe.config
+D:\Students\cs_work\labeladddelbutton\labeladddelbutton\bin\Debug\labeladddelbutton.exe
+D:\Students\cs_work\labeladddelbutton\labeladddelbutton\bin\Debug\labeladddelbutton.pdb
+D:\Students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbutton.csproj.AssemblyReference.cache
+D:\Students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbutton.Form1.resources
+D:\Students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbutton.Properties.Resources.resources
+D:\Students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbutton.csproj.GenerateResource.cache
+D:\Students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbutton.csproj.CoreCompileInputs.cache
+D:\Students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbutton.exe
+D:\Students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbutton.pdb

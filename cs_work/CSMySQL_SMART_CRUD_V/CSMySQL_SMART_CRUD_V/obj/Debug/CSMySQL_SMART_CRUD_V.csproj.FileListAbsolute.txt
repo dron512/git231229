@@ -1,0 +1,102 @@
+C:\Users\jungj\OneDrive\바탕 화면\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\CSMySQL_SMART_CRUD_V.exe.config
+C:\Users\jungj\OneDrive\바탕 화면\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\CSMySQL_SMART_CRUD_V.exe
+C:\Users\jungj\OneDrive\바탕 화면\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\CSMySQL_SMART_CRUD_V.pdb
+C:\Users\jungj\OneDrive\바탕 화면\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.csproj.AssemblyReference.cache
+C:\Users\jungj\OneDrive\바탕 화면\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.Form1.resources
+C:\Users\jungj\OneDrive\바탕 화면\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.Properties.Resources.resources
+C:\Users\jungj\OneDrive\바탕 화면\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.csproj.GenerateResource.cache
+C:\Users\jungj\OneDrive\바탕 화면\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.csproj.CoreCompileInputs.cache
+C:\Users\jungj\OneDrive\바탕 화면\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.exe
+C:\Users\jungj\OneDrive\바탕 화면\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.pdb
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\CSMySQL_SMART_CRUD_V.exe.config
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\CSMySQL_SMART_CRUD_V.exe
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\CSMySQL_SMART_CRUD_V.pdb
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Google.Protobuf.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\MySql.Data.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\MySqlConnector.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Buffers.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.IO.Pipelines.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Memory.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\ZstdSharp.dll
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Google.Protobuf.pdb
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Google.Protobuf.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\MySql.Data.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\MySqlConnector.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Buffers.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.IO.Pipelines.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Memory.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.csproj.AssemblyReference.cache
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.Form1.resources
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.Properties.Resources.resources
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.csproj.GenerateResource.cache
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.csproj.CopyComplete
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.exe
+C:\Users\user\Downloads\c#\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.pdb
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\CSMySQL_SMART_CRUD_V.exe.config
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\CSMySQL_SMART_CRUD_V.exe
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\CSMySQL_SMART_CRUD_V.pdb
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\BouncyCastle.Cryptography.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Google.Protobuf.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Compression.LZ4.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Hash.xxHash.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\MySql.Data.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\MySqlConnector.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Buffers.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.IO.Pipelines.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Memory.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Numerics.Vectors.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\ZstdSharp.dll
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\BouncyCastle.Cryptography.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Google.Protobuf.pdb
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Google.Protobuf.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Compression.LZ4.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\K4os.Hash.xxHash.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\MySql.Data.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\MySqlConnector.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Buffers.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.IO.Pipelines.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Memory.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Numerics.Vectors.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.csproj.AssemblyReference.cache
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.Form1.resources
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.Properties.Resources.resources
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.csproj.GenerateResource.cache
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.csproj.CoreCompileInputs.cache
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.csproj.CopyComplete
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.exe
+D:\공유\코드리뷰\24-02-22\CSMySQL_SMART_CRUD_V\CSMySQL_SMART_CRUD_V\obj\Debug\CSMySQL_SMART_CRUD_V.pdb
