@@ -16,9 +16,10 @@ public class MemberService {
         memberRepository.insert(member);
     }
 
-    public void list() {
+    public Collection<Member> list() {
         Collection<Member> collection = memberRepository.select();
 
         collection.stream().forEach(System.out::println);
+        return collection;
     }
 }
