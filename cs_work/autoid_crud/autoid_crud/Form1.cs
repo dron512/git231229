@@ -27,16 +27,30 @@ namespace autoid_crud
             dataGridView1.AllowUserToAddRows = false;
 
             select();
+
+            
         }
 
-        private void select()
+        private void cleanControl()
         {
+            firstNameTextBox.Text= string.Empty;
+            lastNameTextBox.Text= string.Empty;
+            button2.Text = "UPDATE";
+            button3.Text = "DELETE";
+        }
+
+        private void select(string searchText="")
+        {
+            MessageBox.Show(searchText);
+
             CRUD.con.Open();
 
             OracleDataAdapter oracleDataAdapter = new OracleDataAdapter();
-            string sql = "select * from tb_smart_crud";
+            string sql = "select * from tb_smart_crud where concat(firstname,lastname) like :searchText order by autoid desc";
 
             OracleCommand oracleCommand = new OracleCommand(sql, CRUD.con);
+            oracleCommand.Parameters.Add(":searchText", $"%{searchText}%");
+
             oracleDataAdapter.SelectCommand = oracleCommand;
 
             DataSet dataSet = new DataSet();
@@ -45,6 +59,12 @@ namespace autoid_crud
             dataGridView1.DataSource = dataSet.Tables[0];
 
             CRUD.con.Close();
+            cleanControl();
+
+            if (dataGridView1.Rows.Count > 0)
+            {
+                this.autoid = int.Parse(dataGridView1.Rows[0].Cells[0].Value.ToString());
+            }
         }
 
         private void insert(object sender, EventArgs e)
@@ -85,7 +105,10 @@ namespace autoid_crud
 
         private void button4_Click(object sender, EventArgs e)
         {
-            select();
+            if(searchText.Text.Equals(""))
+                select();
+            else
+                select(searchText.Text);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -108,7 +131,38 @@ namespace autoid_crud
         #region update 버튼 누름
         private void button2_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(firstNameTextBox.Text.Trim())
+                || string.IsNullOrEmpty(lastNameTextBox.Text.Trim()))
+            {
+                MessageBox.Show("이름을 입력하세요", "경고", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            string gender = "남자";
 
+            if (comboBox1.SelectedItem != null)
+            {
+                gender = comboBox1.SelectedItem.ToString();
+            }
+
+            string sql = $"update tb_smart_crud"+
+                             " set firstname = :firstName,"+
+                             "    lastname = :lastName,"+
+                             "    gender = :gender"+
+                            " where autoid = :autoid";
+
+            CRUD.con.Open();
+            CRUD.cmd = new OracleCommand(sql, CRUD.con);
+            CRUD.cmd.Parameters.Clear();
+            CRUD.cmd.Parameters.Add(":firstName", firstNameTextBox.Text);
+            CRUD.cmd.Parameters.Add(":lastName", lastNameTextBox.Text);
+            CRUD.cmd.Parameters.Add(":gender", gender);
+            CRUD.cmd.Parameters.Add(":autoid", this.autoid);
+
+            CRUD.cmd.ExecuteNonQuery();
+            CRUD.con.Close();
+
+            MessageBox.Show("수정되었습니다.");
+            select();
 
         }
         #endregion
@@ -116,8 +170,23 @@ namespace autoid_crud
         #region delete 버튼 누름
         private void button3_Click(object sender, EventArgs e)
         {
+            if ( autoid ==0 )
+            {
+                MessageBox.Show("삭제하는 행을 선택해주세요");
+                return;
+            }
+            string sql = $"delete tb_smart_crud where autoid=:autoid";
+            
+            CRUD.con.Open();
+            CRUD.cmd = new OracleCommand(sql, CRUD.con);
+            CRUD.cmd.Parameters.Clear();
+            CRUD.cmd.Parameters.Add(":autoid", this.autoid);
 
+            CRUD.cmd.ExecuteNonQuery();
+            CRUD.con.Close();
 
+            MessageBox.Show("삭제되었습니다.");
+            select();
         }
         #endregion
     }

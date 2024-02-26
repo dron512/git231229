@@ -37,7 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.firstNameTextBox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.searchText = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -134,13 +134,13 @@
             this.lastNameTextBox.Size = new System.Drawing.Size(152, 31);
             this.lastNameTextBox.TabIndex = 8;
             // 
-            // textBox4
+            // searchText
             // 
-            this.textBox4.Font = new System.Drawing.Font("배달의민족 주아", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox4.Location = new System.Drawing.Point(458, 33);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(211, 31);
-            this.textBox4.TabIndex = 10;
+            this.searchText.Font = new System.Drawing.Font("배달의민족 주아", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.searchText.Location = new System.Drawing.Point(458, 33);
+            this.searchText.Name = "searchText";
+            this.searchText.Size = new System.Drawing.Size(211, 31);
+            this.searchText.TabIndex = 10;
             // 
             // button4
             // 
@@ -179,7 +179,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.searchText);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.firstNameTextBox);
             this.Controls.Add(this.label3);
@@ -208,7 +208,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox firstNameTextBox;
         private System.Windows.Forms.TextBox lastNameTextBox;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox searchText;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
