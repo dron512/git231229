@@ -1,0 +1,9 @@
+Member 테이블생성
+컬럼...
+
+기본키idx,
+email,
+name,
+password
+
+insert 

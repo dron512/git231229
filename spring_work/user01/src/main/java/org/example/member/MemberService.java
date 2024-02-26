@@ -1,8 +1,11 @@
 package org.example.member;
 
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDate;
 import java.util.Collection;
 
+@NoArgsConstructor
 public class MemberService {
 
     //
@@ -12,6 +15,9 @@ public class MemberService {
         this.memberRepository = memberRepository;
     }
 
+    public void setMemberRepository(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     public void regist(MemberDto md) {
 

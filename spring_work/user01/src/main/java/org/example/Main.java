@@ -37,8 +37,5 @@ public class Main {
         }
 
         ms.regist(md);
-
-
-
     }
 }

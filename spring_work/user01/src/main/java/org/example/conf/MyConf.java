@@ -16,7 +16,8 @@ public class MyConf {
 
     @Bean
     public MemberService memberService(){
-        MemberService ms = new MemberService(memberDao());
+        MemberService ms = new MemberService();
+        ms.setMemberRepository(memberDao());
         return ms;
     }
 }
