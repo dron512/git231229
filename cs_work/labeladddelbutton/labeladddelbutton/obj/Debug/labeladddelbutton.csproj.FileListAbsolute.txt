@@ -8,3 +8,4 @@ D:\Students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbut
 D:\Students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbutton.csproj.CoreCompileInputs.cache
 D:\Students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbutton.exe
 D:\Students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbutton.pdb
+D:\students\cs_work\labeladddelbutton\labeladddelbutton\obj\Debug\labeladddelbutton.Form2.resources

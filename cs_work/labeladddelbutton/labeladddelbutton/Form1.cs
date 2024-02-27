@@ -1,4 +1,5 @@
-﻿using System;
+﻿using labeladddelbutton.member;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,8 @@ namespace labeladddelbutton
 
             addButtons();
             setLabelList();
+
+            //this.panel1.IsMdiContainer = true;
         }
 
         private void Button_Click1(object aa, EventArgs bb)
@@ -127,7 +130,15 @@ namespace labeladddelbutton
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("추가버튼누름");
+            this.WindowState = FormWindowState.Maximized;
+
+            MessageBox.Show(this.MaximumSize.ToString());
+            MemberForm memfrm = new MemberForm();
+            memfrm.TopLevel = false;
+
+            this.panel1.Controls.Add(memfrm);
+            //memfrm.MdiParent = this;
+            memfrm.Show();
         }
     }
 }

@@ -1,3 +1,6 @@
+SELECT TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') AS CURRENT_DATE_TIME FROM DUAL;
+
+
 drop table 사원;
 drop table 대출;
 create table 사원 (사번 varchar2(10), 이름 varchar2(10));
