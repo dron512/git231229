@@ -1,8 +1,10 @@
 package org.example;
 
-import org.example.components.Calculator;
+import org.example.components.ExeCalculator;
 import org.example.conf.AppCtx;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +13,10 @@ public class Main {
         AnnotationConfigApplicationContext context
                 = new AnnotationConfigApplicationContext(AppCtx.class);
 
-        Calculator calculator = context.getBean(Calculator.class);
+        Arrays.stream(context.getBeanDefinitionNames())
+                .forEach(System.out::println);
+
+        ExeCalculator calculator = context.getBean(ExeCalculator.class);
         calculator.doPrint();
 
         context.close();
