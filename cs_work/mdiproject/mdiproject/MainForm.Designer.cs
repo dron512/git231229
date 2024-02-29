@@ -32,6 +32,7 @@
             this.사용자관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.할일관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.테스트ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +41,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.사용자관리ToolStripMenuItem,
             this.할일관리ToolStripMenuItem,
-            this.종료ToolStripMenuItem});
+            this.종료ToolStripMenuItem,
+            this.테스트ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1184, 24);
@@ -68,6 +70,13 @@
             this.종료ToolStripMenuItem.Text = "종료";
             this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
+            // 테스트ToolStripMenuItem
+            // 
+            this.테스트ToolStripMenuItem.Name = "테스트ToolStripMenuItem";
+            this.테스트ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.테스트ToolStripMenuItem.Text = "테스트";
+            this.테스트ToolStripMenuItem.Click += new System.EventHandler(this.테스트ToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -90,6 +99,7 @@
         private System.Windows.Forms.ToolStripMenuItem 사용자관리ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 할일관리ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 종료ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 테스트ToolStripMenuItem;
     }
 }
 

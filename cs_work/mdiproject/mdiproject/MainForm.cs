@@ -1,4 +1,5 @@
-﻿using mdiproject.todo;
+﻿using mdiproject.test;
+using mdiproject.todo;
 using mdiproject.user;
 using System;
 using System.Collections.Generic;
@@ -39,6 +40,11 @@ namespace mdiproject
             Dispose();
         }
 
-        
+        private void 테스트ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TestForm testForm = TestForm.getInstance();
+            testForm.MdiParent = this;
+            testForm.Show();
+        }
     }
 }

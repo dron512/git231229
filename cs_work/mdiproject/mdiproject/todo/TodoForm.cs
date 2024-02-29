@@ -31,6 +31,11 @@ namespace mdiproject.todo
         public TodoForm()
         {
             InitializeComponent();
+
+            //monthCalendar1.Width = 500;
+            //monthCalendar1.Height = 300;
+            //monthCalendar1.CalendarDimensions = new Size(1, 1);
+
         }
     }
 }
