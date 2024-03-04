@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace mdiproject.user
 {
-    public class UserDBManager
+    public class TodoDBManager
     {
-        public UserDBManager() { }
+        public TodoDBManager() { }
         public bool insert(Users users)
         {
             try { 

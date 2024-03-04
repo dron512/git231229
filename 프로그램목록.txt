@@ -7,3 +7,5 @@
 6. vscode (소스편집기 툴)
 7. sqldeveloper (oracle 접속 프로그램) 압축풀면됩니다.
 8. heidisql (mysql 접속프로그램)
+9. postman (웹브라우저 대체)
+10. node(react 수업)

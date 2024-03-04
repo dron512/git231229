@@ -100,12 +100,14 @@
     <Compile Include="test\TestForm.Designer.cs">
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="todo\Todo.cs" />
     <Compile Include="todo\TodoForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="todo\TodoForm.Designer.cs">
       <DependentUpon>TodoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="todo\TodoDBManager.cs" />
     <Compile Include="user\UserDBManager.cs" />
     <Compile Include="user\UserForm.cs">
       <SubType>Form</SubType>

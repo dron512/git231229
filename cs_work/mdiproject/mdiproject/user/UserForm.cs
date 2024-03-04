@@ -13,7 +13,7 @@ namespace mdiproject.user
     public partial class UserForm : Form
     {
         private static UserForm instance = null;
-        private UserDBManager userDBManager = new UserDBManager();
+        private TodoDBManager userDBManager = new TodoDBManager();
 
         public static UserForm getInstance()
         {

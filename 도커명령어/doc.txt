@@ -1,0 +1,52 @@
+
+-d 백그라운드 실행해라
+--name 컨테이너명 지정
+-e 환경변수 지정
+
+mysql
+oracle
+
+github
+docker 
+
+github 소스업로드
+-> 소스를 다운받아서
+-> jar war 자동으로
+-> tomcat 
+
+jenkins -> docker 
+
+# 이미지 mysql oracle 
+
+docker run -d -e MYSQL_ROOT_PASSWORD=1234 --name mysqlcontainer mysql
+
+# 이미지 다운로드
+docker pull mysql
+
+# 컨테이너 생성
+docker create --name mysqlcontainer -e MYSQL_ROOT_PASSWORD=1234 -p 3306:3306 mysql
+docker create --name mysqlcontainer -e MYSQL_ROOT_PASSWORD=1234 -p 3306:3306 -v ./mysql:/var/lib/mysql mysql
+
+# 컨테이너 
+docker start -d mysqlcontainer
+
+# 도커 모든 이미지 보기
+docker images
+
+# 도커 이미지 삭제 명령어
+docker rmi mysql
+
+# 도커 컨테이너 삭제 명령어
+docker rm mysqlcontainer
+
+# 도커 컨테이너 목록 보기
+docker ps 
+# 정지된 도커컨테이너 함께 목록보기
+docker ps -a
+
+
+오라클 설치 참고
+https://soir1984.tistory.com/84
+
+# pull create start
+docker run -d -p 1521:1521 --name oraclecontainer jaspeen/oracle-xe-11g 
