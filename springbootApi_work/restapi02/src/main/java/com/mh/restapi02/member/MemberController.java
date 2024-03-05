@@ -47,7 +47,7 @@ public class MemberController {
     }
 
     @DeleteMapping("member")
-    public String update(Long id){
+    public String delete(Long id){
         memberRepository.deleteById(id);
         return "deleted id = "+id;
     }
