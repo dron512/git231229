@@ -64,6 +64,7 @@ namespace mdiproject.todo
                 finishdate = finish_datepicker.Value,
             });
 
+
             if (result) { 
                 MessageBox.Show("입력하였습니다.");
                 title_tb.Text = "";
