@@ -38,13 +38,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -164,92 +158,7 @@
             this.label17.Size = new System.Drawing.Size(110, 26);
             this.label17.TabIndex = 12;
             this.label17.Text = "FinishDate";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel4.Controls.Add(this.checkBox1);
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Location = new System.Drawing.Point(12, 83);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(270, 220);
-            this.panel4.TabIndex = 1;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.checkBox1.Location = new System.Drawing.Point(198, 176);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(69, 30);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "완료";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(4, 160);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(110, 26);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "FinishDate";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(4, 70);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(86, 26);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "Content";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(95, 6);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 26);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "title";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(4, 134);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(110, 26);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "FinishDate";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(4, 44);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 26);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Content";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(3, 6);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 26);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "title";
+            
             // 
             // label1
             // 
@@ -268,7 +177,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(300, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(651, 627);
+            this.panel2.Size = new System.Drawing.Size(756, 627);
             this.panel2.TabIndex = 1;
             // 
             // label2
@@ -296,7 +205,7 @@
             this.panel3.Controls.Add(this.userIdx_combobox);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(651, 0);
+            this.panel3.Location = new System.Drawing.Point(756, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(20);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(300, 627);
@@ -402,18 +311,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 627);
+            this.ClientSize = new System.Drawing.Size(1056, 627);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+
             this.Name = "TodoForm";
             this.Text = "TodoForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -434,16 +343,14 @@
         private System.Windows.Forms.ComboBox userIdx_combobox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox content_tb;
         private System.Windows.Forms.TextBox title_tb;
         private System.Windows.Forms.DateTimePicker finish_datepicker;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox content_tb;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
+       
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label19;
@@ -451,9 +358,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+
     }
 }
