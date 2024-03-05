@@ -41,11 +41,33 @@ namespace mdiproject.todo
 
             userIdx_combobox.SelectedText= "1";
 
-            //   this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            // 
 
-            makeTodoPanel(10, 90);
-            makeTodoPanel(10, 320);
-            makeTodoPanel(10, 550);
+            DataTable dataTable = dbManager.select();
+
+            int y = 90;
+            int evenOdd = 1;
+            foreach (DataRow row in dataTable.Rows)
+            {
+                int idx = int.Parse(row["idx"].ToString());
+                string title = row["title"].ToString();
+                string content = row["content"].ToString();
+                DateTime finishdate = new DateTime(
+                                    int.Parse(row["finishdate"].ToString().Split('-', ' ')[0]),
+                                    int.Parse(row["finishdate"].ToString().Split('-', ' ')[1]),
+                                    int.Parse(row["finishdate"].ToString().Split('-', ' ')[2]));
+                Todo todo = new Todo();
+                todo.idx = idx;
+                todo.title = title;
+                todo.content = content;
+                todo.finishdate = finishdate;
+
+                // y 값은 230씩 증가되야함
+                makeTodoPanel(10, y, todo, evenOdd%2);
+                evenOdd +=1;
+                y += 230;
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -64,7 +86,7 @@ namespace mdiproject.todo
             }
         }
 
-        private void makeTodoPanel(int panelx, int panely)
+        private void makeTodoPanel(int panelx, int panely,Todo todo, int evenOdd)
         {
             #region Panel 화면 구현
 
@@ -93,7 +115,7 @@ namespace mdiproject.todo
             finishDate_lb_value.Name = "finishDate_lb_value";
             finishDate_lb_value.Size = new Size(110, 26);
             finishDate_lb_value.TabIndex = 8;
-            finishDate_lb_value.Text = "FinishDate";
+            finishDate_lb_value.Text = todo.finishdate.ToString("yyyy/MM/dd");
             
             // content_lb_value
             content_lb_value.AutoSize = true;
@@ -102,7 +124,7 @@ namespace mdiproject.todo
             content_lb_value.Name = "content_lb_value";
             content_lb_value.Size = new Size(86, 26);
             content_lb_value.TabIndex = 7;
-            content_lb_value.Text = "Content";
+            content_lb_value.Text = todo.content;
             
             // title_lb_value
             title_lb_value.AutoSize = true;
@@ -111,7 +133,7 @@ namespace mdiproject.todo
             title_lb_value.Name = "title_lb_value";
             title_lb_value.Size = new Size(47, 26);
             title_lb_value.TabIndex = 6;
-            title_lb_value.Text = "title";
+            title_lb_value.Text = todo.title;
             
             // finishDate_lb
             finishDate_lb.AutoSize = true;
@@ -141,7 +163,12 @@ namespace mdiproject.todo
             title_lb.Text = "title";
 
             Panel panel4 = new Panel();
-            panel4.BackColor = Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+
+            if (evenOdd %2==0)
+                panel4.BackColor = Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            else
+                panel4.BackColor = Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+
             panel4.Controls.Add(compete_checkbox);
             panel4.Controls.Add(finishDate_lb_value);
             panel4.Controls.Add(content_lb_value);
