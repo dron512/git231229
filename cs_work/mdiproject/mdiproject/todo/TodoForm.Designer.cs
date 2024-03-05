@@ -38,7 +38,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,7 +54,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -83,9 +81,9 @@
             this.panel5.Controls.Add(this.label18);
             this.panel5.Controls.Add(this.label16);
             this.panel5.Controls.Add(this.label17);
-            this.panel5.Location = new System.Drawing.Point(12, 315);
+            this.panel5.Location = new System.Drawing.Point(19, 370);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(270, 220);
+            this.panel5.Size = new System.Drawing.Size(264, 219);
             this.panel5.TabIndex = 2;
             // 
             // checkBox2
@@ -158,7 +156,13 @@
             this.label17.Size = new System.Drawing.Size(110, 26);
             this.label17.TabIndex = 12;
             this.label17.Text = "FinishDate";
-            
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 100);
+            this.panel4.TabIndex = 3;
             // 
             // label1
             // 
@@ -315,14 +319,12 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-
             this.Name = "TodoForm";
             this.Text = "TodoForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
