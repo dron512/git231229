@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,7 +44,6 @@
             this.userIdx_combobox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -62,107 +52,12 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 627);
             this.panel1.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel5.Controls.Add(this.checkBox2);
-            this.panel5.Controls.Add(this.label14);
-            this.panel5.Controls.Add(this.label19);
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.label18);
-            this.panel5.Controls.Add(this.label16);
-            this.panel5.Controls.Add(this.label17);
-            this.panel5.Location = new System.Drawing.Point(19, 370);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(264, 219);
-            this.panel5.TabIndex = 2;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.checkBox2.Location = new System.Drawing.Point(197, 178);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(69, 30);
-            this.checkBox2.TabIndex = 16;
-            this.checkBox2.Text = "완료";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(3, 162);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(110, 26);
-            this.label14.TabIndex = 15;
-            this.label14.Text = "FinishDate";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(2, 8);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(47, 26);
-            this.label19.TabIndex = 10;
-            this.label19.Text = "title";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(3, 72);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(86, 26);
-            this.label15.TabIndex = 14;
-            this.label15.Text = "Content";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(3, 46);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(86, 26);
-            this.label18.TabIndex = 11;
-            this.label18.Text = "Content";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label16.Location = new System.Drawing.Point(94, 8);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(47, 26);
-            this.label16.TabIndex = 13;
-            this.label16.Text = "title";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("한컴 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.label17.Location = new System.Drawing.Point(3, 136);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(110, 26);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "FinishDate";
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 100);
-            this.panel4.TabIndex = 3;
             // 
             // label1
             // 
@@ -323,8 +218,6 @@
             this.Text = "TodoForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -350,16 +243,5 @@
         private System.Windows.Forms.DateTimePicker finish_datepicker;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-       
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-
     }
 }
