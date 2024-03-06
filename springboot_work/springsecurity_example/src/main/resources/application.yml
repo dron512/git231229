@@ -29,8 +29,8 @@ spring:
 
 kakao:
   client:
-    id: 38b99bb2df5447bcb6b585cfccbe97dc #rest api ?
-    secret: iHIwOUaEh408I4TvI5ZMntOZJ2JRcZzl # ????? ??? ?
+    id: c #rest api ?
+    secret: iHIwOUaEh408I4TvI5Z # ????? ??? ?
 
 # TokenManager
 token:
