@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace mdiproject.user
 {
-    public class TodoDBManager
+    public class UserDBManager
     {
-        public TodoDBManager() { }
+        public UserDBManager() { }
         public bool insert(Users users)
         {
             try { 
@@ -68,7 +68,40 @@ namespace mdiproject.user
                 MessageBox.Show(e.Message);
                 return null;
             }
-            
+        }
+
+        public List<String> selectUserId()
+        {
+            try
+            {
+                OracleConnection con = DBINFO.openConnect();
+
+                string sql = "select idx from users";
+
+                OracleDataAdapter adapter = new OracleDataAdapter();
+                DataSet ds = new DataSet();
+
+                OracleCommand oracleCommand = new OracleCommand(sql, con);
+                adapter.SelectCommand = oracleCommand;
+
+                adapter.Fill(ds);
+
+                DBINFO.closeConnect();
+
+                List<string> list = new List<string>();
+                foreach(DataRow dr in ds.Tables[0].Rows)
+                {
+                    list.Add(dr["idx"].ToString());
+                }
+
+                return list;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.StackTrace);
+                MessageBox.Show(e.Message);
+                return null;
+            }
         }
     }
 }

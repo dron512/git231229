@@ -52,7 +52,7 @@ namespace mdiproject.todo
             try { 
                 OracleConnection con = DBINFO.openConnect();
 
-                string sql = "select * from todo";
+                string sql = "select * from todo order by idx desc";
 
                 OracleDataAdapter adapter = new OracleDataAdapter();
                 DataSet ds = new DataSet();

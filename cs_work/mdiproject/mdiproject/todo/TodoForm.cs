@@ -15,7 +15,8 @@ namespace mdiproject.todo
     {
         private static TodoForm instance = null;
 
-        private TodoDBManager dbManager = new TodoDBManager();
+        private TodoDBManager todoDBManager = new TodoDBManager();
+        private UserDBManager userDBManager = new UserDBManager();
 
         public static TodoForm getInstance()
         {
@@ -34,16 +35,20 @@ namespace mdiproject.todo
         {
             InitializeComponent();
 
-            userIdx_combobox.DataSource = new List<string>()
-            {
-                "1","2","3","4","5"
-            };
+            List<String> list = userDBManager.selectUserId();
+
+            // 사용자 데이터 불러와야...
+            userIdx_combobox.DataSource = list;
 
             userIdx_combobox.SelectedText= "1";
 
-            // 
+            
+            todoSelect();
+        }
 
-            DataTable dataTable = dbManager.select();
+        public void todoSelect()
+        {
+            DataTable dataTable = todoDBManager.select();
 
             int y = 90;
             int evenOdd = 1;
@@ -63,16 +68,15 @@ namespace mdiproject.todo
                 todo.finishdate = finishdate;
 
                 // y 값은 230씩 증가되야함
-                makeTodoPanel(10, y, todo, evenOdd%2);
-                evenOdd +=1;
+                makeTodoPanel(10, y, todo, evenOdd % 2);
+                evenOdd += 1;
                 y += 230;
             }
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bool result =  dbManager.insert(new Todo()
+            bool result =  todoDBManager.insert(new Todo()
             {
                 user_idx = int.Parse(userIdx_combobox.Text),
                 title = title_tb.Text,
@@ -83,6 +87,9 @@ namespace mdiproject.todo
                 MessageBox.Show("입력하였습니다.");
                 title_tb.Text = "";
                 content_tb.Text = "";
+
+                panel1.Controls.Clear();
+                todoSelect();
             }
         }
 
@@ -184,6 +191,16 @@ namespace mdiproject.todo
             panel4.PerformLayout();
 
             this.panel1.Controls.Add(panel4);
+
+            this.label1.AutoSize = true;
+            this.label1.Font = new Font("한컴 고딕", 21.75F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new Point(12, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new Size(71, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "예약";
+
+            this.panel1.Controls.Add(this.label1);
             #endregion
         }
     }
