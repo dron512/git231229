@@ -6,13 +6,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class TokenController {
+public class TokenTestController {
 
     private final TokenManager tokenManager;
     @GetMapping("token")
     public String getToken(){
         String result = tokenManager.buildToken();
-//        tokenManager.validateToken(result);
         return result;
+    }
+
+    @GetMapping("valid")
+    public String getValid(){
+        return "valid";
     }
 }

@@ -114,6 +114,8 @@ namespace mdiproject.todo
             compete_checkbox.Size = new Size(69, 30);
             compete_checkbox.TabIndex = 9;
             compete_checkbox.Text = "완료";
+            // 변수 숨기기
+            compete_checkbox.Tag = todo.idx;
             compete_checkbox.UseVisualStyleBackColor = true;
             compete_checkbox.Click += Compete_checkbox_Click;
 
@@ -215,7 +217,8 @@ namespace mdiproject.todo
 
         private void Compete_checkbox_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("눌렀음.....");
+            CheckBox cb = sender as CheckBox;
+            MessageBox.Show($"눌렀음.....{cb.Tag}");
         }
     }
 }

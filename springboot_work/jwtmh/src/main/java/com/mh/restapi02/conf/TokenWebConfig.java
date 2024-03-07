@@ -13,6 +13,7 @@ public class TokenWebConfig implements WebMvcConfigurer {
     private final TokenInterceptor tokenInterceptor;
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(tokenInterceptor);
+        registry.addInterceptor(tokenInterceptor)
+                .excludePathPatterns("/token");
     }
 }

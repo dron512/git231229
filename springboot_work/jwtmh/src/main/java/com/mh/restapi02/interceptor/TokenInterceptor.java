@@ -1,5 +1,7 @@
 package com.mh.restapi02.interceptor;
 
+import com.mh.restapi02.jwt.ErrorCode;
+import com.mh.restapi02.jwt.TokenException;
 import com.mh.restapi02.jwt.TokenManager;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
@@ -23,11 +25,10 @@ public class TokenInterceptor implements HandlerInterceptor {
             Jws<Claims> claimsJws = tokenManager.validateToken(auth.split("Bearer ")[1]);
             System.out.println(claimsJws);
         }catch (ExpiredJwtException e){
-            System.out.println("토큰 만료");
+            throw new TokenException(ErrorCode.TOKEN_EXPIRED);
         }
         catch (Exception e){
-            System.out.println("토큰 에러");
-            throw new Exception("에러");
+            throw new TokenException(ErrorCode.TOKEN_VALID);
         }
         return true;
     }
