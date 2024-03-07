@@ -52,7 +52,10 @@ namespace mdiproject.todo
             try { 
                 OracleConnection con = DBINFO.openConnect();
 
-                string sql = "select * from todo order by idx desc";
+                string sql = "  select a.idx, a.title, a.content, a.finishdate, b.name " +
+                                    "   from todo a, users b " +
+                                    "   where a.users_idx = b.idx and a.status is null " +
+                                    "  order by a.idx desc";
 
                 OracleDataAdapter adapter = new OracleDataAdapter();
                 DataSet ds = new DataSet();

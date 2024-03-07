@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\students\\cs_work\\mdiproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\tododbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\todoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\todo\\todoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|d:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\tododbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\todo\\tododbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|d:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\todoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\todo\\todoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\test\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\test\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\database\\dbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\database\\dbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\todo\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\todoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -23,24 +39,8 @@
       "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\user\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\todoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\todo\\todoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\database\\dbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\database\\dbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\todo\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\test\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|solutionrelative:mdiproject\\test\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD89186E-E9F2-4EEB-B4ED-25DBE4CC0807}|mdiproject\\mdiproject.csproj|D:\\students\\cs_work\\mdiproject\\mdiproject\\test\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -66,30 +66,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 354,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TodoDBManager.cs",
               "DocumentMoniker": "D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\TodoDBManager.cs",
               "RelativeDocumentMoniker": "mdiproject\\todo\\TodoDBManager.cs",
               "ToolTip": "D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\TodoDBManager.cs",
               "RelativeToolTip": "mdiproject\\todo\\TodoDBManager.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAUwDQAAAA7AAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAIA6wDMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-04T09:09:37.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\students\\cs_work\\mdiproject\\mdiproject\\Program.cs",
               "RelativeDocumentMoniker": "mdiproject\\Program.cs",
               "ToolTip": "D:\\students\\cs_work\\mdiproject\\mdiproject\\Program.cs",
               "RelativeToolTip": "mdiproject\\Program.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAjwA8AAAAJAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAowBIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-27T05:34:20.13Z",
               "EditorCaption": ""
@@ -120,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "UserForm.cs",
               "DocumentMoniker": "D:\\students\\cs_work\\mdiproject\\mdiproject\\user\\UserForm.cs",
               "RelativeDocumentMoniker": "mdiproject\\user\\UserForm.cs",
@@ -128,36 +128,35 @@
               "RelativeToolTip": "mdiproject\\user\\UserForm.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAAUwAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T05:47:37.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-27T05:47:37.887Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "DBINFO.cs",
               "DocumentMoniker": "D:\\students\\cs_work\\mdiproject\\mdiproject\\database\\DBINFO.cs",
               "RelativeDocumentMoniker": "mdiproject\\database\\DBINFO.cs",
               "ToolTip": "D:\\students\\cs_work\\mdiproject\\mdiproject\\database\\DBINFO.cs",
               "RelativeToolTip": "mdiproject\\database\\DBINFO.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAtwBAAAAAdAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAcwCMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T05:27:23.294Z"
+              "WhenOpened": "2024-02-28T05:27:23.294Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "UserForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "D:\\students\\cs_work\\mdiproject\\mdiproject\\user\\UserForm.cs",
               "RelativeDocumentMoniker": "mdiproject\\user\\UserForm.cs",
               "ToolTip": "D:\\students\\cs_work\\mdiproject\\mdiproject\\user\\UserForm.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "mdiproject\\user\\UserForm.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T05:38:11.426Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2024-02-27T05:38:11.426Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "TodoForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\TodoForm.cs",
               "RelativeDocumentMoniker": "mdiproject\\todo\\TodoForm.cs",
@@ -169,32 +168,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TodoForm.cs",
               "DocumentMoniker": "D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\TodoForm.cs",
               "RelativeDocumentMoniker": "mdiproject\\todo\\TodoForm.cs",
               "ToolTip": "D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\TodoForm.cs",
               "RelativeToolTip": "mdiproject\\todo\\TodoForm.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAhwDIAAAA2AAAA",
+              "ViewState": "AQIAAM0AAAAAAAAAAAAnwNkAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-27T05:55:15.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Todo.cs",
               "DocumentMoniker": "D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\Todo.cs",
               "RelativeDocumentMoniker": "mdiproject\\todo\\Todo.cs",
               "ToolTip": "D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\Todo.cs",
               "RelativeToolTip": "mdiproject\\todo\\Todo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T07:08:22.109Z"
+              "WhenOpened": "2024-03-04T07:08:22.109Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "TodoForm.Designer.cs",
               "DocumentMoniker": "D:\\students\\cs_work\\mdiproject\\mdiproject\\todo\\TodoForm.Designer.cs",
               "RelativeDocumentMoniker": "mdiproject\\todo\\TodoForm.Designer.cs",
@@ -207,15 +207,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "TestForm.cs",
               "DocumentMoniker": "D:\\students\\cs_work\\mdiproject\\mdiproject\\test\\TestForm.cs",
               "RelativeDocumentMoniker": "mdiproject\\test\\TestForm.cs",
               "ToolTip": "D:\\students\\cs_work\\mdiproject\\mdiproject\\test\\TestForm.cs",
               "RelativeToolTip": "mdiproject\\test\\TestForm.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACgAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-02-28T07:30:38.349Z"
+              "ViewState": "AQIAABQAAAAAAAAAAAAswCgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T07:30:38.349Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -225,8 +226,9 @@
               "RelativeDocumentMoniker": "mdiproject\\test\\TestForm.cs",
               "ToolTip": "D:\\students\\cs_work\\mdiproject\\mdiproject\\test\\TestForm.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "mdiproject\\test\\TestForm.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-02-28T07:30:11.07Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T07:30:11.07Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
             },
             {
               "$type": "Document",

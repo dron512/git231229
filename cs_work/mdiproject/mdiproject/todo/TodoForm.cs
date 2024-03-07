@@ -66,6 +66,7 @@ namespace mdiproject.todo
                 todo.title = title;
                 todo.content = content;
                 todo.finishdate = finishdate;
+                todo.name = row["name"].ToString();
 
                 // y 값은 230씩 증가되야함
                 makeTodoPanel(10, y, todo, evenOdd % 2);
@@ -114,7 +115,8 @@ namespace mdiproject.todo
             compete_checkbox.TabIndex = 9;
             compete_checkbox.Text = "완료";
             compete_checkbox.UseVisualStyleBackColor = true;
-            
+            compete_checkbox.Click += Compete_checkbox_Click;
+
             // finishDate_lb_value
             finishDate_lb_value.AutoSize = true;
             finishDate_lb_value.Font = new Font("한컴 고딕", 15F, FontStyle.Bold);
@@ -176,6 +178,13 @@ namespace mdiproject.todo
             else
                 panel4.BackColor = Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
 
+            Label nameLabel = new Label();
+            nameLabel.Text = "할사람 : "+todo.name.ToString();
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new Point(140, 50);
+            nameLabel.Font = new Font("한컴 고딕", 12F);
+
+            panel4.Controls.Add(nameLabel);
             panel4.Controls.Add(compete_checkbox);
             panel4.Controls.Add(finishDate_lb_value);
             panel4.Controls.Add(content_lb_value);
@@ -202,6 +211,11 @@ namespace mdiproject.todo
 
             this.panel1.Controls.Add(this.label1);
             #endregion
+        }
+
+        private void Compete_checkbox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("눌렀음.....");
         }
     }
 }

@@ -9,5 +9,6 @@ namespace mdiproject.todo
         public string title { get; set; }
         public string content { get; set; }
         public DateTime finishdate { get; set; }
+        public string name {  get; set; }
     }
 }
