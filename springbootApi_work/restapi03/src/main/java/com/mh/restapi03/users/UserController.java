@@ -1,12 +1,15 @@
 package com.mh.restapi03.users;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.LocalDateTime;
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -20,17 +23,20 @@ public class UserController {
      */
     private final UserService userService;
 
+    @GetMapping("users")
+    public ResponseEntity<List<User>> getAllUsers(){
+        List<User> list = userService.getAllUsers();
+        return ResponseEntity.ok(list);
+//        return ResponseEntity.status(HttpStatus.OK).body(list);
+    }
+
     @PostMapping("users")
-    public User addUser(@RequestBody User reqUser){
-        User user = User.builder()
-                .username(reqUser.getUsername())
-                .password(reqUser.getPassword())
-                .wdate(LocalDateTime.now())
-                .email(reqUser.getPassword())
-                .gender(reqUser.getGender())
-                .build();
+    public ResponseEntity<User> addUser(@RequestBody @Valid UserDto userDto){
+
+        User user = UserDto.of(userDto);
         User dbuser = userService.regist( user );
-        return dbuser;
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(dbuser);
     }
 
 }
