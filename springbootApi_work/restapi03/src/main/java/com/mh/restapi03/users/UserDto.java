@@ -20,6 +20,7 @@ public class UserDto {
     private String password;
     private Gender gender;
 
+    @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss")
     private LocalDateTime wdate;
 
     public static User of(UserDto userDto){

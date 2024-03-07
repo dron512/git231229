@@ -1,5 +1,7 @@
 package com.mh.restapi03.users;
 
+import com.mh.restapi03.exception.ErrorCode;
+import com.mh.restapi03.exception.LogException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +18,7 @@ public class UserService {
         User emailUser = userRepository.findByEmail(user.getEmail());
         if(emailUser != null){
             System.out.println(user.getEmail()+"중복 이메일이 있습니다.");
-            throw new RuntimeException("중복이메일");
+            throw new LogException(ErrorCode.TEST);
         }
 
         // insert 구문 실행...
