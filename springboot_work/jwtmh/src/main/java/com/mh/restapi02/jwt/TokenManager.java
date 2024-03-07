@@ -26,20 +26,15 @@ public class TokenManager {
                 .compact();
     }
 
-    public void validateToken(String token){
-        try{
-            Jws<Claims> claimsJws = Jwts.parser()
-                    .setSigningKey(Keys.hmacShaKeyFor(Base64.getEncoder().encode(mykey.getBytes(StandardCharsets.UTF_8))))
-                    .build()
-                    .parseSignedClaims(token);
+    public Jws<Claims> validateToken(String token) throws Exception{
+        Jws<Claims> claimsJws = Jwts.parser()
+                .setSigningKey(Keys.hmacShaKeyFor(
+                        Base64.getEncoder().encode(mykey.getBytes(StandardCharsets.UTF_8))))
+                .build()
+                .parseSignedClaims(token);
 
-            System.out.println(claimsJws);
-        }catch (ExpiredJwtException e){
-            System.out.println("토큰만료");
-        }catch (Exception e){
-            System.out.println("유효하지 않은 토큰");
-        }
-
+        System.out.println(claimsJws);
+        return claimsJws;
     }
 
     private Date createTokenExpiration(){

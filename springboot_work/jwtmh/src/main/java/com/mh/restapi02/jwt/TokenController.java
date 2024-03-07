@@ -12,7 +12,7 @@ public class TokenController {
     @GetMapping("token")
     public String getToken(){
         String result = tokenManager.buildToken();
-        tokenManager.validateToken(result);
+//        tokenManager.validateToken(result);
         return result;
     }
 }
