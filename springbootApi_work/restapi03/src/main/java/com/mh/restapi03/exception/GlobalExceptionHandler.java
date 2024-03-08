@@ -12,26 +12,29 @@ import java.time.LocalDateTime;
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(LogicException.class)
-    public final ResponseEntity<ErrorResponse> hanleLogException(LogicException ex){
+    public final ResponseEntity<ErrorResponse> hanleLogException(LogicException ex) {
+        ErrorCode errorCode = ex.getErrorCode();
+
         ErrorResponse errorResponse = ErrorResponse.builder()
-                .errorCode(ex.getErrorCode().getErrorCode())
-                .errorMessage(ex.getErrorCode().getMessage())
+                .errorCode(errorCode.getErrorCode())
+                .errorMessage(errorCode.getMessage())
                 .errorDateTime(LocalDateTime.now())
                 .build();
+
         return ResponseEntity.status(ex.getErrorCode().getHttpStatus()).body(errorResponse);
     }
 
-    @ExceptionHandler(Exception.class)
-    public final ResponseEntity<ErrorResponse> handleException(UsersException e){
+    @ExceptionHandler(UsersException.class)
+    public final ResponseEntity<ErrorResponse> handleException(UsersException e) {
 //        UserException exception = (UserException) e;
         ErrorResponse errorResponse
                 = ErrorResponse.builder()
-                .errorMessage( e.getErrorCode().getMessage() )
+                .errorMessage(e.getErrorCode().getMessage())
                 .errorCode(e.getErrorCode().getErrorCode())
                 .errorDateTime(LocalDateTime.now())
                 .build();
 
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body( errorResponse );
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
     }
 
 
