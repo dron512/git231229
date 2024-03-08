@@ -1,14 +1,13 @@
 package com.mh.restapi03.users;
 
+import com.mh.restapi03.exception.ErrorCode;
+import com.mh.restapi03.exception.UsersException;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -17,33 +16,46 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserController {
 
-    /*
-        get 사용자 조회
-        post 사용자 등록
-        put 사용자 수정
-        delete 사용자 삭제
-     */
     private final UserService userService;
 
     @GetMapping("users")
     public ResponseEntity<List<User>> getAllUsers(){
         List<User> list = userService.getAllUsers();
+        if( list.size() ==0 )
+            throw new UsersException(ErrorCode.NOTFOUND);
         return ResponseEntity.ok(list);
-//        return ResponseEntity.status(HttpStatus.OK).body(list);
+    }
+
+    @GetMapping("users/{id}")
+    public ResponseEntity<User> getUserById(@PathVariable Long id){
+        System.out.println(id);
+
+        User user = userService.getUserById(id);
+
+        return ResponseEntity.status(HttpStatus.OK).body(user);
     }
 
     @PostMapping("users")
     public ResponseEntity<User> addUser(@RequestBody @Valid UserDto userDto){
-
         userDto.setWdate(LocalDateTime.now());
 
         ModelMapper mapper = new ModelMapper();
         User user = mapper.map(userDto,User.class);
 
-//        User user = UserDto.of(userDto);
         User dbuser = userService.regist( user );
 
         return ResponseEntity.status(HttpStatus.CREATED).body(dbuser);
+    }
+
+    @PutMapping("users")
+    public ResponseEntity<User> updateUser(@RequestBody @Valid UserDto userDto){
+        ModelMapper mapper = new ModelMapper();
+        User user = mapper.map(userDto,User.class);
+        user.setWdate(LocalDateTime.now());
+
+        User dbUser = userService.updateUser(user);
+
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(dbUser);
     }
 
 }
