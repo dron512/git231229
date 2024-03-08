@@ -39,9 +39,26 @@ namespace mdiproject.todo
                 return false;
             }
         }
-        public void update(Todo todo)
+        public bool update(String idx)
         {
+            try
+            {
+                OracleConnection conn = DBINFO.openConnect();
 
+                string sql = " UPDATE TODO SET STATUS = 'C' WHERE idx = :idx";
+                OracleCommand cmd = new OracleCommand(sql, conn);
+                cmd.Parameters.Add(":idx", idx);
+                cmd.ExecuteNonQuery();
+
+                DBINFO.closeConnect();
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+                Console.WriteLine(e.Message);
+                return false;
+            }
         }
         public void delete(Todo todo)
         {
