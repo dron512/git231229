@@ -78,5 +78,25 @@ json 문자열 요청되서 들어오는것을 UserDto 변경
 
 
 
+======================================================================
+user PK 자동증가
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+
+user_seq 테이블 생성해서 pk 관리
+nextval
+1
+user 테이블에 행을 넣게 되면 user_seq 테이블이 update 구문 실행
+@GeneratedValue(strategy = GenerationType.SEQUENCE)
+
+insert into users (email, gender, password, username, wdate,id)
+values ('aaa@naver.com', 'MALE', '12341234', '홍길동', now(),1);
+update user_seq set nextval = 2;
+
+insert into users (email, gender, password, username, wdate)
+values ('bbb@naver.com', 'MALE', '12341234', '김길동', now());
+insert into users (email, gender, password, username, wdate)
+values ('ccc@naver.com', 'MALE', '12341234', '이길동', now());
+
+
 
 

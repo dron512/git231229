@@ -16,8 +16,10 @@ import java.time.LocalDateTime;
 @Table(name = "users")
 public class User {
 
+    // SEQUENCE 테이블을 생성해서 기본키 관리..
+    // IDENTITY AUTO_INCREMENT 자동증가
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(length = 50)
