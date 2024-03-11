@@ -1,6 +1,7 @@
 package com.mh.restapi03.users;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -14,15 +15,19 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "users")
+@Schema(description = "User Table 에 대한 내용입니다.")
 public class User {
 
     // SEQUENCE 테이블을 생성해서 기본키 관리..
     // IDENTITY AUTO_INCREMENT 자동증가
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(title = "사용자 ID",description = "table에서 자동으로 생성되는 컬럼입니다.")
     private Long id;
 
     @Column(length = 50)
+    @Schema(title = "사용자 username", description = "사용자 이름을 넣어주시면 됩니다.")
     private String username;
 
     @Column(length = 50, unique = true)
