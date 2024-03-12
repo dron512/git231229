@@ -1,0 +1,8 @@
+#이미지 만들기
+docker build -t javaapp .
+
+#컨테이너 삭제
+docker rm -f javacontainer
+
+#컨테이너 생성하기
+docker run -d -p 10000:8080 --name javacontainer -v d:/students/docker_work/jenkins_home/workspace/sample/target:/app docker_myapp

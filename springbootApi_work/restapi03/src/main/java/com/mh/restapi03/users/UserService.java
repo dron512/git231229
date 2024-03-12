@@ -16,6 +16,8 @@ public class UserService {
     private final UserRepository userRepository;
 
     public User regist(User user){
+        // 중복 처리...
+        // 해당 되는 email이 있으면 중복 나서 에러 
         User emailUser = userRepository.findByEmail(user.getEmail());
         if(emailUser != null){
             throw new LogicException(ErrorCode.DUPLICATE);

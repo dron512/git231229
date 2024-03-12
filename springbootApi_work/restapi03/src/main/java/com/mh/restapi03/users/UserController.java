@@ -4,6 +4,8 @@ import com.mh.restapi03.exception.ErrorCode;
 import com.mh.restapi03.exception.UsersException;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.Parameters;
+import io.swagger.v3.oas.annotations.enums.ParameterIn;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -40,10 +42,13 @@ public class UserController {
     }
 
     @GetMapping("users/{id}")
+    @Operation(summary = "사용자 한명 보기",description = "사용자 한명의 정보를 조회 할 수 있습니다.")
+    @Parameters(
+        @Parameter(description = "조회하고자 하는 사용자 ID 입력하세요",
+                name = "id",
+                required = true)
+    )
     public ResponseEntity<User> getUserById(
-            @Parameter(description = "조회하고자 하는 사용자 ID 입력하세요",
-                        name = "사용자 ID",
-                        required = true)
             @PathVariable Long id){
         System.out.println(id);
 

@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -19,8 +20,10 @@ public class UserDto {
     @NotBlank
     private String username;
 
+    @Size(min=5, max = 50)
     private String email;
     private String password;
+
     private Gender gender;
 
     @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss")
