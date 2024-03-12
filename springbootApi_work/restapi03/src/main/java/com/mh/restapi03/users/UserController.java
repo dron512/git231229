@@ -14,6 +14,7 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -25,6 +26,7 @@ import java.util.List;
 public class UserController {
 
     private final UserService userService;
+    private final UserRepository userRepository;
 
     @Operation(summary = "사용자 전체 목록보기",description = "사용자 전체 정보를 조회 할 수 있습니다.")
     @ApiResponses(
@@ -83,8 +85,25 @@ public class UserController {
     @DeleteMapping("users/{id}")
     public ResponseEntity<String> deleteUser(@PathVariable Long id){
         userService.delete(id);
-
         return ResponseEntity.status(HttpStatus.ACCEPTED).body("삭제됨");
+    }
+
+    @DeleteMapping("users/all")
+    public ResponseEntity<String> deleteAllUser(){
+        userService.delete();
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body("삭제됨");
+    }
+
+    @Transactional(readOnly = true)  // 영속성에 의해서 setter 메서드 사용시 db Update 실행됨...
+    @GetMapping("users/tran")
+    public String userstran(){
+
+        // optional<User> 로 만들어 지기 때문에 orElseThrow 사용..
+        User dbUser = userRepository.findById(1L).orElseThrow();
+        dbUser.setUsername("김길동");// 업데이트 구문
+        dbUser.setEmail("aa@naver.com"); // 업데이트 구문
+
+        return "tran";
     }
 
 }
