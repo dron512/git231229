@@ -57,4 +57,9 @@ public class UserService {
         User dbUser = userRepository.save(emailUser);
         return dbUser;
     }
+
+    public void delete(Long id) {
+        // 해당되는 아이디가 있으면 삭제해야됨.
+        // 해당되는 아이디가 없으면 삭제할 유저가 없어요.
+    }
 }
