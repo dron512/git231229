@@ -32,7 +32,7 @@ docker run --name oraclecontainer -p -d 1521:1521 jaspeen/oracle-xe-11g
 docker run --name oraclecontainer -p -d 1521:1521 -v d:/volumn/oracle:/u01/app/oracle jaspeen/oracle-xe-11g
 
 # jenkins 컨테이너 생성
-docker run -d -p 8180:8080 -v d:/students/docker_work/jenkins_home:/var/jenkins_home --name jenkins -u root  jenkins/jenkins:jdk17
+docker run -d -p 8180:8080 8181:8181 -v d:/students/docker_work/jenkins_home:/var/jenkins_home --name jenkins -u root  jenkins/jenkins:jdk17
 
 # 컨테이너 
 docker start -d mysqlcontainer

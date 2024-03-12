@@ -2,6 +2,8 @@ package com.mh.restapi03.users;
 
 import com.mh.restapi03.exception.ErrorCode;
 import com.mh.restapi03.exception.UsersException;
+import com.querydsl.jpa.JPQLTemplates;
+import com.querydsl.jpa.impl.JPAQueryFactory;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
@@ -9,9 +11,15 @@ import io.swagger.v3.oas.annotations.enums.ParameterIn;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+import jakarta.persistence.PersistenceContext;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -38,6 +46,20 @@ public class UserController {
     @GetMapping("users")
     public ResponseEntity<List<User>> getAllUsers(){
         List<User> list = userService.getAllUsers();
+        if( list.size() ==0 )
+            throw new UsersException(ErrorCode.NOTFOUND);
+        return ResponseEntity.ok(list);
+    }
+
+    private final JPAQueryFactory queryFactory;
+
+    @GetMapping("qusers")
+    public ResponseEntity<List<User>> getAllQUsers(){
+
+        QUser user = QUser.user;
+        List<User> list = queryFactory.selectFrom(user)
+                .fetch();
+
         if( list.size() ==0 )
             throw new UsersException(ErrorCode.NOTFOUND);
         return ResponseEntity.ok(list);
@@ -95,15 +117,34 @@ public class UserController {
     }
 
     @Transactional(readOnly = true)  // 영속성에 의해서 setter 메서드 사용시 db Update 실행됨...
-    @GetMapping("users/tran")
-    public String userstran(){
-
+    @GetMapping(value = "users/tran",headers = "version=1")
+    public String userstran1(@RequestHeader String aa){
+        System.out.println(aa);
         // optional<User> 로 만들어 지기 때문에 orElseThrow 사용..
         User dbUser = userRepository.findById(1L).orElseThrow();
         dbUser.setUsername("김길동");// 업데이트 구문
         dbUser.setEmail("aa@naver.com"); // 업데이트 구문
 
-        return "tran";
+        return "tran1";
+    }
+
+    @Transactional(readOnly = true)  // 영속성에 의해서 setter 메서드 사용시 db Update 실행됨...
+    @GetMapping(value = "users/tran",headers = "version=2")
+    public EntityModel<User> userstran2(@RequestHeader String aa){
+        System.out.println(aa);
+        // optional<User> 로 만들어 지기 때문에 orElseThrow 사용..
+        User dbUser = userRepository.findById(1L).orElseThrow();
+        dbUser.setUsername("김길동");// 업데이트 구문
+        dbUser.setEmail("aa@naver.com"); // 업데이트 구문
+
+        EntityModel<User> entityModel = EntityModel.of(dbUser);
+        entityModel.add(
+                WebMvcLinkBuilder.linkTo(UserController.class)
+                        .slash("/users")
+                        .withSelfRel()
+        );
+
+        return entityModel;
     }
 
 }

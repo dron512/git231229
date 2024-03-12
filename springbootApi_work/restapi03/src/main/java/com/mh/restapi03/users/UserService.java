@@ -44,7 +44,7 @@ public class UserService {
 
     public User updateUser(User user){
 
-        User emailUser = userRepository.findByEmail(user.getEmail());
+        User emailUser = userRepository.findMyCustom(user.getEmail());
         if(emailUser == null){
             throw new UsersException(ErrorCode.NOTUPDATEEMAIL);
         }

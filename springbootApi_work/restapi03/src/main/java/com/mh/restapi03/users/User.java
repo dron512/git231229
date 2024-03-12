@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @ToString
@@ -44,5 +45,8 @@ public class User {
 
     @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss")
     private LocalDateTime wdate;
+
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
+    private List<Posts> postsList;
 
 }
