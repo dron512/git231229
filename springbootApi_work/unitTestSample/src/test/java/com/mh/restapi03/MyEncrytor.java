@@ -24,7 +24,7 @@ public class MyEncrytor {
         config.setStringOutputType("base64");
         encryptor.setConfig(config);
 
-        String content = "jdbc:mysql://localhost:3306/mh?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=UTC";
+        String content = "1234";
         String encString = encryptor.encrypt(content);
         String decString = encryptor.decrypt(encString);
         System.out.println(String.format("root encString = %s decString = %s", encString, decString));
