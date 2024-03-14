@@ -13,8 +13,8 @@ public class JasyptConfig {
     @Value("${jasypt.encryptor.password}")
     String password;
 
-    @Bean(name = "encryptorBean")
-    public PooledPBEStringEncryptor pooledPBEStringEncryptor(){
+    @Bean
+    public PooledPBEStringEncryptor jasyptStringEncryptor(){
         PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
         SimpleStringPBEConfig config = new SimpleStringPBEConfig();
         config.setPassword(password);
