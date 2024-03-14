@@ -1,5 +1,6 @@
 package com.mh.restapi03.main;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,5 +17,6 @@ public class MainController {
     public String greet(String param){
         return "greet "+param;
     }
+
 
 }

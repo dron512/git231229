@@ -31,6 +31,12 @@ public class UserController {
     private final UserService userService;
     private final UserRepository userRepository;
 
+    @GetMapping("usernameemail")
+    public ResponseEntity<List<User>> getAllUserName(@RequestBody UserDto userDto){
+        List<User> list = userRepository.findByUsernameContainingOrEmailContaining(userDto.getUsername(),userDto.getEmail());
+        return ResponseEntity.status(HttpStatus.OK).body(list);
+    }
+
     @Operation(summary = "사용자 전체 목록보기",description = "사용자 전체 정보를 조회 할 수 있습니다.")
     @ApiResponses(
             {
@@ -76,6 +82,7 @@ public class UserController {
 
     @PutMapping()
     public ResponseEntity<User> updateUser(@RequestBody @Valid UserDto userDto){
+
         ModelMapper mapper = new ModelMapper();
         User user = mapper.map(userDto,User.class);
         user.setWdate(LocalDateTime.now());

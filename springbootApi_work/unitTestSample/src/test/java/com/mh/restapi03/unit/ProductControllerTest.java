@@ -1,4 +1,4 @@
-package com.mh.restapi03;
+package com.mh.restapi03.unit;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mh.restapi03.product.Product;
@@ -36,6 +36,8 @@ public class ProductControllerTest {
 
     @Test
     public void testAddProduct() throws Exception {
+        // given
+
         // 상품 객체 생성
         Product product = new Product();
         product.setName("Test Product");
@@ -47,12 +49,14 @@ public class ProductControllerTest {
         String jsonProduct = objectMapper.writeValueAsString(product);
         System.out.println(jsonProduct);
 
+        //when
         // MockMvc를 사용하여 POST 요청 보내기
         ResultActions resultActions =  mockMvc.perform(
                         MockMvcRequestBuilders.post("/products")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(jsonProduct));
 
+        //then
         resultActions.andExpect(MockMvcResultMatchers.status().isCreated());
 
         // ProductService가 제대로 호출되는지 확인할 수도 있음
