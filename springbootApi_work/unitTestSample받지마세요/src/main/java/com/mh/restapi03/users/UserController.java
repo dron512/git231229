@@ -69,7 +69,7 @@ public class UserController {
     }
 
     @PostMapping()
-    public ResponseEntity<User> addUser(@RequestBody @Valid UserDto userDto){
+    public EntityModel<User> addUser(@RequestBody @Valid UserDto userDto){
         userDto.setWdate(LocalDateTime.now());
 
         ModelMapper mapper = new ModelMapper();
@@ -77,7 +77,14 @@ public class UserController {
 
         User dbuser = userService.regist( user );
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(dbuser);
+        EntityModel<User> entityModel = EntityModel.of(dbuser);
+        entityModel.add(
+                WebMvcLinkBuilder.linkTo(UserController.class)
+                        .slash(dbuser.getId())
+                        .withSelfRel()
+        );
+
+        return entityModel;
     }
 
     @PutMapping()

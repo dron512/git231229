@@ -35,6 +35,9 @@ public class User {
     @JsonIgnore
     private String password;
 
+    // User admin
+    private String grade;
+
     // @Enumerated(EnumType.ORDINAL) male = 0 , female = 1
     // @Enumerated(EnumType.STRING) => Male,feMale
     @Enumerated(EnumType.STRING)
