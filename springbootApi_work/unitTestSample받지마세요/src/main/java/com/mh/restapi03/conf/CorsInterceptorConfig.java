@@ -16,6 +16,7 @@ public class CorsInterceptorConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginInterceptor)
+                .excludePathPatterns("/join","/login")
                 .addPathPatterns("/**");
     }
 

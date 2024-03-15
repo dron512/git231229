@@ -13,6 +13,9 @@ public interface UserRepository extends JpaRepository<User,Long> {
     // select * from user where email = ?;
     public User findByEmail(String email);
 
+    // select * from user where email =? and password =?;
+    public User findByEmailAndPassword(String email,String password);
+
 
     // pagging
     // select * from user where username like '%길동%' or email like '%aaa% limit 0,5'

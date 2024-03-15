@@ -20,15 +20,13 @@ public class LoginInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println("일로오나");
-        String id = request.getHeader("id");
         String password = request.getHeader("password");
         String email = request.getHeader("email");
 
-        System.out.println(id);
         System.out.println(password);
         System.out.println(email);
 
-        User dbUser = userRepository.findByEmail(email);
+        User dbUser = userRepository.findByEmailAndPassword(email,password);
         if(dbUser==null) {
             throw new UsersException(ErrorCode.lOGINFAILED);
         }
