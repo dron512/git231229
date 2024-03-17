@@ -20,6 +20,7 @@ public class TokenManager {
                 .subject("token")
                 .expiration(createTokenExpiration())
                 .claim("memberId","member1")
+                .claim("username","user1")
                 .claim("role","User")
                 .signWith(Keys
                         .hmacShaKeyFor(Base64.getEncoder().encode(mykey.getBytes(StandardCharsets.UTF_8))))
