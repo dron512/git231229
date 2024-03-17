@@ -37,8 +37,11 @@ public class JwtAuthenticationProcessingFilter extends OncePerRequestFilter {
                                     FilterChain filterChain) throws ServletException, IOException {
         String url = request.getRequestURL().toString();
 
+        //token 발행 url은 토큰 검증을 하지 않는다.
         if(url.contains("/token")){
+            System.out.println(url);
             filterChain.doFilter(request, response);
+            return;
         }
 
         String auth = request.getHeader("Authorization");

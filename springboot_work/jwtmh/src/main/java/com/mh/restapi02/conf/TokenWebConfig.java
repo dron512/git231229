@@ -23,6 +23,7 @@ public class TokenWebConfig implements WebMvcConfigurer {
     private final TokenInterceptor tokenInterceptor;
     private final JwtAuthenticationProcessingFilter jwtAuthenticationProcessingFilter;
 
+// interceptor 구현 방법
 //    @Override
 //    public void addInterceptors(InterceptorRegistry registry) {
 //        registry.addInterceptor(tokenInterceptor)
@@ -43,14 +44,11 @@ public class TokenWebConfig implements WebMvcConfigurer {
             header.frameOptions(frameOptionsConfig -> frameOptionsConfig.sameOrigin());
         });
 
+        // 토큰 인증 필터 방법
         httpSecurity.addFilterAfter(jwtAuthenticationProcessingFilter, UsernamePasswordAuthenticationFilter.class);
 
         return httpSecurity.build();
-//        http.addFilterAt(loginProcessingFilter(authenticationManager()),
-//                UsernamePasswordAuthenticationFilter.class);
-        // 로그인 필터 앞에 JWT 인증 필터 추가
 
     }
 
-    // AuthenticationEntryPoint 등록
 }
