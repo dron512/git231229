@@ -19,4 +19,10 @@ public class Restapi03Application {
 	}
 
 
+	@Bean
+	public JPAQueryFactory jpaQueryFactory(EntityManager em){
+		return new JPAQueryFactory(em);
+	}
+
+
 }

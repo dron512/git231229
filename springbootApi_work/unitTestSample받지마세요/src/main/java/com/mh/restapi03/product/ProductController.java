@@ -6,6 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/products")
 @RequiredArgsConstructor
@@ -17,5 +19,11 @@ public class ProductController {
     @ResponseStatus(HttpStatus.CREATED)
     public Product addProduct(@RequestBody Product product) {
         return productService.addProduct(product);
+    }
+
+    @GetMapping
+    public List<Product> getProduct(){
+        List<Product> list = productService.getProduct();
+        return list;
     }
 }
