@@ -2,6 +2,7 @@ package com.mh.restapi02.member;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,6 +14,12 @@ public class MemberController {
     // select... insert...
 //    @Autowired
     private final MemberRepository memberRepository;
+
+    @GetMapping("auth")
+    public String auth(Authentication authentication){
+        System.out.println(authentication.getPrincipal());
+        return "auth";
+    }
 
     @GetMapping("member")
     public List<Member> allMember(){

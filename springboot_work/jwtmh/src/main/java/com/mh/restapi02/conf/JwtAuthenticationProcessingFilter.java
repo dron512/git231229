@@ -50,7 +50,8 @@ public class JwtAuthenticationProcessingFilter extends OncePerRequestFilter {
             List<SimpleGrantedAuthority> roles = Stream.of(claimsJws.getPayload().get("role").toString())
                     .map(SimpleGrantedAuthority::new)
                     .toList();
-            Authentication authentication = UsernamePasswordAuthenticationToken.authenticated(claimsJws.getPayload().get("username"),
+            Authentication authentication = UsernamePasswordAuthenticationToken
+                    .authenticated(claimsJws.getPayload().get("username"),
                     null, roles);
             SecurityContextHolder.getContext().setAuthentication(authentication);
         } catch (ExpiredJwtException e) {

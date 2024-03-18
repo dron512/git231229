@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+#logging:
+#  level:
+#    org.springframework: debug
+
+spring:
+  messages:
+    basename: messages
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true # sql ??? ??
+        default_batch_fetch_size: 500 # ??? ??? ?? ? ?? ???
+    open-in-view: false # ??? ????? ?? ??? ???? ??? ??
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+
+kakao:
+  client:
+    id: c #rest api ?
+    secret: iHIwOUaEh408I4TvI5Z # ????? ??? ?
+
+# TokenManager
+token:
+  secret: passwordpasswordpasswordpasswordpasswordpasswordpasswordpasswordpasswordpasswordpasswordpasswordpasswordpasswordpasswordpassword # ??? ???
+  access-token-expiration-time: 900000  # 15? 1000(ms) x 60(s) x 15(m)
+  refresh-token-expiration-time: 1209600000 # 2? 1000(ms) x 60 (s) x 60(m) x 24(h) x 14(d)

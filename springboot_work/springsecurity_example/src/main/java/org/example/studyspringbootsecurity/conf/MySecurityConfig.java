@@ -27,9 +27,9 @@ public class MySecurityConfig implements WebMvcConfigurer {
 
         httpSecurity.csrf(AbstractHttpConfigurer::disable);
 
-        httpSecurity.authorizeHttpRequests(req->{
-           req.anyRequest().permitAll();
-        });
+//        httpSecurity.authorizeHttpRequests(req->{
+//           req.anyRequest().authenticated();
+//        });
 
         return httpSecurity.build();
     }
@@ -50,24 +50,24 @@ public class MySecurityConfig implements WebMvcConfigurer {
         ;
     }
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(myInterceptor)
-                .addPathPatterns("/**");
-    }
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(myInterceptor)
+//                .addPathPatterns("/**");
+//    }
 
-    @Bean
-    UserDetailsService userDetailsService() {
-        InMemoryUserDetailsManager userDetailsService = new InMemoryUserDetailsManager();
-
-        UserDetails user = User.withUsername("user")
-                .password(passwordEncoder().encode("password"))
-                .authorities("read")
-                .build();
-
-        userDetailsService.createUser(user);
-        return userDetailsService;
-    }
+//    @Bean
+//    UserDetailsService userDetailsService() {
+//        InMemoryUserDetailsManager userDetailsService = new InMemoryUserDetailsManager();
+//
+//        UserDetails user = User.withUsername("user")
+//                .password(passwordEncoder().encode("password"))
+//                .authorities("read")
+//                .build();
+//
+//        userDetailsService.createUser(user);
+//        return userDetailsService;
+//    }
 
     @Bean
     BCryptPasswordEncoder passwordEncoder() {
