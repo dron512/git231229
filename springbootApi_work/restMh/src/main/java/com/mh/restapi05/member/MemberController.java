@@ -6,6 +6,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/member")
 @RequiredArgsConstructor
@@ -20,9 +22,11 @@ public class MemberController {
     }
 
     @GetMapping("")
-    public String member() {
-        return "member";
+    public List<Member> member() {
+        List<Member> list = memberService.findAll();
+        return list;
     }
+
 
     @PostMapping("")
     public String member(@Valid @RequestBody MemberDto memberDto) {
