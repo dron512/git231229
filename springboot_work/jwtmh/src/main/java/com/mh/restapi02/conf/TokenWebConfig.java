@@ -35,7 +35,8 @@ public class TokenWebConfig implements WebMvcConfigurer {
         httpSecurity.csrf(AbstractHttpConfigurer::disable);
 
         httpSecurity.authorizeHttpRequests(req->{
-            req.anyRequest().permitAll()
+                    req.anyRequest().permitAll()
+                    ;
             ;
         });
 
