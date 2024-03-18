@@ -10,7 +10,10 @@ public class TokenTestController {
 
     private final TokenManager tokenManager;
     @GetMapping("token")
-    public String getToken(){
+    public String getToken(String username, String password){
+
+        // todo...
+        // username 과 password가 맞으면 토큰 발행
         String result = tokenManager.buildToken();
         return result;
     }
