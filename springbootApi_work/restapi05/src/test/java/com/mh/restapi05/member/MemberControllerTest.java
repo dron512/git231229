@@ -67,7 +67,6 @@ class MemberControllerTest {
                 .andExpect(jsonPath("$[1].id").value(2))
                 .andExpect(jsonPath("$[1].name").value("Jane Smith"))
                 .andExpect(jsonPath("$[1].email").value("jane.smith@example.com"));
-
          */
     }
 
