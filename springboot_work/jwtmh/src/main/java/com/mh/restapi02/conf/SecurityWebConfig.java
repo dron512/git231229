@@ -1,24 +1,18 @@
 package com.mh.restapi02.conf;
 
 import com.mh.restapi02.interceptor.TokenInterceptor;
-import jakarta.servlet.FilterChain;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
-import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
-import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.security.web.util.matcher.RequestMatcher;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @RequiredArgsConstructor
-public class TokenWebConfig implements WebMvcConfigurer {
+public class SecurityWebConfig implements WebMvcConfigurer {
 
     private final TokenInterceptor tokenInterceptor;
     private final JwtAuthenticationProcessingFilter jwtAuthenticationProcessingFilter;
@@ -35,7 +29,8 @@ public class TokenWebConfig implements WebMvcConfigurer {
         httpSecurity.csrf(AbstractHttpConfigurer::disable);
 
         httpSecurity.authorizeHttpRequests(req->{
-            req.anyRequest().permitAll()
+                    req.anyRequest().permitAll()
+                    ;
             ;
         });
 

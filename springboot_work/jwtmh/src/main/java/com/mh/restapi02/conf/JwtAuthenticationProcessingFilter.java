@@ -36,39 +36,29 @@ public class JwtAuthenticationProcessingFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
                                     FilterChain filterChain) throws ServletException, IOException {
         String url = request.getRequestURL().toString();
-
-        //token 발행 url은 토큰 검증을 하지 않는다.
-        if(url.contains("/token")){
-            System.out.println(url);
+        if(url.contains("/token") || url.contains("/h2-console")) {
             filterChain.doFilter(request, response);
             return;
         }
-
         String auth = request.getHeader("Authorization");
         if (auth == null || !auth.startsWith("Bearer ")) {
             System.out.println("No Bearer Token");
             throw new TokenException(ErrorCode.TOKEN_EXPIRED);
         }
-
         try {
             Jws<Claims> claimsJws = tokenManager.validateToken(auth.split("Bearer ")[1]);
-            System.out.println(claimsJws);
-
             List<SimpleGrantedAuthority> roles = Stream.of(claimsJws.getPayload().get("role").toString())
                     .map(SimpleGrantedAuthority::new)
                     .toList();
-
-            Authentication authentication = UsernamePasswordAuthenticationToken.authenticated(claimsJws.getPayload().get("username"),
+            Authentication authentication = UsernamePasswordAuthenticationToken
+                    .authenticated(claimsJws.getPayload().get("username"),
                     null, roles);
             SecurityContextHolder.getContext().setAuthentication(authentication);
-            System.out.println(authentication.getAuthorities());
-            System.out.println(authentication.getPrincipal());
         } catch (ExpiredJwtException e) {
             throw new TokenException(ErrorCode.TOKEN_EXPIRED);
         } catch (Exception e) {
             throw new TokenException(ErrorCode.TOKEN_VALID);
         }
-
         filterChain.doFilter(request, response);
     }
 
