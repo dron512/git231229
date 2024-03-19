@@ -1,14 +1,19 @@
 package com.mh.restapi05.member;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+// MemberService 는 UserDetilsService 이다.
+// 그러므로 spring security 에서 자동으로 등록해서 사용합니다.
 @Service
 @RequiredArgsConstructor
-public class MemberService {
+public class MemberService implements UserDetailsService {
 
     private final MemberRepository memberRepository;
 
@@ -28,5 +33,10 @@ public class MemberService {
 
     public List<Member> getAllMembers() {
         return memberRepository.findAll();
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return null;
     }
 }

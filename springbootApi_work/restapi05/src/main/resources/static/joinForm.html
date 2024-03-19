@@ -19,7 +19,13 @@
                 body: JSON.stringify(body)
             })
             .then(response => response.text())
-            .then(data => console.log(data));
+            .then(data => {
+                console.log(data)
+                if(data==="member"){
+                    alert("회원가입 성공");
+                    location.href='/main.html';
+                }
+            });
         }
     </script>
 </head>

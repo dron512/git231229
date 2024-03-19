@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 // DB 에 저장하는 클래스
 @Entity
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor

@@ -7,7 +7,6 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
-import javax.management.modelmbean.ModelMBean;
 import java.util.List;
 
 @RestController
@@ -29,7 +28,7 @@ public class MemberController {
 
     @PostMapping("")
     public String member(@Valid @RequestBody MemberDto memberDto) {
-        System.out.println("memberDto = " + memberDto);
+
         ModelMapper modelMapper = new ModelMapper();
         Member member = modelMapper.map(memberDto, Member.class);
         memberService.save(member);
