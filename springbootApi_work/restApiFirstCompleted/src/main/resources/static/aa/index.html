@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Kakao 지도 시작하기</title>
+	<script>
+		function domove(){
+			var container = document.getElementById('map');
+			var options = {
+				center: new kakao.maps.LatLng(34.450701, 126.530167),
+				level: 6
+			};
+
+			var map = new kakao.maps.Map(container, options);
+		}
+	</script>
+</head>
+<body>
+<div id="map" style="width:500px;height:400px;"></div>
+<button onclick="domove();">버튼</button>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fb5baf42fb072dc8895f4e9e6b7f1477"></script>
+<script>
+	var container = document.getElementById('map');
+	var options = {
+		center: new kakao.maps.LatLng(34.450701, 126.570667),
+		level: 3
+	};
+
+	var map = new kakao.maps.Map(container, options);
+</script>
+</body>
+</html>

@@ -1,6 +1,7 @@
 package com.mh.restapi05.member;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -13,7 +14,7 @@ import java.util.Optional;
 // 그러므로 spring security 에서 자동으로 등록해서 사용합니다.
 @Service
 @RequiredArgsConstructor
-public class MemberService implements UserDetailsService {
+public class MemberService  implements UserDetailsService {
 
     private final MemberRepository memberRepository;
 
@@ -37,6 +38,10 @@ public class MemberService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return null;
+        return User.builder()
+                .username("user")
+                .password("1234")
+                .roles("USER")
+                .build();
     }
 }
