@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @ControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
@@ -18,9 +21,15 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                                          HttpHeaders headers,
                                          HttpStatusCode status,
                                          WebRequest request) {
-        System.out.println("일로오나");
+
+        List<String> list = ex.getBindingResult()
+                                .getFieldErrors()
+                                .stream()
+                                .map(error -> error.getField() + " : " + error.getDefaultMessage())
+                            .collect(Collectors.toList());
+
         ErrorResponse response = ErrorResponse.builder()
-                .message("잘못된 요청입니다."+ex.getBindingResult().getFieldErrors())
+                .message("잘못된 요청입니다."+list)
                 .reason("유효성 검사 실패"+ex.getBindingResult().getFieldError().getDefaultMessage())
                 .build();
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
