@@ -23,6 +23,13 @@ spring:
     init:
       mode: always
 
+
+mh:
+ jwt:
+   secret: mh1234mh1234mh1234mh1234mh1234mh1234mh1234mh1234mh1234mh1234
+
+
 jasypt:
   encryptor:
     password: ${PASSWORD}
+

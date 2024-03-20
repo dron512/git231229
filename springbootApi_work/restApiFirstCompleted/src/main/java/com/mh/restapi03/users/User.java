@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.GenerationTime;
+import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -44,6 +46,8 @@ public class User {
     private Gender gender;
 
     @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss")
+    @org.hibernate.annotations.Generated(GenerationTime.ALWAYS)
+    @Column(updatable = true, name = "wdate")
     private LocalDateTime wdate;
 
 }

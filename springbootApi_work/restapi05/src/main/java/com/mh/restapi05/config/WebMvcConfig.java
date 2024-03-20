@@ -14,21 +14,35 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class WebMvcConfig {
-
     @Bean
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
 
+    // 스프링 부트 3 버전 람다문법을 써야지만 에러가 안납니다.
+    // jwt 토큰 인증을 달겠다.
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity httpSecurity)throws Exception{
-        httpSecurity.csrf(httpSecurityCsrfConfigurer -> httpSecurityCsrfConfigurer.disable());
-        httpSecurity.authorizeRequests(authorizeRequests ->
-                authorizeRequests
-                        .anyRequest().permitAll()
-        );
-        return httpSecurity.build();
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        // post 방식 put 방식 delete 방식을 사용할때 csrf 토큰을 사용하지 않겠다.
+        // 허용해주겠다..
+        http.csrf(httpSecurityCsrfConfigurer ->  httpSecurityCsrfConfigurer.disable() );
+        http
+                .authorizeRequests(
+//                       req ->
+//                            req.requestMatchers("/member","test").permitAll().
+//                            anyRequest().authenticated()
+                        req->req.anyRequest().permitAll()
+                );
 
+        // Exceptionhandling ->
+        // 스프링시큐리티에서 필터를 다는 방법
+
+        // http.addFilter(filter);
+
+        // 인터셉터
+        // http.addFilterBefore(filter, UsernamePasswordAuthenticationFilter.class);
+
+        return http.build();
     }
 
 //    @Bean

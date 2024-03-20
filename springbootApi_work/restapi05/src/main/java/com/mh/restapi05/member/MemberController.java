@@ -13,7 +13,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/member")
 @RequiredArgsConstructor
-@Slf4j
 public class MemberController {
 
     private final MemberService memberService;
@@ -30,8 +29,6 @@ public class MemberController {
 
     @PostMapping("")
     public String member(@Valid @RequestBody MemberDto memberDto) {
-
-        log.info("ㅁㄴㅇㄹ???");
         ModelMapper modelMapper = new ModelMapper();
         Member member = modelMapper.map(memberDto, Member.class);
         memberService.save(member);

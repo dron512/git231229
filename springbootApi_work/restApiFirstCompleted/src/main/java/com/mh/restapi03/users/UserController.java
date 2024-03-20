@@ -70,7 +70,7 @@ public class UserController {
 
     @PostMapping()
     public EntityModel<User> addUser(@RequestBody @Valid UserDto userDto){
-        userDto.setWdate(LocalDateTime.now());
+        //userDto.setWdate(LocalDateTime.now());
 
         ModelMapper mapper = new ModelMapper();
         User user = mapper.map(userDto,User.class);

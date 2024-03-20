@@ -38,10 +38,7 @@ public class MemberService  implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return User.builder()
-                .username("user")
-                .password("1234")
-                .roles("USER")
-                .build();
+        System.out.println("일로오나");
+        return null;
     }
 }
