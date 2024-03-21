@@ -28,9 +28,9 @@ public class TokenManager {
                 // 유효시간은 1000 * 60 * 60 * 10 10시간
 //                .expiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 10))
                 // 유효시간은 1000 * 60 * 15 15분
-//                .expiration(new Date(System.currentTimeMillis() + 1000 * 60 * 15))
+                .expiration(new Date(System.currentTimeMillis() + 1000 * 60 * 15))
                 // 유효시간 60초..
-                .expiration(new Date(System.currentTimeMillis() + 1000 * 60))
+//                .expiration(new Date(System.currentTimeMillis() + 1000 * 60))
                 .signWith(hmacShaKeyFor(mykey.getBytes()))
                 .compact();
     }

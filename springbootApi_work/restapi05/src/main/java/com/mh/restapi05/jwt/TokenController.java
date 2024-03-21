@@ -5,6 +5,7 @@ import com.mh.restapi05.member.MemberRepository;
 import com.mh.restapi05.member.Role;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,14 @@ public class TokenController {
 
     private final TokenManager tokenManager;
     private final MemberRepository memberRepository;
+
+    @GetMapping("auth")
+    public String loginTest(Authentication authentication) {
+        System.out.println(authentication);
+        System.out.println(authentication.isAuthenticated());
+        System.out.println(authentication.getPrincipal());
+        return "loginTest";
+    }
 
     @GetMapping("/token")
     public String token(@RequestBody TokenDto tokenDto) {

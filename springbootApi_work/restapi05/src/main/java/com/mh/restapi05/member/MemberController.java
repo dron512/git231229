@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,14 +19,12 @@ public class MemberController {
     private final MemberService memberService;
 
     @GetMapping("")
-    public String member() {
-        return "getMember";
+    public String member(Authentication authentication) {
+        Member member = (Member) authentication.getPrincipal();
+        return "getMember email = "+member.getEmail()+
+                        " : username : "+member.getUsername()+
+                        " : role : "+member.getRole();
     }
-
-    // 1. db 저장하고 -> 유효성 검사를 하다가...
-    // 2. security 추가
-    // 3. 로그인할때 email password
-    // 4. email password 로그인 해주는거
 
     @PostMapping("")
     public String member(@Valid @RequestBody MemberDto memberDto) {
