@@ -49,9 +49,6 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                                                                   HttpHeaders headers,
                                                                   HttpStatusCode status,
                                                                   WebRequest request) {
-        System.out.println("유효성 실패"+ex.getMessage());
-        System.out.println("유효성 실패"+ex.getBindingResult());
-
         ErrorResponse errorResponse = ErrorResponse
                                         .builder()
                                         .errorCode(HttpStatus.BAD_REQUEST.toString())

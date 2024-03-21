@@ -11,6 +11,7 @@ public interface UserRepository extends JpaRepository<User,Long> {
     // findAll(), save(), findById()
 
     // select * from user where email = ?;
+    public User findByEmailContainingOrUsernameContaining(String email,String username);
     public User findByEmail(String email);
 
     // select * from user where email =? and password =?;

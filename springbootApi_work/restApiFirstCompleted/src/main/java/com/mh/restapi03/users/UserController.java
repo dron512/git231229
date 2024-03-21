@@ -72,6 +72,8 @@ public class UserController {
     public EntityModel<User> addUser(@RequestBody @Valid UserDto userDto){
         //userDto.setWdate(LocalDateTime.now());
 
+        System.out.println(userDto.toString());
+
         ModelMapper mapper = new ModelMapper();
         User user = mapper.map(userDto,User.class);
 
