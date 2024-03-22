@@ -6,6 +6,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,11 +28,13 @@ public class MemberController {
                         " : role : "+member.getRole();
     }
 
-    @PostMapping("")
-    public String member(@Valid @RequestBody MemberDto memberDto) {
+    @PostMapping("join")
+    public ResponseEntity<String> member(@Valid @RequestBody MemberDto memberDto) {
+
+        System.out.println(memberDto);
         ModelMapper modelMapper = new ModelMapper();
         Member member = modelMapper.map(memberDto, Member.class);
         memberService.save(member);
-        return "member";
+        return ResponseEntity.status(HttpStatus.OK).body("회원가입 성공");
     }
 }

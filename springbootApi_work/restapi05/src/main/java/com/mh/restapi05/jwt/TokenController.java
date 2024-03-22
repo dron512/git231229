@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,7 +28,7 @@ public class TokenController {
         return "loginTest";
     }
 
-    @GetMapping("/token")
+    @PostMapping("/token")
     public String token(@RequestBody TokenDto tokenDto) {
         System.out.println("email = " + tokenDto.getEmail());
         System.out.println("password = " + tokenDto.getPassword());
