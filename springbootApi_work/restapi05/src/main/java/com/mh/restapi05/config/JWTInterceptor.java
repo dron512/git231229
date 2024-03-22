@@ -28,7 +28,15 @@ public class JWTInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println("일로오나");
+        request.getHeaderNames().asIterator().forEachRemaining(System.out::println);
         String token = request.getHeader("Authorization");
+        System.out.println(request.getRequestURI());
+        if(request.getRequestURI().contains("swagger")
+                || request.getRequestURI().contains("file") || request.getRequestURI().contains("error"))
+        {
+            return true;
+        }
+
         if(token ==null || !token.startsWith("Bearer ")){
             System.out.println("token 이 없습니다.");
             throw new RuntimeException("JWT 토큰 발행후에 해라");
