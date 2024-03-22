@@ -30,11 +30,16 @@ public class MemberController {
 
     @PostMapping("join")
     public ResponseEntity<String> member(@Valid @RequestBody MemberDto memberDto) {
-
         System.out.println(memberDto);
         ModelMapper modelMapper = new ModelMapper();
         Member member = modelMapper.map(memberDto, Member.class);
         memberService.save(member);
         return ResponseEntity.status(HttpStatus.OK).body("회원가입 성공");
+    }
+
+    @GetMapping("list")
+    public ResponseEntity<List<Member>> member() {
+        List<Member> allMembers = memberService.getAllMembers();
+        return ResponseEntity.status(HttpStatus.OK).body(allMembers);
     }
 }

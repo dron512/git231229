@@ -85,11 +85,28 @@
                 })
                 .catch(error => {
                 });
-
         }
         // 목록불러오기 /member/list -> token 너는 할수 없어...
         function doList() {
             const token = localStorage.getItem("token");
+            fetch("http://112.218.211.194:10049/member/list", {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${token}`
+                },
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("서버 오류 발생");
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById("print").innerHTML = data;
+                })
+                .catch(error => {
+                });
         }
     </script>
 </head>
@@ -115,6 +132,10 @@
         <div class="row">
             <div class="col-12">
                 <h1>회원목록</h1>
+                <button class="btn btn-primary" onclick="doList();">회원목록</button>
+                <div id="print">
+
+                </div>
             </div>
         </div>
     </div>

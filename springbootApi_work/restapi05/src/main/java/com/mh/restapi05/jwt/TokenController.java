@@ -34,7 +34,7 @@ public class TokenController {
         System.out.println("password = " + tokenDto.getPassword());
         Member dbmember = memberRepository.findByEmailAndPassword(tokenDto.getEmail(), tokenDto.getPassword());
         if (dbmember == null){
-            throw new RuntimeException("인증안됨");
+            throw new RuntimeException("회원가입이 안되어져있습니다.");
         }
         return tokenManager.generateToken(dbmember);
     }
