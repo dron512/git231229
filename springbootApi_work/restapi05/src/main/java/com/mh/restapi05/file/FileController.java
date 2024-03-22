@@ -3,6 +3,8 @@ package com.mh.restapi05.file;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import lombok.RequiredArgsConstructor;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -32,9 +34,9 @@ public class FileController {
         }
     }
     @PostMapping("/upload")
-    public String handleFileUpload(@RequestParam("file") MultipartFile file) {
+    public EntityModel<FileDto> handleFileUpload(@RequestParam("file") MultipartFile file) {
         if (file.isEmpty()) {
-            return "파일을 선택해주세요.";
+            return EntityModel.of(new FileDto("파일을 선택해주세요."));
         }
         try {
             // 업로드된 파일을 저장
@@ -42,10 +44,15 @@ public class FileController {
             String filePath = imageStorageLocation + "/"+ fileName;
             File dest = new File(filePath);
             file.transferTo(dest);
-            return "파일 업로드 성공: " + fileName;
+
+            EntityModel<FileDto> entityModel = EntityModel.of(new FileDto("file uploaded successfully"));
+            entityModel.add(WebMvcLinkBuilder.linkTo(
+                    WebMvcLinkBuilder.methodOn(FileController.class).getImage(fileName))
+                    .withRel("file"));
+            return entityModel;
         } catch (IOException e) {
             e.printStackTrace();
-            return "파일 업로드 중 오류 발생.";
+            return EntityModel.of(new FileDto("file upload failed"));
         }
     }
 

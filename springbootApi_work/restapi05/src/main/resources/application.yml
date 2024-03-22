@@ -37,8 +37,6 @@ jasypt:
 
 # 파일 업로드 관련 설정
 multipart:
-  # 업로드된 파일이 저장될 디렉토리 경로
-  location: d:/images
   # 최대 업로드 파일 크기 설정 (기본값은 1MB)
   max-file-size: 10MB
   # 요청의 최대 크기 설정 (기본값은 10MB)
