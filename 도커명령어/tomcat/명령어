@@ -1,0 +1,2 @@
+
+docker run -d --name tomcat1 -p 8280:8080 -v ./aa:/usr/local/tomcat/webapps tomcat:10.1.19-jdk17-temurin-jammy

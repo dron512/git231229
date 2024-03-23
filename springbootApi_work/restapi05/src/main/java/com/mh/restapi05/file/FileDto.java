@@ -7,4 +7,10 @@ import lombok.Data;
 @AllArgsConstructor
 public class FileDto {
     private String fileName;
+    private String myName;
+    private String age;
+
+    public FileDto(String fileName) {
+        this.fileName = fileName;
+    }
 }

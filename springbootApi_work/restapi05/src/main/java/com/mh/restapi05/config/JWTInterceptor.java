@@ -27,8 +27,8 @@ public class JWTInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        System.out.println("일로오나");
-        request.getHeaderNames().asIterator().forEachRemaining(System.out::println);
+//        System.out.println("일로오나");
+//        request.getHeaderNames().asIterator().forEachRemaining(System.out::println);
         String token = request.getHeader("Authorization");
         System.out.println(request.getRequestURI());
         if(request.getRequestURI().contains("swagger")
