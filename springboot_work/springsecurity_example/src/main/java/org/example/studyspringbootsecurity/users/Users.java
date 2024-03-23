@@ -1,8 +1,23 @@
-package org.example.studyspringbootsecurity.controller;
+package org.example.studyspringbootsecurity.users;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.*;
+
+@Entity
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
 class Users {
     private String username;
     private String email;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     public Users(String username, String email) {
         this.username = username;
@@ -17,11 +32,4 @@ class Users {
                 '}';
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public String getEmail() {
-        return email;
-    }
 }

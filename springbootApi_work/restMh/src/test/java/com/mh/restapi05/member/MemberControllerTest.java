@@ -37,8 +37,6 @@ class MemberControllerTest {
     @Test
     @WithMockUser(username = "user", roles = "USER")
     void member() throws Exception {
-
-
         ResultActions resultActions = mockMvc.perform(MockMvcRequestBuilders.get("/member"));
         resultActions
                 .andDo(print())

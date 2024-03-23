@@ -1,4 +1,4 @@
-package org.example.studyspringbootsecurity.controller;
+package org.example.studyspringbootsecurity.users;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +12,7 @@ public class UserControllerAdvice extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public final ResponseEntity<Object> AllException(Exception ex, WebRequest webRequest){
+        ex.printStackTrace();
         return  new ResponseEntity<>("AllException", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 

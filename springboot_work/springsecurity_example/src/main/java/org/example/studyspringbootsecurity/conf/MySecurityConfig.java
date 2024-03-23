@@ -38,6 +38,7 @@ public class MySecurityConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins("*")
+                .allowedHeaders("*")
                 .allowedMethods(
                         HttpMethod.GET.name(),
                         HttpMethod.POST.name(),
@@ -50,11 +51,11 @@ public class MySecurityConfig implements WebMvcConfigurer {
         ;
     }
 
-//    @Override
-//    public void addInterceptors(InterceptorRegistry registry) {
-//        registry.addInterceptor(myInterceptor)
-//                .addPathPatterns("/**");
-//    }
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(myInterceptor)
+                .addPathPatterns("/**");
+    }
 
 //    @Bean
 //    UserDetailsService userDetailsService() {

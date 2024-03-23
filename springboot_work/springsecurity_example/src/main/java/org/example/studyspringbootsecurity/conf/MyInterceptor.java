@@ -13,6 +13,7 @@ public class MyInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
         String id = request.getHeader("id");
+        System.out.println("interceptor");
 //        if(id == null)
 //            throw new Exception();
 //        else {
