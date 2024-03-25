@@ -1,0 +1,9 @@
+1. 인텔리제이 (자바 개발프로그램)
+2. docker-desktop (데이터베이스서버 ,jenkins 설치)
+ -oracle,mysql
+3. java17 
+4. visualstudiocommunity (C#개발프로그램)
+5. git-scm, sourcetree (소스관리프로그램)
+6. vscode (소스편집기 툴)
+7. sqldeveloper (oracle 접속 프로그램) 압축풀면됩니다.
+8. heidisql (mysql 접속프로그램)
