@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function loadData(){
+            console.log(localStorage.getItem('token'));
+            document.getElementById('divp').innerHTML="목록불러오기";
+            fetch("http://localhost:8080/user", {
+                // method는 get, post, put, delete가 있다 
+                // 백단과 맞게 적기 (노션참고)
+                method: "GET",
+                headers: {
+                    "Authorization": "Bearer "+ localStorage.getItem('token'),
+                    "Content-Type": "application/json"
+                },
+            })
+            .then(response => {
+                // 응답이 200번 ok가 뜨지많으면 예외처리가 되도록
+                if (!response.ok) {
+                    throw new Error("서버 오류 발생");
+                }
+                return response.json();
+            })
+            .then(data => {
+                // 사용자 목록(users 배열)을 기반으로 div 태그를 생성하여 userListDiv에 추가합니다.
+                const userListDiv = document.getElementById('divp');
+                data.map(user => {
+                    const userDiv = document.createElement("div");
+                    userDiv.textContent = `Name: ${user.name}, Age: ${user.age}`;
+                    userListDiv.appendChild(userDiv);
+                })
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Main</h1>
+    <h2>Todo목록</h2>
+    <div id="divp" style="border:1px solid black; padding:1rem">
+    </div>
+    <hr>
+    <button onclick="loadData();">목록보여주기</button>
+</body>
+</html>
