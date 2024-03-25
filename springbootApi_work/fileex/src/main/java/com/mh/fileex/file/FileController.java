@@ -3,6 +3,8 @@ package com.mh.fileex.file;
 import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -29,22 +31,33 @@ public class FileController {
     }
 
     @PostMapping("/upload")
-    public void uploadFile(@RequestParam("file") MultipartFile file){
+    public EntityModel<FileDto> uploadFile(@RequestParam("file") MultipartFile file){
         try {
             System.out.println(file.getOriginalFilename());
             System.out.println(imagePath+"/"+file.getOriginalFilename());
             // 저장...
             File dest = new File(imagePath+"/"+file.getOriginalFilename());
             file.transferTo(dest);
+
+            EntityModel<FileDto> entityModel = EntityModel.of(new FileDto(file.getOriginalFilename()));
+            entityModel.add(
+                    WebMvcLinkBuilder
+                        .linkTo(
+                                WebMvcLinkBuilder
+                                    .methodOn(FileController.class)
+                                        .getImage(file.getOriginalFilename())
+                        )
+                        .withRel("download"));
+            return entityModel;
         }
         catch (Exception e){
             e.printStackTrace();
+            return null;
         }
     }
 
     @GetMapping("/download/{fileName}")
     public ResponseEntity<Resource> getImage(@PathVariable String fileName){
-
         Path filePath = this.imagePath.resolve(fileName).normalize();
         Resource resource = null;
         try{
