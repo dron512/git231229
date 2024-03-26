@@ -6,8 +6,6 @@
     <title>Document</title>
     <script>
         function loadData(){
-            console.log(localStorage.getItem('token'));
-            document.getElementById('divp').innerHTML="목록불러오기";
             fetch("http://localhost:8080/user", {
                 // method는 get, post, put, delete가 있다 
                 // 백단과 맞게 적기 (노션참고)
@@ -30,6 +28,7 @@
                 data.map(user => {
                     const userDiv = document.createElement("div");
                     userDiv.textContent = `Name: ${user.name}, Age: ${user.age}`;
+                    userDiv.classList.add("user-info"); // 클래스 추가
                     userListDiv.appendChild(userDiv);
                 })
             })
@@ -38,6 +37,15 @@
             });
         }
     </script>
+    <style>
+        .user-info {
+            background-color: rgb(12, 49, 61);
+            color: white;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <h1>Main</h1>
