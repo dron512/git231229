@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -59,7 +60,7 @@
                         <li class="nav-item">
                             <a href="join.html" class="nav-link">join</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="loginlogout">
                             <a href="login.html" class="nav-link">Login</a>
                         </li>
                     </ul>
@@ -73,3 +74,19 @@
 </body>
 
 </html>
+<script>
+    function logout(){
+        localStorage.removeItem("email");
+        localStorage.removeItem("password");
+        location.href = "login.html";
+        alert('로그아웃 되었습니다.');
+    }
+    if(localStorage.getItem("email")!=null && localStorage.getItem("password")!=null){
+        document.getElementById("loginlogout").innerHTML = `<a href="login.html" class="nav-link" onclick="logout();">Logout</a>`;
+    }
+    // document.getElementById("loginlogout").addEventListener("click", ()=>{
+    //     localStorage.removeItem("email");
+    //     localStorage.removeItem("password");
+    //     location.href = "login.html";
+    // });
+</script>
