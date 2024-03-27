@@ -3,10 +3,7 @@ package com.mh.fileex.user;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestPart;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.awt.*;
@@ -41,5 +38,11 @@ public class UserController {
         userService.join(user, imageFile);
 
         return "회원가입";
+    }
+
+    @PostMapping("/login")
+    public String login(@RequestBody UserDto userDto){
+        String result = userService.loginCheck(userDto);
+        return result;
     }
 }

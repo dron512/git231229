@@ -11,6 +11,7 @@ import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -55,6 +56,19 @@ public class UserService {
         // 디스크에 파일 저장시 user 저장..
         userRepository.save(user);
 
+    }
+
+
+    public String loginCheck(UserDto userDto) {
+
+        Optional<User> optionalUser = userRepository.findByEmailAndPassword(userDto.getEmail(), userDto.getPassword());
+
+        if(optionalUser.isPresent()) {
+            return "loginok";
+        }
+        else{
+            return "loginfail";
+        }
     }
 }
 

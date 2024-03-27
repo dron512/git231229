@@ -10,8 +10,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <style>
-        </style>
+    <script>
+        const doLogin = ()=>{
+            // alert("로그인 되냐");
+            const userDto = {
+                email: document.getElementById("email").value,
+                password: document.getElementById("password").value,
+            };
+            fetch("http://localhost:8080/api/user/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(userDto)
+            }).then(response => {
+                return response.text();
+            }).then(result => {
+                if(result ==="loginok")
+                {
+                    localStorage.setItem("email", userDto.email);
+                    localStorage.setItem("password", userDto.password);
+                    location.href = "index.html";
+                }
+                else{
+                    alert("로그인 실패");
+                }
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -68,10 +94,19 @@
                 </div>
             </div>
         </nav>
-        <h1>Member</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab dolore quos tempore ut saepe nihil minima!
-            Adipisci ut facere eveniet, minima eligendi nobis alias dignissimos culpa ipsum, molestiae vel ex!</p>
+        <div class="container">
+            <h1>LOGIN</h1>
+            <p>welcome to LOGIN</p>
+            <div class="row">
+                <div class="col-8">
+                    <h3>email</h3>
+                    <input type="email" placeholder="email" id="email" class="form-control">
+                    <h3>password</h3>
+                    <input type="password" placeholder="password" id="password" class="form-control">
+                    <input type="button" value="LOGIN" class="btn btn-primary mt-3" onclick="doLogin();">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
-
 </html>
