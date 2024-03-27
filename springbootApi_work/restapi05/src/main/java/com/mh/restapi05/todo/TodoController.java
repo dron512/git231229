@@ -1,13 +1,34 @@
 package com.mh.restapi05.todo;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
+@RequestMapping("todo")
+@RequiredArgsConstructor
 public class TodoController {
 
-    @GetMapping("todo")
-    public String todo(){
-        return "todo";
+    private final TodoService todoService;
+
+    @GetMapping("/{id}/findAll")
+    public ResponseEntity<List<Todo>> todoAll(@PathVariable Long id)
+    {
+        return ResponseEntity.ok().body(todoService.getAllTodos(id));
     }
+
+    @GetMapping("/{id}/findOne")
+    public ResponseEntity<Todo> todoOne(@PathVariable Long id)
+    {
+        return ResponseEntity.ok().body(todoService.getTodoById(id));
+    }
+
+    @PostMapping("/{id}")
+    public ResponseEntity<Todo> todo(@PathVariable Long id, @RequestBody Todo todo)
+    {
+        return ResponseEntity.ok().body(todoService.save(id,todo));
+    }
+
 }
