@@ -1,10 +1,13 @@
 package com.mh.restapi05.todo;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.mh.restapi05.member.Member;
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
 @Table(name = "todo")
 public class Todo {
     @Id
@@ -16,6 +19,7 @@ public class Todo {
 
     @ManyToOne
 //    @JoinColumn(name = "mem_id")
+    @JsonIgnore
     private Member member;
 
 }
