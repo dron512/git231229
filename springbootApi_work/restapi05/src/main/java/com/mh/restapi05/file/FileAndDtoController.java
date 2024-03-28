@@ -1,5 +1,6 @@
 package com.mh.restapi05.file;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
@@ -19,6 +20,7 @@ import java.nio.file.Paths;
 @RequestMapping("/filedto")
 @RequiredArgsConstructor
 @RestController
+@SecurityRequirement(name = "Bearer Authentication")
 public class FileAndDtoController {
 
     private final Path imageStorageLocation;
