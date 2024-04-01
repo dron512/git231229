@@ -22,7 +22,7 @@
             formData.append("file", document.querySelector("input[type=file]").files[0]);
             formData.append("userDto", new Blob([JSON.stringify(userDto)], {type: "application/json"}));
 
-            fetch("http://localhost:8080/api/user/join", {
+            fetch("http://localhost:8080/user/singUp", {
                 method: "POST",
                 body: formData
             }).then(response => {

@@ -31,51 +31,56 @@ public class JWTInterceptor implements HandlerInterceptor {
 //        request.getHeaderNames().asIterator().forEachRemaining(System.out::println);
         String token = request.getHeader("Authorization");
         System.out.println(request.getRequestURI());
-        if(request.getRequestURI().contains("swagger")
-                || request.getRequestURI().contains("file") || request.getRequestURI().contains("error"))
-        {
-            return true;
-        }
+//        if(
+//                request.getRequestURI().contains("swagger")
+//                || request.getRequestURI().contains("file")
+//                || request.getRequestURI().contains("error")
+//                || request.getRequestURI().contains("common")
+//                || request.getRequestURI().contains("main")
+//                || request.getRequestURI().contains("h2")
+//        )
+//        {
+//            return true;
+//        }
 
-        if(token ==null || !token.startsWith("Bearer ")){
+        if(token == null || !token.startsWith("Bearer ")){
             System.out.println("token 이 없습니다.");
-            throw new RuntimeException("JWT 토큰 발행후에 해라");
         }
-        try{
-            Jws<Claims> jws = tokenManager.validateToken(token.substring("Bearer ".length()));
+        else {
+            try {
+                Jws<Claims> jws = tokenManager.validateToken(token.substring("Bearer ".length()));
 
-            List<SimpleGrantedAuthority> roles =
-                    Stream.of(jws.getBody().get("role").toString())
-                            .map(SimpleGrantedAuthority::new)
-                            .toList();
-            System.out.println(roles);
+                List<SimpleGrantedAuthority> roles =
+                        Stream.of(jws.getBody().get("role").toString())
+                                .map(SimpleGrantedAuthority::new)
+                                .toList();
+                System.out.println(roles);
 
-            // 로그인한 사람 정보를 Authentication에 저장해라..
-            Authentication authentication = UsernamePasswordAuthenticationToken.authenticated(
-                    Member.builder()
-                            .email(jws.getPayload().get("email").toString())
-                            .username(jws.getPayload().get("username").toString())
-                            .id(jws.getPayload().get("id", Long.class))
-                            .role(
-                                    Role.fromString(jws.getPayload().get("role").toString())
-                            )
-                            .build(),
-                    null,
-                    roles
-            );
-            // 로그인한 사람 정보를 저장해라
-            SecurityContextHolder.getContext().setAuthentication(authentication);
+                // 로그인한 사람 정보를 Authentication에 저장해라..
+                Authentication authentication = UsernamePasswordAuthenticationToken.authenticated(
+                        Member.builder()
+                                .email(jws.getPayload().get("email").toString())
+                                .username(jws.getPayload().get("username").toString())
+                                .id(jws.getPayload().get("id", Long.class))
+                                .role(
+                                        Role.fromString(jws.getPayload().get("role").toString())
+                                )
+                                .build(),
+                        null,
+                        roles
+                );
+                // 로그인한 사람 정보를 저장해라
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+            } catch (ExpiredJwtException e) {
+                System.out.println("토큰 만료");
+                throw new RuntimeException("JWT 토큰 만료");
+            } catch (Exception e) {
+                System.out.println("토큰 검증 실패");
+                throw new RuntimeException("JWT 토큰 검증 실패");
+            }
+
+            // 하고 싶은거 하러 가라
         }
-        catch (ExpiredJwtException e){
-            System.out.println("토큰 만료");
-            throw new RuntimeException("JWT 토큰 만료");
-        }
-        catch (Exception e) {
-            System.out.println("토큰 검증 실패");
-            throw new RuntimeException("JWT 토큰 검증 실패");
-        }
-        
-        // 하고 싶은거 하러 가라
         return true;
     }
 }
