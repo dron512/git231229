@@ -1,5 +1,6 @@
 package com.mh.restapi05.config;
 
+import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.configurers.provisioning.InMemoryUserDetailsManagerConfigurer;
@@ -26,13 +27,30 @@ public class WebMvcConfig {
         // post 방식 put 방식 delete 방식을 사용할때 csrf 토큰을 사용하지 않겠다.
         // 허용해주겠다..
         http.csrf(httpSecurityCsrfConfigurer ->  httpSecurityCsrfConfigurer.disable() );
+        http.formLogin(
+                fr -> fr.loginPage("/main/login")
+                        .defaultSuccessUrl("/main/main")
+                        .failureUrl("/main/login?error")
+        );
         http
                 .authorizeRequests(
-//                       req ->
-//                            req.requestMatchers("/member","test").permitAll().
-//                            anyRequest().authenticated()
-                        req->req.anyRequest().permitAll()
-                );
+                   req ->
+                        req
+                                .requestMatchers("/main/login",
+                                                "/main/login?error",
+                                                "/main/join",
+                                                "/error"
+                                        ).permitAll()
+                                .anyRequest().authenticated()
+//                        req->
+//                                req.anyRequest().permitAll()
+                )
+        ;
+
+        // h2 console 사용하는 구문
+        http.headers(httpSecurityHeadersConfigurer -> httpSecurityHeadersConfigurer.frameOptions(
+                frameOptionsConfig -> frameOptionsConfig.sameOrigin()
+        ));
 
         // Exceptionhandling ->
         // 스프링시큐리티에서 필터를 다는 방법

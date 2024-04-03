@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="layout/common :: head('todo')">
+<head th:replace="~{layout/common :: head('todo')}">
 </head>
 <body>
-<nav th:replace="layout/common :: nav('')"></nav>
+<nav th:replace="~{layout/common :: nav('')}"></nav>
 <div class="container">
     <h1>Todo</h1>
 </div>

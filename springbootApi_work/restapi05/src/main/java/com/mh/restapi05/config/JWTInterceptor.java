@@ -45,6 +45,7 @@ public class JWTInterceptor implements HandlerInterceptor {
 
         if(token == null || !token.startsWith("Bearer ")){
             System.out.println("token 이 없습니다.");
+            return true;
         }
         else {
             try {
@@ -78,9 +79,7 @@ public class JWTInterceptor implements HandlerInterceptor {
                 System.out.println("토큰 검증 실패");
                 throw new RuntimeException("JWT 토큰 검증 실패");
             }
-
-            // 하고 싶은거 하러 가라
+            return true;
         }
-        return true;
     }
 }

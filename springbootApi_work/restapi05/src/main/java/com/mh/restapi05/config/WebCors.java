@@ -26,7 +26,9 @@ public class WebCors implements WebMvcConfigurer {
                         ,"/v3/api-docs"
                         ,"/h2-console/**"
                         ,"/main/**"
-                        ,"/error");
+                        ,"/error"
+                        ,"index.html"
+                        ,"");
     }
 
     @Override

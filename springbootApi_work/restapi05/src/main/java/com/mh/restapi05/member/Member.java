@@ -1,5 +1,6 @@
 package com.mh.restapi05.member;
 
+import com.mh.restapi05.common.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 import net.sf.jsqlparser.expression.DateTimeLiteralExpression;
@@ -16,7 +17,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Member {
+public class Member extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,10 +37,5 @@ public class Member {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    // insert 한시간
-    @CreatedDate
-    private LocalDateTime writeDate;
-    @LastModifiedDate
-    private LocalDateTime modifyDate;
 
 }
