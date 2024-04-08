@@ -43,7 +43,7 @@
                     <a class="nav-link" href="/main/signin">Login</a>
                 </li>
 
-                <li class="nav-item" id="logout-btn" sec:authorize="isAuthenticated()" onClick="()=>{alert('test');}">
+                <li class="nav-item" id="logout-btn" sec:authorize="isAuthenticated()">
                     logOut
 <!--                    <a class="nav-link" href="/main/logout">LogOut</a>-->
                 </li>
@@ -63,8 +63,28 @@
 </nav>
 </body>
 </html>
-<script>
-    document.getElementById('logout-btn').addEventListener('click',()=>{    alert('test');   });
+<script th:fragment="myscript">
+    // function doA(){}
+    // const doA = function(){ alert(test); };
+    const doA = ()=>{
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                location.href = "/main/logout";
+            }else{
+                Swal.fire("Cancelled", "취소햇씁니다.", "error");
+            }
+        });
+    };
+
+    document.getElementById('logout-btn').addEventListener('click', doA);
 </script>
 
 
