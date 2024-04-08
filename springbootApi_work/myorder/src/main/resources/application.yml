@@ -2,8 +2,11 @@ spring:
   messages:
     basename: messages
   datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mh?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 1234
+
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
