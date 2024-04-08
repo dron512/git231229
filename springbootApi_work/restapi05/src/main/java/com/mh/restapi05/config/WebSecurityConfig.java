@@ -30,6 +30,7 @@ public class WebSecurityConfig {
         http.formLogin(
                 fr -> fr.loginPage("/main/login")
                         .defaultSuccessUrl("/main/main")
+                        .successForwardUrl("/main/main")
                         .usernameParameter("email")
 //                        .passwordParameter("password")
                         .failureUrl("/main/login?error")
