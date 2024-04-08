@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <!-- Basic -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Site Metas -->
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -19,15 +16,13 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
 </head>
-
 <body>
-
 <div class="hero_area">
     <div class="bg-box">
         <img src="images/hero-bg.jpg" alt="">
     </div>
     <!-- header section strats -->
-    <header class="header_section">
+    <header th:fragment="comheader(menu)" class="header_section">
         <div class="container">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
                 <a class="navbar-brand" href="/">
