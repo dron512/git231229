@@ -1,0 +1,3 @@
+1712110908580|0|statement|connection 21|url jdbc:h2:mem:testdb|     drop table if exists member cascade |     drop table if exists member cascade 
+1712110908581|0|statement|connection 21|url jdbc:h2:mem:testdb|     drop table if exists todo cascade |     drop table if exists todo cascade 
+1712110908581|0|statement|connection 21|url jdbc:h2:mem:testdb|     drop sequence if exists todo_seq|     drop sequence if exists todo_seq

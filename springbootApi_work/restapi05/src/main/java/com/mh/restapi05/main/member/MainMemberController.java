@@ -5,6 +5,7 @@ import com.mh.restapi05.member.MemberDto;
 import com.mh.restapi05.member.MemberRepository;
 import com.mh.restapi05.member.Role;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +22,7 @@ import java.util.List;
 public class MainMemberController {
 
     private final MemberRepository memberRepository;
+    private final PasswordEncoder passwordEncoder;
 
     @GetMapping("member")
     public String member(Model model){
@@ -41,14 +43,17 @@ public class MainMemberController {
     @PostMapping("join")
 //    public @ResponseBody Member pjoin(MemberDto memberDto){
     public String pjoin(MemberDto memberDto){
+
+        System.out.println("일로오나");
         memberRepository.save(
             Member.builder()
                     .username(memberDto.getUsername())
-                    .password(memberDto.getPassword())
+                    .password(passwordEncoder.encode(memberDto.getPassword()))
                     .email(memberDto.getEmail())
                     .role(Role.USER)
                     .build()
         );
+
         return "redirect:/main/member";
     }
 

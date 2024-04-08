@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var aa = 1;
+        setInterval(() => {
+            console.log("test"+aa);
+            aa+=1;
+            if(aa==10){
+                document.getElementById("aaa").innerHTML = "<h1>test</h1>";
+            }
+        }, 1000);
+    </script>
+</head>
+<body>
+<h1>Main</h1>
+<div id="aaa">
+
+</div>
+</body>
+</html>

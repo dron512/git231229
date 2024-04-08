@@ -1,24 +1,20 @@
 package com.mh.restapi05.config;
 
-import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
+import com.mh.restapi05.main.member.MainMemberService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.authentication.configurers.provisioning.InMemoryUserDetailsManagerConfigurer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
-public class WebMvcConfig {
-    @Bean
-    public PasswordEncoder passwordEncoder(){
-        return new BCryptPasswordEncoder();
-    }
+@RequiredArgsConstructor
+public class WebSecurityConfig {
+
+    private final MainMemberService mainMemberService;
+
 
     // 스프링 부트 3 버전 람다문법을 써야지만 에러가 안납니다.
     // jwt 토큰 인증을 달겠다.
@@ -26,20 +22,36 @@ public class WebMvcConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         // post 방식 put 방식 delete 방식을 사용할때 csrf 토큰을 사용하지 않겠다.
         // 허용해주겠다..
+
+        http.userDetailsService(mainMemberService);
+
+        // userDetailService
         http.csrf(httpSecurityCsrfConfigurer ->  httpSecurityCsrfConfigurer.disable() );
         http.formLogin(
                 fr -> fr.loginPage("/main/login")
                         .defaultSuccessUrl("/main/main")
+                        .usernameParameter("email")
+//                        .passwordParameter("password")
                         .failureUrl("/main/login?error")
         );
+
+        http.logout(
+                // logout 페이지 지정
+                logout -> logout.logoutUrl("/main/logout")
+                // 성공적으로 logout시에 main/main페이지로 이동
+                .logoutSuccessUrl("/main/main")
+        );
+
         http
                 .authorizeRequests(
                    req ->
                         req
                                 .requestMatchers("/main/login",
                                                 "/main/login?error",
+                                                "/main/logout",
                                                 "/main/join",
-                                                "/error"
+                                                "/error",
+                                                "/main/main"
                                         ).permitAll()
                                 .anyRequest().authenticated()
 //                        req->

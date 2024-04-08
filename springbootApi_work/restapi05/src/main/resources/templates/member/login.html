@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
@@ -321,38 +323,9 @@
 
         /*# sourceMappingURL=test.css.map */
     </style>
-    <script>
-        /**
-         * Variables
-         */
-        const signupButton = document.getElementById('signup-button'),
-            loginButton = document.getElementById('login-button'),
-            userForms = document.getElementById('user_options-forms')
 
-        /**
-         * Add event listener to the "Sign Up" button
-         */
-        signupButton.addEventListener('click', () => {
-            userForms.classList.remove('bounceRight')
-            userForms.classList.add('bounceLeft')
-        }, false)
-
-        /**
-         * Add event listener to the "Login" button
-         */
-        loginButton.addEventListener('click', () => {
-            userForms.classList.remove('bounceLeft')
-            userForms.classList.add('bounceRight')
-        }, false)
-    </script>
 </head>
 <body>
-<h1>LOGIN</h1>
-<!--
-This was created based on the Dribble shot by Deepak Yadav that you can find at https://goo.gl/XRALsw
-I'm @hk95 on GitHub. Feel free to message me anytime.
--->
-
 <section class="user">
     <div class="user_options-container">
         <div class="user_options-text">
@@ -370,37 +343,48 @@ I'm @hk95 on GitHub. Feel free to message me anytime.
                 <button class="user_registered-login" id="login-button">Login</button>
             </div>
         </div>
-
         <div class="user_options-forms" id="user_options-forms">
             <div class="user_forms-login">
                 <h2 class="forms_title">Login</h2>
-                <form class="forms_form">
+                <form class="forms_form" action="/main/login" method="post">
                     <fieldset class="forms_fieldset">
                         <div class="forms_field">
-                            <input type="email" placeholder="Email" class="forms_field-input" required autofocus/>
+                            <input type="email"
+                                   placeholder="Email"
+                                   class="forms_field-input"
+                                   name="email"
+                                   required autofocus/>
                         </div>
+                        <!--
+                            화면 css 작업을 class id
+                            백엔드 기능 추가 할때는 name
+                        -->
                         <div class="forms_field">
-                            <input type="password" placeholder="Password" class="forms_field-input" required/>
+                            <input type="password"
+                                   placeholder="Password"
+                                   class="forms_field-input"
+                                   name="password"
+                                   required/>
                         </div>
                     </fieldset>
                     <div class="forms_buttons">
                         <button type="button" class="forms_buttons-forgot">Forgot password?</button>
-                        <input type="submit" value="Log In" class="forms_buttons-action">
+                        <input type="submit" value="SignIn" class="forms_buttons-action">
                     </div>
                 </form>
             </div>
             <div class="user_forms-signup">
                 <h2 class="forms_title">Sign Up</h2>
-                <form class="forms_form">
+                <form class="forms_form" action="/main/join" method="post">
                     <fieldset class="forms_fieldset">
                         <div class="forms_field">
-                            <input type="text" placeholder="Full Name" class="forms_field-input" required/>
+                            <input type="text" placeholder="username" name="username" class="forms_field-input" required/>
                         </div>
                         <div class="forms_field">
-                            <input type="email" placeholder="Email" class="forms_field-input" required/>
+                            <input type="email" placeholder="Email" name="email" class="forms_field-input" required/>
                         </div>
                         <div class="forms_field">
-                            <input type="password" placeholder="Password" class="forms_field-input" required/>
+                            <input type="password" placeholder="Password" name="password" class="forms_field-input" required/>
                         </div>
                     </fieldset>
                     <div class="forms_buttons">
@@ -413,3 +397,18 @@ I'm @hk95 on GitHub. Feel free to message me anytime.
 </section>
 </body>
 </html>
+<script>
+    const signupButton = document.getElementById('signup-button'),
+        loginButton = document.getElementById('login-button'),
+        userForms = document.getElementById('user_options-forms')
+
+    signupButton.addEventListener('click', () => {
+        userForms.classList.remove('bounceRight')
+        userForms.classList.add('bounceLeft')
+    }, false)
+
+    loginButton.addEventListener('click', () => {
+        userForms.classList.remove('bounceLeft')
+        userForms.classList.add('bounceRight')
+    }, false)
+</script>

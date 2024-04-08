@@ -27,8 +27,8 @@ docker pull mysql
 docker create --name mysqlcontainer -e MYSQL_ROOT_PASSWORD=1234 -p 3306:3306 mysql
 docker run -d --name mysqlcontainer -e MYSQL_ROOT_PASSWORD=1234 -p 3306:3306 -v d:/mysql:/var/lib/mysql mysql
 
-docker network create --gateway 172.20.0.1 --subnet 172.20.0.0/21 mybridge
-docker run --name mysql -d  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_CHARSET=utf8mb4 -e MYSQL_COLLATION=utf8mb4_unicode_ci mysql
+docker network create --gateway 172.18.0.1 --subnet 172.18.0.0/21 mybridge
+docker run --name mysql -d -ip 172.18.0.100 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_CHARSET=utf8mb4 -e MYSQL_COLLATION=utf8mb4_unicode_ci mysql
 
 docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD=examplepassword -e MYSQL_DATABASE=exampledb -e MYSQL_USER=exampleuser -e MYSQL_PASSWORD=examplepassword -e MYSQL_CHARSET=utf8mb4 -e MYSQL_COLLATION=utf8mb4_unicode_ci -p 3306:3306 mysql:latest
 

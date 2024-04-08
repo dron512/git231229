@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/common :: head('member')}">
+</head>
+<body>
+<nav th:replace="~{layout/common :: nav('')}"></nav>
+<div class="container">
+    <h1>Member</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>아이디</th>
+                <th>유저네임</th>
+                <th>EMAIL</th>
+                <th>패스워드</th>
+                <th>권한</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="member:${list}">
+                <td th:text="${member.id}">1</td>
+                <td th:text="${member.username}">2</td>
+                <td th:text="${member.email}">2</td>
+                <td th:text="${member.password}">3</td>
+                <td th:text="${member.role}">4</td>
+            </tr>
+        </tbody>
+    </table>
+    <p th:each="member:${list}">
+        <span th:text="${member.id}"></span>
+        <span th:text="${member.username}"></span>
+        <span th:text="${member.role}"></span>
+    </p>
+    <p th:each="string:${stringlist}">
+        <span th:text="${string}"></span>
+    </p>
+</div>
+</body>
+</html>
