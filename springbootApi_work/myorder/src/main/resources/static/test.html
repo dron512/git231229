@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Screen with 3 Pages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .pages {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        .page {
+            width: 30vw;
+            height: 50vh;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page1 { background-color: #ffcccc; }
+        .page2 { background-color: #ccffcc; }
+        .page3 { background-color: #ccccff; }
+
+        .page-content {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="pages">
+        <div class="page page1">
+            <div class="page-content">
+                <h2>Page 1</h2>
+                <p>This is Page 1 content.</p>
+            </div>
+        </div>
+        <div class="page page2">
+            <div class="page-content">
+                <h2>Page 2</h2>
+                <p>This is Page 2 content.</p>
+            </div>
+        </div>
+        <div class="page page3">
+            <div class="page-content">
+                <h2>Page 3</h2>
+                <p>This is Page 3 content.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
