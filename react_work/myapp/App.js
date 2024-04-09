@@ -60,8 +60,9 @@ export default function App() {
               }
             }
           },
-          tabBarActiveTintColor: '#063',
+          tabBarActiveTintColor: '#fff',
           tabBarInactiveTintColor: '#999',
+          tabBarBackground: '#063',
         })}
       >
         <Tab.Screen name="Home" component={Home} />
