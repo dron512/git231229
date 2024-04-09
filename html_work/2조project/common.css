@@ -1,0 +1,20 @@
+a{
+    text-decoration: none;
+}
+a:visited{
+    padding: 0.5rem;
+    display: inline-block;
+    color: #063;
+}
+.header_logo{
+    display: flex; justify-content: flex-end;
+}
+.header_logo div {
+    margin: 10px;
+}
+.title{
+    font-size: 32px; font-weight: bold;margin-left: 1rem; color: #063;
+}
+.welcome{
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+}

@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .header_logo div {
-            margin: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="common.css">
+    <script>
+        const doA = () => { };
+    </script>
 </head>
 
 <body>
-    <div class="header_logo" style="display: flex; justify-content: flex-end;">
+    <div class="header_logo">
         <div>
             <i class="fa fa-bell-o" style="font-size:24px"></i>
         </div>
@@ -23,13 +22,13 @@
         </div>
     </div>
     <div style="margin: 20px 0;">
-        <h1 style="font-size: 32px; font-weight: bold;margin-left: 5%; color: #063;">MyPage</h1>
+        <h1 class="title"><a href="">MyPage</a></h1>
     </div>
-    <div style="background-color: #cbcbcb; height: 0.3px;"></div>
+    <div style="background-color: #cbcbcb; height: 10px;"></div>
     <div style="height: 30px;"></div>
-    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-        <div style="display: flex; flex-direction: row;">
-            <h2 style="font-size: 24px; font-weight: bold; margin: 20px; color: #063;">MyPage </h2>
+    <div class="welcome">
+        <div style="display: flex;">
+            <h2 style="font-size: 24px; font-weight: bold; margin: 20px 0; color: #063;">MyPage </h2>
             <h2 style="font-size: 24px; font-weight: bold; margin: 20px;">님</h2>
         </div>
         <p>환영합니다.!🙌</p>
@@ -51,7 +50,7 @@
             <p>주문영수증</p>
         </div>
         <!-- <div style="background-image: url('mypage.png');  width: 25%; height: 100px;"> -->
-            <!-- <img src="mypage.png" width="200"> -->
+        <!-- <img src="mypage.png" width="200"> -->
         <!-- </div> -->
     </div>
 
@@ -70,13 +69,35 @@
             <i class="fa fa-id-badge" style="font-size:48px;color: #063;"></i>
             <p>나만의메뉴</p>
         </div>
-        
+
     </div>
 
     <div style="text-align: center; margin: 20px 0;">
-        <a href=""><h1 style="font-size: 30px; text-decoration: underline;color: #063;">로그아웃</h1></a>
+        <a href="">
+            <h1 style="font-size: 30px; text-decoration: underline;color: #063;">로그아웃</h1>
+        </a>
     </div>
 
+
+    <div style=" position: fixed; bottom: 0; width: 100%; background-color: #063;">
+        <div style="display: flex; justify-content: center; flex-direction: row; height: 50px; ">
+            <div style="margin: 1rem 1.2rem"><a href="home" style="color:#f8f8f8; font-size:20px;">
+                    <h1>홈</h1>
+                </a></div>
+            <div style="margin: 1rem 1.2rem"><a href="" style="color:#f8f8f8; font-size:20px;">
+                    <h1>굿즈판매</h1>
+                </a></div>
+            <div style="margin: 1rem 1.2rem"><a href="" style="color:#f8f8f8; font-size:20px;">
+                    <h1>게시판</h1>
+                </a></div>
+            <div style="margin: 1rem 1.2rem"><a href="" style="color:#f8f8f8; font-size:20px;">
+                    <h1>오더</h1>
+                </a></div>
+            <div style="margin: 1rem 1.2rem"><a href="" style="color:#f8f8f8; font-size:20px;">
+                    <h1>마이페이지</h1>
+                </a></div>
+        </div>
+    </div>
 </body>
 
 </html>
