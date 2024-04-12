@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { AntDesign , Entypo , MaterialCommunityIcons, Ionicons , FontAwesome6 } from '@expo/vector-icons';
@@ -16,8 +16,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <SafeAreaView>
-        <View style={{padding:10}}>
-          <MaterialCommunityIcons name="coffee-outline" size={50} color="black" />
+        <View style={{alignItems:"center",marginVertical:10}}>
+          <Image source={require('./assets/logo.png')} 
+            style={{
+              width:200,
+              height:50,
+              }} />
         </View>
       </SafeAreaView>
       <Tab.Navigator screenOptions={({ route }) => ({
@@ -62,7 +66,7 @@ export default function App() {
           },
           tabBarActiveTintColor: '#fff',
           tabBarInactiveTintColor: '#999',
-          tabBarBackground: '#063',
+          headerShown: false,
         })}
       >
         <Tab.Screen name="Home" component={Home} />

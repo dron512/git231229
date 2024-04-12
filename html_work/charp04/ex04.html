@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            /* 기준 되는 곳에 넣는거 position?? realative 상대적인...*/
+            position: relative;
+            width: 1000px;
+            height: 500px;
+            background-color: cadetblue;
+        }
+        .test{
+            position: absolute;
+            right: 50px;
+            top: 50px;
+            width: 100px; height: 100px; background-color: aqua;            
+        }
+        .keygen{
+            position: absolute;
+            bottom: 0;
+            width: 100px; height: 100px; background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="test">
+            test
+        </div>
+        <div class="keygen">
+            keygen
+        </div>
+        <div style="width: 100px; height: 100px; background-color: aliceblue;">
+            last
+        </div>
+    </div>
+</body>
+</html>

@@ -64,7 +64,7 @@
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="../static/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                      <img src="/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -73,7 +73,7 @@
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
-                              <img src="../static/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                              <img src="/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                             </div>
                           </div>
                           <div class="flex-grow-1">
@@ -111,7 +111,7 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="../static/html/auth-login-basic.html">
+                      <a class="dropdown-item" href="/html/auth-login-basic.html">
                         <i class="bx bx-power-off me-2"></i>
                         <span class="align-middle">Log Out</span>
                       </a>
@@ -132,18 +132,18 @@
             <div class="container-xxl flex-grow-1 container-p-y">
               <!-- Layout Demo -->
               <div class="layout-demo-wrapper">
-                <div class="layout-demo-placeholder">
-                  <img
-                    src="../static/assets/img/layouts/layout-container-light.png"
-                    class="img-fluid"
-                    alt="Layout container"
-                    data-app-light-img="layouts/layout-container-light.png"
-                    data-app-dark-img="layouts/layout-container-dark.png"
-                  />
+                <div class="layout-demo-placeholder" style="display: flex; justify-content:center; width: 100%">
+                  <div th:each="itemDto : ${list}" style="width: 30%;">
+                    <div style="border:1px solid black; border-radius: 1rem; padding: 1rem;margin: 1.5rem; ">
+                      <img src="/images/dog.jpg" style="width: 100%; border-radius: 1rem;"/>
+                      <h1 style="text-align: center; margin-top: 1rem;" th:text="${itemDto.itemNm}"></h1>
+                      <p style="text-align: center" th:text="${itemDto.price}+'원'"></p>
+                    </div>
+                  </div>
                 </div>
                 <div class="layout-demo-info">
-                  <h4>Layout container</h4>
-                  <p>Container layout sets a <code>max-width</code> at each responsive breakpoint.</p>
+                  <h4>MHHOME</h4>
+                  <p>ㅁㄴ아ㅣ러ㅜ빚차더귑잧더ㅟㅏㅁ너출ㅇ</p>
                 </div>
               </div>
               <!--/ Layout Demo -->
@@ -195,16 +195,7 @@
     </div>
     <!-- / Layout wrapper -->
 
-    <div class="buy-now">
-      <a
-        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-        >Upgrade to Pro</a
-      >
-    </div>
-
-    <th:block th:replace="~{common/common::script}">
+    <th:block th:replace="~{common/common::footerscript}">
     </th:block>
   </body>
 </html>

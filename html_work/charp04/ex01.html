@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::selection {
+            background-color: yellow;
+            color: red;
+        }        
+        p:nth-child(2){ font-size: 150%; }
+        p:nth-child(3){ font-size: 200%; }
+
+        #aa{ 
+            background-color: rgb(255,255,0); 
+            opacity: 0.5;
+        }
+        #bb{
+            background-color: rgba(0,200,255,0.2); 
+        }
+        body{
+            background-image: url('aaa.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="aa">
+        <p style="font-size: 2rem;">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+        <p>olorum accusantium maiores pariatur repudian</p>
+        <p>e reiciendis aut assumenda vel, iste digniss</p>
+        <p>illo quae consectetur porro.</p>
+    </div>
+    <div id="bb">
+        <h1>제목입니다.</h1>
+        <p>
+            Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Pariatur velit harum ea non sapiente? 
+            Minus, dolorum accusantium maiores pariatur repudiandae reiciendis aut assumenda vel, iste dignissimos,
+            illo quae consectetur porro.
+        </p>
+    </div>
+    <div>
+        <img src="https://cdn.pixabay.com/photo/2023/11/21/13/53/beetle-8403460_1280.jpg"/>
+    </div>
+</body>
+</html>
