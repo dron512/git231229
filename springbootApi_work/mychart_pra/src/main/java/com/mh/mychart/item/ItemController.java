@@ -20,12 +20,24 @@ import java.nio.file.Paths;
 import java.security.Principal;
 
 @RequestMapping("/api/item")
-@RequiredArgsConstructor
 @RestController
 @SecurityRequirement(name = "Bearer Authentication")
 public class ItemController {
 
+    private final Path imageStorageLocation;
     private final ItemService itemService;
+
+    public ItemController(ItemService itemService) {
+        this.imageStorageLocation = Paths.get("image/file/").toAbsolutePath().normalize();
+
+        try {
+            Files.createDirectories(this.imageStorageLocation);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        this.itemService = itemService;
+    }
 
     @PostMapping(value = "/new", produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
@@ -48,18 +60,18 @@ public class ItemController {
         return entityModel;
     }
 
-//    @GetMapping("/{fileName:.+}")
-//    public ResponseEntity<Resource> getImage(@PathVariable String fileName) {
-//        Path filePath = this.imageStorageLocation.resolve(fileName).normalize();
-//        Resource resource;
-//        try {
-//            resource = (Resource) new UrlResource(filePath.toUri());
-//            return ResponseEntity.ok()
-//                    //.header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
-//                    .body(resource);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//            return ResponseEntity.notFound().build();
-//        }
-//    }
+    @GetMapping("/{fileName:.+}")
+    public ResponseEntity<Resource> getImage(@PathVariable String fileName) {
+        Path filePath = this.imageStorageLocation.resolve(fileName).normalize();
+        Resource resource;
+        try {
+            resource = (Resource) new UrlResource(filePath.toUri());
+            return ResponseEntity.ok()
+                    //.header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
+                    .body(resource);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return ResponseEntity.notFound().build();
+        }
+    }
 }
