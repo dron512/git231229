@@ -12,12 +12,13 @@ spring:
     database-platform: org.hibernate.dialect.MySQLDialect
     defer-datasource-initialization: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     generate-ddl: true
     show-sql: true
     properties:
       hibernate:
         format_sql: true
+        use_sql_comments: true
   h2:
     console:
       enabled: true
@@ -40,3 +41,14 @@ multipart:
   file-size-threshold: 0
 
 
+mh:
+  jwt:
+    secret: mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004
+    access-token-expiration: 86400000
+    refresh-token-expiration: 2592000000
+
+
+kakao:
+  client:
+    id: cf2d93f813f588cb0616341a7a287487
+    secret: Hr7gAtRILsnFEZB6IWxt3SRdnJXlOi0F
