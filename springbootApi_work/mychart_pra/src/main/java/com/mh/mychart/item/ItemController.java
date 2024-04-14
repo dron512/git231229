@@ -7,6 +7,8 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,27 +23,15 @@ import java.security.Principal;
 
 @RequestMapping("/api/item")
 @RestController
+@RequiredArgsConstructor
 @SecurityRequirement(name = "Bearer Authentication")
 public class ItemController {
 
-    private final Path imageStorageLocation;
     private final ItemService itemService;
-
-    public ItemController(ItemService itemService) {
-        this.imageStorageLocation = Paths.get("image/file/").toAbsolutePath().normalize();
-
-        try {
-            Files.createDirectories(this.imageStorageLocation);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-
-        this.itemService = itemService;
-    }
 
     @PostMapping(value = "/new", produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public EntityModel<ItemDto> handleFileUpload(@RequestPart(value = "file", required = true) MultipartFile[] file,
+    public ResponseEntity<String> handleFileUpload(@RequestPart(value = "file", required = true) MultipartFile[] file,
                                                  @RequestPart(value = "itemDto", required = false) ItemDto itemDto,
                                                  Principal principal){
 
@@ -49,29 +39,20 @@ public class ItemController {
         System.out.println(principal.getName());
 
         if (file[0].isEmpty()) {
-            return EntityModel.of(ItemDto.builder()
-                    .name("file upload failed because file is empty")
-                    .build());
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("file is empty");
         }
 
-        itemService.save(itemDto, file);
+        String result = itemService.save(itemDto, file);
 
-        EntityModel<ItemDto> entityModel = EntityModel.of(itemDto);
-        return entityModel;
+//        EntityModel<ItemDto> entityModel = EntityModel.of(responseItemDto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(result);
     }
 
-    @GetMapping("/{fileName:.+}")
-    public ResponseEntity<Resource> getImage(@PathVariable String fileName) {
-        Path filePath = this.imageStorageLocation.resolve(fileName).normalize();
-        Resource resource;
-        try {
-            resource = (Resource) new UrlResource(filePath.toUri());
-            return ResponseEntity.ok()
-                    //.header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
-                    .body(resource);
-        } catch (IOException e) {
-            e.printStackTrace();
-            return ResponseEntity.notFound().build();
-        }
+    @GetMapping("/get/{id}")
+    public ResponseEntity<ItemDto> getItem(@PathVariable Long id){
+        ItemDto itemDto = itemService.getItem(id);
+        return ResponseEntity.ok(itemDto);
     }
+
+
 }

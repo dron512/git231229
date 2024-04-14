@@ -16,7 +16,8 @@ public class WebCorsInterceptor implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(jwtInterceptor)
-                .addPathPatterns("/api/**");
+                .addPathPatterns("/api/**")
+                .excludePathPatterns("/image/file/**");
     }
 
     @Override

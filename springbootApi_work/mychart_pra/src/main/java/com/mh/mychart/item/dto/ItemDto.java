@@ -2,8 +2,6 @@ package com.mh.mychart.item.dto;
 
 import com.mh.mychart.item.Entity.Item;
 import com.mh.mychart.member.Member;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -26,9 +24,6 @@ public class ItemDto {
     private int stock;
 
     private List<ItemImgDto> itemImgDtoList = new ArrayList<>();
-
-    @ManyToOne
-    @JoinColumn(name = "member_id")
     private Member member;
 
     public Item toEntity() {
