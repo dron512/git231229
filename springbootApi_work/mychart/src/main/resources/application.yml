@@ -30,3 +30,27 @@ multipart:
   max-file-size: 10MB
   max-request-size: 10MB
   file-size-threshold: 0
+
+
+kakao:
+  client:
+    id: ff0937f4b6886da19d90506ef2579de0
+    secret : ICCDaN5BUDdQ3IXjFHUi7GkS0m8YwuFL
+    redirect: http://localhost:8080/oauth/kakao/callback
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

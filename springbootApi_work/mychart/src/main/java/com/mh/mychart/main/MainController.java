@@ -1,15 +1,21 @@
 package com.mh.mychart.main;
 
 import com.mh.mychart.item.ItemDto;
+import com.mh.mychart.kakao.KakaoService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Arrays;
 import java.util.List;
 
 @Controller
+@RequiredArgsConstructor
 public class MainController {
+
+    private final KakaoService kakaoService;
 
     @GetMapping("/")
     public String index(){
@@ -27,4 +33,22 @@ public class MainController {
         model.addAttribute("list",list);
         return "container";
     }
+
+    @GetMapping("oauth/kakao/callback")
+    public @ResponseBody String kakaoCallback(String code){
+        kakaoService.getKakaoToken(code);
+        return code;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>카카오 로그인 페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .content {
+        font-family: "Montserrat", sans-serif;
+        font-size: 10rem;
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 1rem;
+        background: #74992e;
+    }
+    a {
+        text-decoration-line: none
+    }
+</style>
+<body>
+<div class="wrapper">
+    <a href="https://kauth.kakao.com/oauth/authorize?client_id=ff0937f4b6886da19d90506ef2579de0&redirect_uri=http://localhost:8080/oauth/kakao/callback&response_type=code">
+        <div class="content">
+            kakao login
+        </div>
+    </a>
+    <div>
+        <img src="http://localhost:8080/image/file/aa.webp" width="200"/>
+    </div>
+</div>
+</body>
+</html>
