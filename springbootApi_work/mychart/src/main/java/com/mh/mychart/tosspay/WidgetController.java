@@ -84,6 +84,8 @@ public class WidgetController {
         JSONObject jsonObject = (JSONObject) parser.parse(reader);
         responseStream.close();
 
+        System.out.println(jsonObject);
+
 //        OrderRepostory orderRepostory = new OrderRepostory();
 //        orderRepostory.saveOrder(orderId, amount, paymentKey);
 

@@ -15,7 +15,7 @@ export function SuccessPage() {
     };
 
     async function confirm() {
-      // 결제성공 페이지로 이동하면 결제를 확인합니다.
+      // 결제성공
       const response = await fetch("http://localhost:8080/api/tosspay/confirm", {
         method: "POST",
         headers: {
