@@ -12,7 +12,7 @@ spring:
     database-platform: org.hibernate.dialect.MySQLDialect
     defer-datasource-initialization: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
     generate-ddl: true
     show-sql: true
     properties:
@@ -41,7 +41,7 @@ kakao:
 
 toss:
   client:
-    secret: test_sk_ex6BJGQOVDPJa0Dy92daVW4w2zNb
+    secret: test_sk_ex6BJqwe
 
 
 
