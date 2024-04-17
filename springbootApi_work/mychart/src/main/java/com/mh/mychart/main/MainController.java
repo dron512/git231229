@@ -36,8 +36,10 @@ public class MainController {
 
     @GetMapping("oauth/kakao/callback")
     public String kakaoCallback(String code){
+
         kakaoService.getKakaoToken(code);
-        String redirectTo = "http://localhost:3000?accessToken=asdfasdf&refeshToken=asdcflkjqnwc"; // 클라이언트 주소
+
+        String redirectTo = "http://localhost:3000"; // 클라이언트 주소
 
         return "redirect:" + redirectTo;
     }

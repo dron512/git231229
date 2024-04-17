@@ -2,6 +2,27 @@ import aaa from './aaa.jpg';
 import './App.css';
 
 import React, { useEffect, useState } from 'react';
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { CheckoutPage } from './Checkout.jsx';
+import { SuccessPage } from './Success.jsx';
+import { FailPage } from './Fail.jsx';
+import './style.css';
+
+const router = createBrowserRouter([
+  {
+    path: "/sandbox",
+    element: <CheckoutPage />,
+  },
+  {
+    path: "/sandbox/success",
+    element: <SuccessPage />,
+  },
+  {
+    path: "/sandbox/fail",
+    element: <FailPage />,
+  },
+]);
 
 function App() {
 
@@ -40,7 +61,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1></h1>
+      <RouterProvider router={router} />
       <header className="App-header">
         <img src={aaa} className="App-logo" alt="logo" />
         <button onClick={newItem}>AddItem</button>
