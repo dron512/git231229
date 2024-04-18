@@ -44,19 +44,20 @@ const MainRcItem = () => {
   };
   // 패스이동 =========================================
   useEffect(() => {
+    console.log("MainRcItem");
     // 데이터 연동 처리 결과
+
     const successFn = result => {
       setData(result);
       // console.log(result);
     };
-    const failFn = result => {
-      // console.log(result);
+    const failFn = result => {  // console.log(result);  
     };
-    const errorFn = result => {
-      // console.log("에러에옹", result);
+    const errorFn = result => {  // console.log("에러에옹", result);
     };
     getPoPNewList({ successFn, failFn, errorFn });
   }, []);
+  
   if (!setData) {
     return <p>Loading...</p>;
   }
@@ -117,7 +118,7 @@ const MainRcItem = () => {
                         src={
                           item.repPic === ""
                             ? process.env.PUBLIC_URL +
-                              "/assets/images/defaultitemimg.svg"
+                            "/assets/images/defaultitemimg.svg"
                             : `${API_SERVER_HOST}/pic/product/${item.iproduct}/${item.repPic}`
                         }
                         alt={item.productNm}
@@ -221,7 +222,7 @@ const MainRcItem = () => {
                         src={
                           item.repPic === ""
                             ? process.env.PUBLIC_URL +
-                              "/assets/images/defaultitemimg.svg"
+                            "/assets/images/defaultitemimg.svg"
                             : `${API_SERVER_HOST}/pic/product/${item.iproduct}/${item.repPic}`
                         }
                       />

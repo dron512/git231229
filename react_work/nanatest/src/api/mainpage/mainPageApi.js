@@ -2,7 +2,7 @@ import axios from "axios";
 import { API_SERVER_HOST } from "../../util/util";
 import jwtAxios from "../../util/jwtUtil";
 
-const host = `${API_SERVER_HOST}/api/product`;
+const host = `http://112.222.157.156:5223/api/product`;
 
 // 비로그인 추천상품 가져오기
 // http://192.168.0.144:5223/api/product/main
@@ -41,9 +41,13 @@ export const getAfterList = async ({ successFn, failFn, errorFn }) => {
 // http://192.168.0.144:5223/api/product/pop-new-product
 export const getPoPNewList = async ({ successFn, failFn, errorFn }) => {
   try {
+    console.log(`${host}/pop-new-product`);
+
     // const header = { headers: { "Content-Type": "application/json" } };
     const res = await axios.get(`${host}/pop-new-product`);
     // const res = await jwtAxios.get(`${host}/main`, header);
+
+    // ResposeEntity.httsStatus(200)
     const status = res.status.toString();
     if (status.charAt(0) === "2") {
       successFn(res.data);
