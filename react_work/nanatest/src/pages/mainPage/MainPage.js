@@ -7,6 +7,7 @@ import MainLoginSwiper from "../../components/mainpage/MainLoginSwiper";
 
 const MainPage = () => {
   const { isLogin } = useCustomLogin();
+  console.log("API_SERVER_HOST"+API_SERVER_HOST);
   return (
     <div>
       <MainSwiper />

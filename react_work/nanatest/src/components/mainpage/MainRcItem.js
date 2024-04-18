@@ -39,6 +39,7 @@ const MainRcItem = () => {
   const swiperRef = useRef(null);
   // 패스이동 =========================================
   const { moveToPath, moveToObj, page } = useCustomLogin();
+
   const moveToProduct = item => {
     moveToObj(`/item/${item.iproduct}?page=1`);
   };
@@ -51,13 +52,13 @@ const MainRcItem = () => {
       setData(result);
       // console.log(result);
     };
-    const failFn = result => {  // console.log(result);  
-    };
-    const errorFn = result => {  // console.log("에러에옹", result);
+    const errorFn = result => { } // console.log("에러에옹", result);
+    const failFn = result => {
+      // console.log(result);
     };
     getPoPNewList({ successFn, failFn, errorFn });
   }, []);
-  
+
   if (!setData) {
     return <p>Loading...</p>;
   }
@@ -123,7 +124,7 @@ const MainRcItem = () => {
                         }
                         alt={item.productNm}
                       />
-                    </ItemImg>
+                    </ItemImg >
                     <ItemDecArea>
                       <ItemTagBoxDiv
                         onClick={() => {
@@ -155,10 +156,10 @@ const MainRcItem = () => {
                       <p>{item.productNm}</p>
                       <b>{item.price.toLocaleString()}원</b>
                     </ItemTitlePrice>
-                  </ItemPacket>
-                </SwiperSlide>
+                  </ItemPacket >
+                </SwiperSlide >
               ))}
-            </Swiper>
+            </Swiper >
             <button className="slide-prev-bt">
               <img
                 src={process.env.PUBLIC_URL + "/assets/images/slidebt.svg"}
@@ -171,11 +172,11 @@ const MainRcItem = () => {
                 alt=""
               />
             </button>
-          </div>
-        </RcSwiperWrap>
-      </div>
+          </div >
+        </RcSwiperWrap >
+      </div >
       {/* 신상품 */}
-      <div>
+      < div >
         <TextArea>
           <span>
             모두가 기다렸던 그 상품 지금 바로 OPEN
@@ -276,9 +277,9 @@ const MainRcItem = () => {
             </button>
           </div>
         </RcSwiperWrap>
-      </div>
+      </div >
       <div style={{ height: "300px" }} />
-    </div>
+    </div >
   );
 };
 export default MainRcItem;
