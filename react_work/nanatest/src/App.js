@@ -1,6 +1,12 @@
 import React, { Suspense, lazy } from "react";
 
 import { Navigate, Route, Routes } from "react-router-dom";
+
+
+import { AA } from "./pages/aa/AA";
+import { BB } from "./pages/bb/BB";
+
+
 import { Wrap } from "./styles/basic";
 import LoginPage from "./pages/LoginPage";
 import CartPage from "./pages/cartpage/CartPage";
@@ -44,6 +50,7 @@ import AppliancesProduct from "./pages/product/AppliancesProduct";
 import CleanProduct from "./pages/product/CleanProduct";
 import Loading from "./components/loading/Loading";
 
+
 const LazyTodoOrderListPage = lazy(() =>
   import("./pages/orderList/OrderListPage"),
 );
@@ -56,6 +63,9 @@ const App = () => {
           {/* <Route path="*" element={<h1>파일이없네요.</h1>}></Route> */}
           {/* <Route path="/intro" element={<Intro />}></Route> */}
           {/* <Route path="/" element={<BasicLayout />}></Route> */}
+          <Route path="/bb" element={<BB/>}></Route>
+          <Route path="/aa" element={<AA/>}></Route>
+
           <Route path="/" element={<MainPage />}></Route>
 
           <Route path="/login" element={<LoginPage />}></Route>
