@@ -46,13 +46,13 @@ public class ItemService {
     }
 
     @Transactional
-    public String save(ItemDto itemDto, MultipartFile[] file){
+    public EntityModel<ItemImgDto> save(ItemDto itemDto, MultipartFile[] file){
 
         Long memberId = ((Member)SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getMemberId();
 
         itemDto.setMember(memberRepository.findById(memberId).get());
         Item item = itemRepository.save(itemDto.toEntity());
-
+        EntityModel<ItemImgDto> link = EntityModel.of(ItemImgDto.builder().build());
         try {
             // 업로드된 파일을 저장
             for(MultipartFile f : file){
@@ -65,10 +65,9 @@ public class ItemService {
                         .imgUrl(filePath)
                         .build());
 
-                EntityModel<ItemImgDto> link =  entityModel.add(WebMvcLinkBuilder.linkTo(
+                link =  entityModel.add(WebMvcLinkBuilder.linkTo(
                                 WebMvcLinkBuilder.methodOn(ImgFileController.class).getImage(fileName))
                         .withRel("file"));
-                System.out.println(link);
 
                 itemImgRepository.save(ItemImg.builder()
                         .item(item)
@@ -76,12 +75,12 @@ public class ItemService {
                         .imgUrl(link.getLinks().toList().get(0).getHref())
                         .build());
             }
+            return link;
         } catch (IOException e) {
             e.printStackTrace();
-            return "fail";
+            return null;
         }
 
-        return "success";
     }
 
     public ItemDto getItem(Long id) {

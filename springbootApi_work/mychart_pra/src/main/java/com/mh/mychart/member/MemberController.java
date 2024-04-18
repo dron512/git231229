@@ -1,6 +1,7 @@
 package com.mh.mychart.member;
 
 import com.mh.mychart.base.constenum.Role;
+import com.mh.mychart.config.token.TokenManager;
 import com.mh.mychart.kakao.KakaoTokenClient;
 import com.mh.mychart.kakao.KakaoTokenDto;
 import com.mh.mychart.kakao.KakaoUserInfoClient;
@@ -19,12 +20,18 @@ public class MemberController {
     private final KakaoUserInfoClient kakaoUserInfoClient;
 
     private final MemberService memberService;
+    private final TokenManager tokenManager;
 
     @Value("${kakao.client.id}")
     private String clientId;
 
     @Value("${kakao.client.secret}")
     private String clientSecret;
+
+    @GetMapping("test/token")
+    public String getToken(){
+        return tokenManager.generateToken(Member.builder().memberId(1L).username("test").role(Role.USER).email("aaa@naver.com").build());
+    }
 
     @GetMapping("oauth/kakao/callback")
     public String kakaoCallback(String code) {

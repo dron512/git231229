@@ -1,6 +1,7 @@
 package com.mh.mychart.item;
 
 import com.mh.mychart.item.dto.ItemDto;
+import com.mh.mychart.item.dto.ItemImgDto;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.io.Resource;
@@ -31,7 +32,7 @@ public class ItemController {
 
     @PostMapping(value = "/new", produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public ResponseEntity<String> handleFileUpload(@RequestPart(value = "file", required = true) MultipartFile[] file,
+    public EntityModel<ItemImgDto> handleFileUpload(@RequestPart(value = "files", required = true) MultipartFile[] file,
                                                  @RequestPart(value = "itemDto", required = false) ItemDto itemDto,
                                                  Principal principal){
 
@@ -39,13 +40,12 @@ public class ItemController {
         System.out.println(principal.getName());
 
         if (file[0].isEmpty()) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("file is empty");
+            return EntityModel.of(null);
         }
 
-        String result = itemService.save(itemDto, file);
+        EntityModel<ItemImgDto> entityModel = itemService.save(itemDto, file);
 
-//        EntityModel<ItemDto> entityModel = EntityModel.of(responseItemDto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(result);
+        return entityModel;
     }
 
     @GetMapping("/get/{id}")
