@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { getLottoNumber } from '../api/home/homePageApi';
-import jwtAxios from '../../../study/src/api/jwtAxios/jwtAxios';
 
 const Home = () => {
     const initData = {
