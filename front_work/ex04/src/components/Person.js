@@ -12,10 +12,20 @@ const getPeson = async () => {
     return result.data;
 }
 
+const getData = async () => {
+    console.log('getData');
+    const id = parseInt(Math.random() * 3 + 1);
+
+    const result = await axios.get(`http://www.grencoffee.store/user/`);
+    console.log(result);
+    return result.data;
+}
+
 const Person = ({ name: personname, age: paramage }) => {
     console.log('Person');
     const [age, setAge] = useState(paramage);
     const [name, setName] = useState(personname);
+    const [data,setData] = useState("초기값");
     const addAge = () => {
         setAge(age + 1);
     }
@@ -23,6 +33,7 @@ const Person = ({ name: personname, age: paramage }) => {
         setAge(age - 1);
     }
     return (<>
+        <h1>{data}</h1>
         <h1>Person</h1>
         <h2>이름 = {name}</h2>
         <h2>나이 = {age}</h2>
@@ -33,6 +44,10 @@ const Person = ({ name: personname, age: paramage }) => {
             const data = await getPeson();
             setAge(data.age);
             setName(data.name);
+        }}>가져오기</button>
+        <button onClick={async () => {
+            const data = await getData();
+            setData(data);
         }}>가져오기</button>
     </>);
 }
