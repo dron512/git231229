@@ -1,0 +1,13 @@
+ kubeadm init --apiserver-advertise-address $(hostname -i) --pod-network-cidr 10.5.0.0/16
+
+
+ kubectl apply -f https://raw.githubusercontent.com/cloudnativelabs/kube-router/master/daemonset/kubeadm-kuberouter.yaml
+
+
+ kubectl apply -f https://raw.githubusercontent.com/kubernetes/website/master/content/en/examples/application/nginx-app.yaml
+
+
+ kubeadm join 192.168.0.18:6443 --token qqfxuo.as89bm49ozovymzl \
+        --discovery-token-ca-cert-hash sha256:acb059af391f5443cf6028d1c93c7a40411ed98024eafe8ecc56930bed0bfff3 
+
+
