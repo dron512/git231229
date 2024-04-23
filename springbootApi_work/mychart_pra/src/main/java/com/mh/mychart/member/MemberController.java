@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.openfeign.SpringQueryMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -31,6 +32,12 @@ public class MemberController {
     @GetMapping("test/token")
     public String getToken(){
         return tokenManager.generateToken(Member.builder().memberId(1L).username("test").role(Role.USER).email("aaa@naver.com").build());
+    }
+
+    @GetMapping("test/validate")
+    public String validateToken(@RequestHeader("Authorization") String token){
+        token = token.replace("Bearer ", "");
+        return tokenManager.validateToken(token).getBody().toString();
     }
 
     @GetMapping("oauth/kakao/callback")

@@ -39,7 +39,7 @@ const MultipleFileUploader = () => {
         const result = await axios.post('/api/item/new', formData, {
           headers: {
             "Content-Type": "multipart/form-data",
-            "Authorization": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtaFRva2VuIiwiaWQiOjEsInVzZXJuYW1lIjoidGVzdCIsInJvbGUiOiJVU0VSIiwiZW1haWwiOiJhYWFAbmF2ZXIuY29tIiwiZXhwIjoxNzEzNDQxOTE5fQ.Ff8UBe7VLulOORxaULjW6siWT6Z5VZO_zGIn4cLQeFhk7Ak31Dqi-Y-MlJD7QVzc",
+            "Authorization": "Bearer "+localStorage.getItem('accessToken')
           }
         });
 

@@ -5,8 +5,6 @@ import { Button, IconButton } from '@mui/material';
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-
-
 const BaiscLayout = ({ children }) => {
 
     const navigate = useNavigate();
@@ -41,6 +39,8 @@ const BaiscLayout = ({ children }) => {
                 <Link to="/about">About</Link>
                 <Link to="/contact">Contact</Link>
                 <Link to="/filesupload">files</Link>
+                <Link to="/login/login">login</Link>
+                <Link to="/login/mypage">mypage</Link>
             </div>
         </>
     );
