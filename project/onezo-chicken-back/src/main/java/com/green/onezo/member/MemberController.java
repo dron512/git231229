@@ -30,6 +30,8 @@ public class MemberController {
             @RequestBody @Valid MemberDTO memberDTO
 //            BindingResult bindingResult
     ) {
+        System.out.println("일로오나");
+
 //        if(bindingResult.hasErrors()){
 //            // memberDto 유효성이 안맞아서 hasError가 되면
 //            // 프론트 쪽에다가 memberDTO
