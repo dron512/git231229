@@ -17,6 +17,8 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class MemberService {
     private final MemberRepository memberRepository;
+
+
 //    private PasswordEncoder passwordEncoder;
     //회원가입 signUp
     @Transactional
