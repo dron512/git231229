@@ -18,6 +18,7 @@ public class Member {
     @Column(name = "id", nullable = false)
     private Long id;
 
+    @Column(unique = true)
     private String email;
     private String nickname;
     private String profileImageUrl;
