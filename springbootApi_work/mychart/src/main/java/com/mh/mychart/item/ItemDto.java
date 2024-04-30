@@ -1,5 +1,6 @@
 package com.mh.mychart.item;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,5 +13,6 @@ import lombok.NoArgsConstructor;
 public class ItemDto {
 
     private String itemNm;
+
     private int price;
 }
