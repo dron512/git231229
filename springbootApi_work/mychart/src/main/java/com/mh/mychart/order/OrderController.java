@@ -2,10 +2,7 @@ package com.mh.mychart.order;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
@@ -21,9 +18,9 @@ public class OrderController {
         System.out.println("new order");
     }
 
-    @GetMapping("getOrder")
-    public ResponseEntity<Order> getOrder() {
-        Optional<Order> order = orderService.getOrder();
+    @GetMapping("/getorder/{orderId}")
+    public ResponseEntity<Order> getOrder(@PathVariable long orderId) {
+        Optional<Order> order = orderService.getOrder(orderId);
         if(order.isPresent())
             return ResponseEntity.ok().body(order.get());
         return ResponseEntity.notFound().build();

@@ -50,8 +50,9 @@ dependencies {
 	annotationProcessor "jakarta.persistence:jakarta.persistence-api"
 
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
-
 }
+
+// gradle compile
 
 // Querydsl 설정부
 def generated = 'src/main/generated'

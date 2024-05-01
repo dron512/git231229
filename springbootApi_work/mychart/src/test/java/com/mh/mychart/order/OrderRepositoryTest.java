@@ -2,8 +2,10 @@ package com.mh.mychart.order;
 
 import com.mh.mychart.item.Item;
 import com.mh.mychart.item.ItemRepository;
+import com.mh.mychart.item.QItem;
 import com.mh.mychart.member.Member;
 import com.mh.mychart.member.MemberRepository;
+import com.mh.mychart.member.QMember;
 import com.mh.mychart.order.orderitem.OrderItem;
 import com.mh.mychart.order.orderitem.OrderItemRepository;
 import com.mh.mychart.order.orderitem.QOrderItem;
@@ -11,6 +13,8 @@ import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.PersistenceContexts;
+import jakarta.transaction.Transactional;
+import org.aspectj.weaver.ast.Or;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -37,11 +41,11 @@ class OrderRepositoryTest {
     @Autowired
     private OrderItemRepository orderItemRepository;
 
-    @PersistenceContext
-    EntityManager entityManager;
+//    @PersistenceContext
+//    EntityManager entityManager;
 
+    @Autowired
     private JPAQueryFactory queryFactory;
-
 
     @BeforeEach
     public void setUp(){
@@ -49,6 +53,7 @@ class OrderRepositoryTest {
 
     @Test
     @DisplayName("주문생성")
+//    @Transactional
     public void newOrder(){
 //        Optional<Member> member = memberRepository.findById(1l);
 //        if(member.isEmpty()) {
@@ -105,7 +110,7 @@ class OrderRepositoryTest {
     @DisplayName("주문Item삭제")
     public void deleteItems(){
 
-        Optional<Order> order = orderRepository.findById(6l);
+        Optional<Order> order = orderRepository.findById(8l);
 
         order.ifPresent(ord->{
             orderRepository.delete(ord);
@@ -117,47 +122,54 @@ class OrderRepositoryTest {
     @Test
     @DisplayName("주문리스트select")
     public void selectOrder(){
-
-        queryFactory = new JPAQueryFactory(entityManager);
-
         QOrder qOrder = QOrder.order;
         QOrderItem qOrderItem = QOrderItem.orderItem;
+        QItem qItem = QItem.item;
+        QMember qMember = QMember.member;
 
-        List<Order> orders = queryFactory
-                .selectFrom(qOrder)
-                .leftJoin(qOrder.orderItems, qOrderItem).fetchJoin()
+        List<Order> orderList = queryFactory.selectFrom(qOrder)
+                .leftJoin(qMember)
+                .on(qMember.id.eq(qOrder.member.id))
+                .leftJoin(qOrderItem)
+                .on(qOrder.orderId.eq(qOrderItem.order.orderId))
+                .leftJoin(qItem)
+                .on(qOrderItem.item.id.eq(qItem.id))
+                .where(qMember.id.eq(1l))
+                .offset(0)
+                .limit(3)
+                .orderBy(qOrder.orderId.desc())
                 .fetch();
-        System.out.println(orders.size());
-        orders.forEach(order -> {
-            System.out.println(order.getOrderName());
-            order.getOrderItems().forEach(orderItem -> {
-                System.out.println(orderItem.getOrderItemName());
-            });
-        });
+
+
+        orderList.forEach(
+                order -> {
+                    System.out.println(order.getMember());
+                    System.out.println(order.getOrderId());
+                    System.out.println(order.getOrderName());
+                    List<OrderItem> list = order.getOrderItems();
+                    list.forEach(item->{
+                        System.out.println(item.getOrderItemName());
+                        System.out.println(item.getOrderItemPrice());
+                    });
+                }
+        );
     }
 
     @Test
     @DisplayName("주문하나select")
     public void selectOneOrder(){
-        queryFactory = new JPAQueryFactory(entityManager);
+        Order order = orderRepository.findById(8l).orElse(null);
 
-        QOrder qOrder = QOrder.order;
-        QOrderItem qOrderItem = QOrderItem.orderItem;
+        System.out.println(order.getOrderItems().size());
+        System.out.println(order.getOrderName());
+        System.out.println(order.getMember());
 
-        List<Order> orders = queryFactory
-                .selectFrom(qOrder)
-                .leftJoin(qOrder.orderItems, qOrderItem).fetchJoin()
-                .where(qOrder.orderId.eq(8l))
-                .fetch();
-        System.out.println(orders.size());
-        orders.forEach(order -> {
-            System.out.println(order.getOrderName());
-            order.getOrderItems().forEach(orderItem -> {
-                System.out.println(orderItem.getOrderItemName());
-                System.out.println(orderItem.getOrderItemPrice());
-            });
-        });
-
+        List<OrderItem> orderItems = order.getOrderItems();
+        for (OrderItem orderItem : orderItems) {
+            System.out.println(orderItem.getOrderItemName());
+            System.out.println(orderItem.getOrderItemPrice());
+            System.out.println(orderItem.getOrderItemQuantity());
+        }
     }
 
     @AfterEach
@@ -165,3 +177,18 @@ class OrderRepositoryTest {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

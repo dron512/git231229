@@ -34,10 +34,9 @@ public class Order {
     // OneToMany 는 select 두번 한다.. 나중에 취야는 전략
     // OrderItem casecade
     @OneToMany(mappedBy = "order",
-                    fetch = FetchType.LAZY, // select
+                    fetch = FetchType.EAGER, // select
                     cascade = CascadeType.ALL // item저장
                  , orphanRemoval = true// 고아객체제거
     )
     private List<OrderItem> orderItems = new ArrayList<>();
-
 }

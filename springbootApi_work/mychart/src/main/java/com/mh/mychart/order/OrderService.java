@@ -15,9 +15,9 @@ public class OrderService {
         System.out.println("new order");
     }
 
-    public Optional<Order> getOrder() {
+    public Optional<Order> getOrder(long orderId) {
         System.out.println("get order");
-        return orderRepository.findById(8l);
+        return orderRepository.findById(orderId);
     }
 
 }
