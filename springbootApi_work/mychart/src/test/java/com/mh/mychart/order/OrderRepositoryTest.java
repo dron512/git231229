@@ -140,7 +140,6 @@ class OrderRepositoryTest {
                 .orderBy(qOrder.orderId.desc())
                 .fetch();
 
-
         orderList.forEach(
                 order -> {
                     System.out.println(order.getMember());

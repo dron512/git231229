@@ -1,0 +1,15 @@
+services:
+  server:
+    container_name: server
+    image: gradle:jdk19
+    restart: always
+    ports:
+      - 8080:8080
+      - 8081:8081
+      - 8082:8082
+    volumes:
+      - ./server:/workspace
+    environment:
+      - TZ=Asia/Seoul
+      - LC_ALL:en_US.UTF-8
+    command: sleep infinity

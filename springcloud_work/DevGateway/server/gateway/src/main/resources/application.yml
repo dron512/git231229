@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: folder-gateway
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: folder-api1
+#          uri: http://localhost:8081
+#          predicates:
+#            - Path=/api1/**
+#          filters:
+#            - ApiFilter
+
+#        - id: folder-api2
+#          uri: http://localhost:8082
+#          predicates:
+#            - Path=/api2/**
+
+
+server:
+  port: 8080
