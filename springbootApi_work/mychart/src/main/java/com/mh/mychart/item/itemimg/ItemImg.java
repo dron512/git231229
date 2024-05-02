@@ -1,6 +1,6 @@
-package com.mh.mychart.item;
+package com.mh.mychart.item.itemimg;
 
-import com.mh.mychart.member.Member;
+import com.mh.mychart.item.Item;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,16 +9,21 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class Item {
+public class ItemImg{
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "item_id", nullable = false)
+    @Column(name = "item_img_id", nullable = false)
     private Long id;
 
-    private String name;
-    private int price;
+    private String imgPath;
+
+    @ManyToOne
+    @JoinColumn(name = "item_id")
+    Item item;
 
 }
+

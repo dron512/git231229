@@ -24,13 +24,13 @@ public class MainController {
 
     @GetMapping("/container")
     public String container(Model model){
-        List<ItemDto> list =
-                Arrays.asList(
-                    new ItemDto("아메리카노",2000),
-                    new ItemDto("카페라떼",3000),
-                    new ItemDto("카푸치노",3500)
-                );
-        model.addAttribute("list",list);
+        // List<ItemDto> list =
+        //         Arrays.asList(
+        //             new ItemDto("아메리카노",2000),
+        //             new ItemDto("카페라떼",3000),
+        //             new ItemDto("카푸치노",3500)
+        //         );
+        // model.addAttribute("list",list);
         return "container";
     }
 

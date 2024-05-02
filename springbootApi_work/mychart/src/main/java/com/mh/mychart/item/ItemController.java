@@ -1,27 +1,66 @@
 package com.mh.mychart.item;
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
-/*
-    react 에서 item 추가
-    스프링부트 item 추가 해서 mysql DB 저장하는거
-    카카오
- */
+import jakarta.validation.Valid;
+
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 @RestController
 @RequestMapping("api/item")
+@RequiredArgsConstructor
 public class ItemController {
 
-    @PostMapping("/new")
-    public ResponseEntity<ItemDto> newItem(Item item) {
-        System.out.println("new item");
+    private final ItemService itemService;
+
+    @PostMapping(value = "/new",
+                                    produces = MediaType.APPLICATION_JSON_VALUE,
+                                    consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<String> newItem(
+        @RequestPart ItemDto itemDto,
+        @RequestPart("files") MultipartFile[] files
+        ) throws IOException {
+
+        if(files[0] == null)
+            return  ResponseEntity
+                    .status( HttpStatus.NOT_ACCEPTABLE )
+                    .body( "상품 이미지를 한 개 등록하세요");
+
+        itemService.addItem(itemDto,files);
+
         return ResponseEntity
                 .status( HttpStatus.OK )
-                .body( new ItemDto("아메리카노", 2000) );
+                .body( "저장하였습니다.");
+    }
+
+
+    // 유효성 검사랑, 아이템 수정 처리 해야함.
+    // baseEntity로 시간 넣어야함.
+
+    @GetMapping("download/{fileName}")
+    public ResponseEntity<Resource> getImage(@PathVariable String fileName){
+        Path imagesStorageLocation = Paths.get("images/item").toAbsolutePath().normalize();
+        try{
+            Path filePath = imagesStorageLocation.resolve(fileName);
+            Resource resource = new UrlResource(filePath.toUri());
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
+                    .body(resource);
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
+        }
     }
 
 }
