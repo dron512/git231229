@@ -1,0 +1,56 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-ConfigApplication<config>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.folder.config.ConfigApplication",
+      "projectName": "config",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=40925 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=config"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-EurekaApplication<eureka>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.folder.eureka.EurekaApplication",
+      "projectName": "eureka",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=38267 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=eureka"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-App1Application<app1>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.folder.app.App1Application",
+      "projectName": "app1",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-App2Application<app2>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.folder.app.App2Application",
+      "projectName": "app2",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-GatewayApplication<gateway>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.folder.gateway.GatewayApplication",
+      "projectName": "gateway",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

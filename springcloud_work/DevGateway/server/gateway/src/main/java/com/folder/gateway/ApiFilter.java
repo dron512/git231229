@@ -32,7 +32,6 @@ public class ApiFilter extends AbstractGatewayFilterFactory<ApiFilter.Config> {
         URI uri = request.getURI();
         HttpStatusCode status = response.getStatusCode();
 
-
         log.info("[API 필터] 요청 -> IP : {}, PORT : {}, PATH : {}", address, uri.getPort(), uri.getPath());
 
         request.getHeaders().forEach( (key, value) -> {
@@ -40,9 +39,7 @@ public class ApiFilter extends AbstractGatewayFilterFactory<ApiFilter.Config> {
         });
 
         return chain.filter(exchange).then(Mono.fromRunnable(() -> {
-
           log.info("[API 필터] 응답 -> URI : {}, 응답코드 : {}", uri, status);
-
           response.getHeaders().forEach( (key, value) -> {
             log.info("[응답 Header] {} : {}", key, value);
           });

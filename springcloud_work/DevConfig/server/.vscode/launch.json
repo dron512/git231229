@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-ConfigApplication<config>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.folder.config.ConfigApplication",
+      "projectName": "config",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=36221 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=config"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-App1Application<app1>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.folder.app.App1Application",
+      "projectName": "app1",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

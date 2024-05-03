@@ -1,0 +1,58 @@
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+#      globalcors:
+#        cors-configurations:
+#          '[/**]':
+#            allowedOrigins: "http://localhost:80"
+#            allow-credentials: true
+#            allowedHeaders: '*'
+#            allowedMethods:
+#              - PUT
+#              - GET
+#              - POST
+#              - DELETE
+#              - OPTIONS
+      routes:
+        - id: folder-api
+          uri: lb://folder-api
+          predicates:
+            - Path=/api/**
+          filters:
+            - ApiFilter
+        - id: folder-api-auth
+          uri: lb://folder-api
+          predicates:
+            - Path=/auth/**
+          filters:
+            - AuthFilter
+          metadata:
+            cors:
+              allowedOrigins: '*'
+              allowedMethods:
+                - GET
+                - POST
+              allowedHeaders: '*'
+              maxAge: 30
+
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://server:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, refresh
+
+server:
+  port: 8080
+
+jwt:
+  key: c2hlbGxmb2xkZXIxMjM0NTY3ODlEZXZKV1QxMjM0NTY3ODk=
+  type: Bearer

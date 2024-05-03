@@ -15,6 +15,7 @@ import jakarta.validation.Valid;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 
 @RestController
 @RequestMapping("api/item")
@@ -27,7 +28,7 @@ public class ItemController {
                                     produces = MediaType.APPLICATION_JSON_VALUE,
                                     consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<String> newItem(
-        @RequestPart ItemDto itemDto,
+        @Valid @RequestPart ItemDto itemDto,
         @RequestPart("files") MultipartFile[] files
         ) throws IOException {
 
@@ -36,11 +37,16 @@ public class ItemController {
                     .status( HttpStatus.NOT_ACCEPTABLE )
                     .body( "상품 이미지를 한 개 등록하세요");
 
-        itemService.addItem(itemDto,files);
+        boolean result = itemService.addItem(itemDto,files);
 
-        return ResponseEntity
-                .status( HttpStatus.OK )
-                .body( "저장하였습니다.");
+        if(result)
+            return ResponseEntity
+                    .status( HttpStatus.OK )
+                    .body( "저장하였습니다.");
+        else
+            return ResponseEntity
+                    .status( HttpStatus.NOT_ACCEPTABLE )
+                    .body( "중복입니다..");
     }
 
 
@@ -63,4 +69,18 @@ public class ItemController {
         }
     }
 
+    @GetMapping("list")
+    public ResponseEntity<List<ItemResDto>> getItemList(){
+        List<ItemResDto> list = itemService.listItem();
+        return ResponseEntity.ok(list);
+    }
+
 }
+
+
+
+
+
+
+
+

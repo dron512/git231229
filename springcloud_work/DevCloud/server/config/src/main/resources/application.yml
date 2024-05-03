@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: folder-config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///workspace/config-repository
+
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://server:8761/eureka/
+
+server:
+  port: 8888

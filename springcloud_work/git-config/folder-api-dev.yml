@@ -1,0 +1,10 @@
+server:
+  port: 8082
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, refresh
+
+user.message: Remote Development Profiles

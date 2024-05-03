@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: folder-config
+
+#  profiles:
+#    active: native
+  cloud:
+    config:
+      server:
+#        native:
+#          search-locations: file:///workspace/native-config
+
+        git:
+#          uri: file:///workspace/git-config
+          uri: https://github.com/vignekim/git-config.git
+          default-label: main
+
+
+server:
+  port: 8888

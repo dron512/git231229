@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: folder-gateway
+  cloud:
+    gateway:
+      routes:
+#        - id: folder-api1
+#          uri: http://localhost:8081
+#          predicates:
+#            - Path=/api1/**
+#          filters:
+#            - ApiFilter
+
+#        - id: folder-api2
+#          uri: http://localhost:8082
+#          predicates:
+#            - Path=/api2/**
+        - id: folder-api
+          uri: lb://folder-api
+          predicates:
+            - Path=/api/**
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://server:8761/eureka/
+
+server:
+  port: 8080

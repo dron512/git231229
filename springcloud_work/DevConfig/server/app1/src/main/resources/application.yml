@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: folder-api
+
+  profiles:
+    active: dev
+
+  config:
+    import: optional:configserver:http://server:8888
+
+#spring.cloud.config.enabled: false
+
+server:
+  port: 8081

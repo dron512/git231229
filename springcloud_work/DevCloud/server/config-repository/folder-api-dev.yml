@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://db:3306/edu
+    username: folder
+    password: 1234
+
+  servlet:
+    multipart:
+      maxFileSize: 50MB
+      maxRequestSize: 50MB
+
+mybatis.mapper-locations: classpath:sql/**.xml
+
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${random.value}
+  client:
+    serviceUrl:
+      defaultZone: http://server:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, refresh
+
+server:
+  port: 0
+
+jwt:
+  key: c2hlbGxmb2xkZXIxMjM0NTY3ODlEZXZKV1QxMjM0NTY3ODk=
+  type: Bearer

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: folder-eureka
+  profiles:
+    active: dev
+  cloud:
+    config:
+      enabled: false
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, refresh
+
+server:
+  port: 8761

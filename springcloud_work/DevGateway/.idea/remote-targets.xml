@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <targets>
+      <target name="server" type="docker-compose" uuid="8e72b3f1-5719-4b9f-b84d-852bc5df8840">
+        <config>
+          <option name="targetPlatform">
+            <TargetPlatform />
+          </option>
+          <option name="configurationFiles">
+            <list>
+              <option value="D:\students\springcloud_work\DevGateway\compose.yml" />
+            </list>
+          </option>
+          <option name="serviceName" value="server" />
+        </config>
+        <ContributedStateBase type="GradleRuntime">
+          <config />
+        </ContributedStateBase>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config>
+            <option name="homePath" value="C:\Program Files\Java\jdk-17" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>

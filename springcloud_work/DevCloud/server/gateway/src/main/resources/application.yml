@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: folder-gateway
+  profiles:
+    active: dev
+  config:
+    import: optional:configserver:http://server:8888

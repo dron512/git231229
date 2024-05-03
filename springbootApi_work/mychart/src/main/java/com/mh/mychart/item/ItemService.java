@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ItemService {
@@ -31,31 +33,53 @@ public class ItemService {
         System.out.println(imageStorageLocation);
     }
 
-    public void addItem(ItemDto itemDto, MultipartFile[] files) throws IOException {
-
-//        Item item = new ModelMap
-        Item item = Item.builder()
-                .price(itemDto.getPrice())
-                .name(itemDto.getItemNm())
-                .build();
-        // 하나 생성
-        Item dbItem = itemRepository.save(item);
-
-        for(MultipartFile file:files){
-            // 파일 경로와 파일 이름 생성
-            String fileName = file.getOriginalFilename();
-            String filePath = imageStorageLocation +"/"+fileName;
-            // 파일 저장 images/item
-            File dest = new File(filePath);
-            file.transferTo(dest);
-            
-            // Itemimg 행저장
-            ItemImg itemImg = ItemImg.builder()
-                    .item(dbItem)
-                    .imgPath(fileName)
-                    .build();
-            itemImgRepository.save(itemImg);
+    public boolean addItem(ItemDto itemDto, MultipartFile[] files) throws IOException {
+        Optional<Item> dbItem = itemRepository.findByName(itemDto.getItemNm());
+        if(dbItem.isPresent()){
+            return false;
         }
+        if(dbItem.isEmpty()) {
+            Item item = Item.builder()
+                    .price(itemDto.getPrice())
+                    .name(itemDto.getItemNm())
+                    .build();
 
+            Item insertedItem = itemRepository.save(item);
+
+            for (MultipartFile file : files) {
+                String fileName = file.getOriginalFilename();
+                String filePath = imageStorageLocation + "/" + fileName;
+                File dest = new File(filePath);
+                file.transferTo(dest);
+
+                ItemImg itemImg = ItemImg.builder()
+                        .item(insertedItem)
+                        .imgPath(fileName)
+                        .build();
+                itemImgRepository.save(itemImg);
+            }
+        }
+        return true;
+    }
+
+
+    public List<ItemResDto> listItem() {
+        itemRepository.getItemList();
+        return null;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

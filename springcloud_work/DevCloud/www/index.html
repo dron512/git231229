@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/logo.png">
+  <title>JWT</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="app">
+    <main>
+      <h1>Hello JWT!</h1>
+      <div class="body" v-if="view == 1">
+        <hr>
+        <h2>Token Authorize</h2>
+        <form @submit.prevent="authorize">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="키를 입력하세요." v-model="key" />
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn" value="생성" />
+          </div>
+        </form>
+      </div>
+      <div class="body" v-if="view == 2">
+        <hr>
+        <h2>Token Verification</h2>
+        <div>
+          <p>Token :</p>
+          <textarea class="token" cols="30" rows="12" v-model="auth.token"></textarea>
+          <form @submit.prevent="verification" >
+            <div class="form-group">
+              <input type="hidden" class="form-control" placeholder="Token를 입력하세요." readonly v-model="auth.token" />
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn" value="검증" />
+            </div>
+          </form>
+        </div>
+        <div v-if="auth.payload.name">
+          <div class="token-body">
+            <h3>Header</h3>
+            <p>Algorithm : <span class="token">{{ auth.header.algorithm }}</span></p>
+            <p>Type : <span class="token">{{ auth.header.type }}</span></p>
+          </div>
+          <div class="token-body">
+            <h3>Payload</h3>
+            <p>No : <span class="token">{{ auth.payload.no }}</span></p>
+            <p>Name : <span class="token">{{ auth.payload.name }}</span></p>
+          </div>
+          <div>
+            <button class="btn" @click="clean">초기화</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="importmap">
+    {
+      "imports": {
+        "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js",
+        "axios": "https://cdn.jsdelivr.net/npm/axios@1.3.5/+esm",
+        "app": "/App.js"
+      }
+    }
+  </script>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
