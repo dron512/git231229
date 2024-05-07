@@ -53,5 +53,5 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.33.2"
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://192.168.0.90:8080/"
 }
