@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("api/item")
@@ -23,6 +24,7 @@ import java.util.List;
 public class ItemController {
 
     private final ItemService itemService;
+    private final ItemRepository itemRepository;
 
     @PostMapping(value = "/new",
                                     produces = MediaType.APPLICATION_JSON_VALUE,
@@ -72,7 +74,25 @@ public class ItemController {
     @GetMapping("list")
     public ResponseEntity<List<ItemResDto>> getItemList(){
         List<ItemResDto> list = itemService.listItem();
-        return ResponseEntity.ok(list);
+        List<Map> list1 = itemRepository.getItemListJPQL();
+        System.out.println(list1);
+        list1.forEach(obj -> {
+            System.out.println(obj.get("name"));
+            System.out.println(obj.get("price"));
+            System.out.println(obj.get("item_id"));
+            System.out.println(obj.get("item_img_id"));
+            System.out.println(obj.get("img_path"));
+        });
+        List<ItemResDto> list2 =list1.stream().map(obj->{
+            return new ItemResDto(
+                    (String)obj.get("name"),
+                    (int)obj.get("price"),
+                    (long)obj.get("item_id"),
+                    (long)obj.get("item_img_id"),
+                    (String)obj.get("img_path")
+            );
+        }).toList();
+        return ResponseEntity.ok(list2);
     }
 
 }

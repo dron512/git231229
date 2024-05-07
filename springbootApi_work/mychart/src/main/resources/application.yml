@@ -43,8 +43,6 @@ kakao:
 toss:
   client:
     secret: test_sk_ex6BJqwe
-server:
-  port: 9000
 
 
 

@@ -64,8 +64,8 @@ public class ItemService {
 
 
     public List<ItemResDto> listItem() {
-        itemRepository.getItemList();
-        return null;
+        List<ItemResDto> list = itemRepository.getItemList();
+        return list;
     }
 }
 
