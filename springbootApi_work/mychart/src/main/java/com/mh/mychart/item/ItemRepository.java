@@ -30,4 +30,5 @@ public interface ItemRepository extends JpaRepository<Item, Long>,
             "    GROUP BY a.item_id ) b"+
             "      where a.item_id = b.item_id",nativeQuery = true)
     List<Map> getItemListJPQL();
+
 }

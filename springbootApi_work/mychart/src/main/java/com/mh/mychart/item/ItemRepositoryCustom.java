@@ -9,4 +9,6 @@ import java.util.Optional;
 
 public interface ItemRepositoryCustom {
     public List<ItemResDto> getItemList();
+
+    public List<ItemResDto> getItemListlazy();
 }

@@ -75,6 +75,7 @@ public class ItemController {
     public ResponseEntity<List<ItemResDto>> getItemList(){
         List<ItemResDto> list = itemService.listItem();
         List<Map> list1 = itemRepository.getItemListJPQL();
+
         System.out.println(list1);
         list1.forEach(obj -> {
             System.out.println(obj.get("name"));
@@ -92,7 +93,7 @@ public class ItemController {
                     (String)obj.get("img_path")
             );
         }).toList();
-        return ResponseEntity.ok(list2);
+        return ResponseEntity.ok(list);
     }
 
 }

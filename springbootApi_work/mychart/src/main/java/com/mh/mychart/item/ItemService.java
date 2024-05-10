@@ -65,7 +65,8 @@ public class ItemService {
 
     public List<ItemResDto> listItem() {
         List<ItemResDto> list = itemRepository.getItemList();
-        return list;
+        List<ItemResDto> lazyList = itemRepository.getItemListlazy();
+        return lazyList;
     }
 }
 
