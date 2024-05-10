@@ -1,7 +1,7 @@
 1조 
 진영호, 정종철
 백엔드 2명
-http://www.green-coffee.shop/swagger-ui/index.html
+http://back.green-coffee.shop/swagger-ui/index.html
 https://github.com/sdqwe12/green-coffee
 
 
