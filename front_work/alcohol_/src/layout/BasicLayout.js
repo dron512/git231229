@@ -10,6 +10,7 @@ const BasicLayout = ({ children }) => {
       </header>
 
       <main>{children}</main>
+      
       <footer>
         <BasicFooter />
       </footer>

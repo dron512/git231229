@@ -11,8 +11,16 @@ import {
 } from "../../styles/product/proWrapCss";
 import ProSearch from "../../components/product/ProSearch";
 import { useLocation, useNavigate } from "react-router-dom";
+import { doA } from "../../api/test";
 
 const ProductPage = () => {
+
+  const getMydata = () => {
+    doA().then((res) => {
+      console.log(res);
+    });
+  }
+
   // side => Param의 숫자인거임
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -59,6 +67,10 @@ const ProductPage = () => {
 
   return (
     <ProductWrap>
+      <div><h1>
+        <button onClick={getMydata}>
+          데이터 가여옴
+        </button></h1></div>
       <SideBar>
         <SideTitle sideTitle="WHISKEY" />
         <hr />

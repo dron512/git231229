@@ -17,6 +17,7 @@ import { RecoilRoot } from "recoil";
 import CartPage from "./pages/cart/CartPage";
 import PaymentPage from "./pages/payment/PaymentPage";
 import OrderPage from "./pages/order/OrderPage";
+import AA from "./pages/test/AA";
 
 const App = () => {
   // const listdata = await getSearchName();
@@ -26,6 +27,7 @@ const App = () => {
     <Wrap maxw={1920}>
       <BasicLayout>
         <Routes>
+          <Route path="/aa" element={<AA/>}></Route>
           <Route path="/" element={<Main />}></Route>
           <Route path="/product" element={<ProductPage />}></Route>
           <Route path="/login" element={<LoginPage />}></Route>
