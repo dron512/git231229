@@ -1,0 +1,17 @@
+
+kubectl apply -f storageClass-local-storage.yaml
+kubectl apply -f pv-mysql.yaml
+kubectl apply -f pvc-mysql.yaml
+kubectl apply -f deployment-mysql.yaml
+kubectl apply -f service-mysql.yaml
+
+
+kubectl create configmap configmap-mysql --from-literal MYSQL_USER=truelifer --from-literal MYSQL_ROOT_HOST=%
+kubectl create secret generic secret-mysql --from-literal MYSQL_PASSWORD=12345 --from-literal MYSQL_ROOT_PASSWORD=12345
+
+
+kubectl delete -f storageClass-local-storage.yaml
+kubectl delete -f pv-mysql.yaml
+kubectl delete -f pvc-mysql.yaml
+kubectl delete -f deployment-mysql.yaml
+kubectl delete -f service-mysql.yaml

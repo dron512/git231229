@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Javadoc Plugin
+Specification-Version: 0.0
+Implementation-Title: Javadoc Plugin
+Implementation-Version: 243.vb_b_503b_b_45537
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: javadoc
+Short-Name: javadoc
+Long-Name: Javadoc Plugin
+Url: https://github.com/jenkinsci/javadoc-plugin
+Plugin-Version: 243.vb_b_503b_b_45537
+Hudson-Version: 2.361.4
+Jenkins-Version: 2.361.4
+Plugin-Developers: 
+Plugin-License-Name: The MIT license
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/javadoc-plugi
+ n.git
+Plugin-ScmTag: bb503bb45537035789a057036a540728128b6db9
+Plugin-ScmUrl: https://github.com/jenkinsci/javadoc-plugin
+Plugin-GitHash: bb503bb45537035789a057036a540728128b6db9
+Implementation-Build: bb503bb45537035789a057036a540728128b6db9
+

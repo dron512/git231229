@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: JSON Path API Plugin
+Specification-Version: 2.9
+Implementation-Title: JSON Path API Plugin
+Implementation-Version: 2.9.0-33.v2527142f2e1d
+Group-Id: io.jenkins.plugins
+Artifact-Id: json-path-api
+Short-Name: json-path-api
+Long-Name: JSON Path API Plugin
+Url: https://github.com/jenkinsci/json-path-api-plugin
+Plugin-Version: 2.9.0-33.v2527142f2e1d
+Hudson-Version: 2.401.3
+Jenkins-Version: 2.401.3
+Plugin-Developers: 
+Support-Dynamic-Loading: true
+Plugin-License-Name: Apache License 2.0
+Plugin-License-Url: https://www.apache.org/licenses/LICENSE-2.0
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/json-path-api
+ -plugin
+Plugin-ScmTag: 2527142f2e1d48862ce4c73d2fd20137463de947
+Plugin-ScmUrl: https://github.com/jenkinsci/json-path-api-plugin
+Plugin-GitHash: 2527142f2e1d48862ce4c73d2fd20137463de947
+Implementation-Build: 2527142f2e1d48862ce4c73d2fd20137463de947
+

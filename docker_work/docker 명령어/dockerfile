@@ -1,0 +1,26 @@
+FROM bellsoft/liberica-openjdk-alpine:17
+# or
+# FROM openjdk:8-jdk-alpine
+# FROM openjdk:11-jdk-alpine
+
+# CMD ["./gradlew", "clean", "build"]
+# or Maven 
+# CMD ["./mvnw clean && ./mvnw", "package","-DskipTests"]
+
+# VOLUME /tmp
+
+# ARG JAR_FILE=build/libs/*.jar
+# or Maven
+# ARG JAR_FILE_PATH=target/*.jar
+
+COPY app.jar app.jar
+
+EXPOSE 8080
+
+# java -jar -Dserver.port=10000 /app.jar
+# dockfile image 
+# docker build -t spring-boot-docker .
+# application-dev.yml
+# java -jar -Dspring.profiles.active=dev your_application.jar
+
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=dev","/app.jar"]

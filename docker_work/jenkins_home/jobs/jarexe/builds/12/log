@@ -1,0 +1,61 @@
+Started by user [8mha:////4LFeTZSAvgHNPMeI7zL//FBZNX/bdWKIySXW1woo98KIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/jarexe
+[jarexe] $ /bin/sh -xe /tmp/jenkins8490994708022228564.sh
++ java -jar -Dserver.port=8181 /var/jenkins_home/workspace/sample/target/app.jar
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2024-03-12T06:13:04.137Z  INFO 2841 --- [           main] com.mh.ex05.Ex05Application              : Starting Ex05Application v0.0.1-SNAPSHOT using Java 17.0.10 with PID 2841 (/var/jenkins_home/workspace/sample/target/app.jar started by root in /var/jenkins_home/workspace/jarexe)
+2024-03-12T06:13:04.144Z  INFO 2841 --- [           main] com.mh.ex05.Ex05Application              : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T06:13:06.695Z  INFO 2841 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-12T06:13:06.871Z  INFO 2841 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 3 JPA repository interfaces.
+2024-03-12T06:13:08.252Z  INFO 2841 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2024-03-12T06:13:08.275Z  INFO 2841 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T06:13:08.275Z  INFO 2841 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-12T06:13:08.430Z  INFO 2841 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-12T06:13:08.431Z  INFO 2841 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4095 ms
+2024-03-12T06:13:08.770Z  INFO 2841 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T06:13:09.462Z  INFO 2841 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:11222701-b6eb-4a65-b0d2-aace839acb35 user=SA
+2024-03-12T06:13:09.467Z  INFO 2841 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T06:13:09.562Z  INFO 2841 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-12T06:13:09.780Z  INFO 2841 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-12T06:13:09.784Z  INFO 2841 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-12T06:13:10.674Z  INFO 2841 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-12T06:13:13.531Z  INFO 2841 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-12T06:13:13.643Z  INFO 2841 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T06:13:14.701Z  WARN 2841 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-12T06:13:16.047Z  INFO 2841 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T06:13:16.474Z  INFO 2841 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a1b8a46, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2921199d, org.springframework.security.web.context.SecurityContextHolderFilter@602f8f94, org.springframework.security.web.header.HeaderWriterFilter@715a70e9, org.springframework.web.filter.CorsFilter@3d40a3b4, org.springframework.security.web.authentication.logout.LogoutFilter@21ae657b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f677247, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4dfe8b37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11dcd42c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f13811b, org.springframework.security.web.access.ExceptionTranslationFilter@5d7d8613, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47829d6d]
+2024-03-12T06:13:17.148Z  WARN 2841 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-03-12T06:13:17.258Z  INFO 2841 --- [cTaskExecutor-1] com.tngtech.archunit.core.PluginLoader   : Detected Java version 17.0.10
+2024-03-12T06:13:18.044Z  INFO 2841 --- [           main] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2024-03-12T06:13:18.046Z  INFO 2841 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T06:13:18.053Z  INFO 2841 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T06:13:18.054Z  INFO 2841 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-12T06:13:18.056Z  INFO 2841 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-12T06:13:18.076Z  INFO 2841 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-12T06:13:18.144Z ERROR 2841 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8181 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8181 or configure this application to listen on another port.
+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

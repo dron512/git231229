@@ -1,0 +1,15 @@
+Started by user [8mha:////4LFeTZSAvgHNPMeI7zL//FBZNX/bdWKIySXW1woo98KIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/jarexe
+[jarexe] $ /bin/sh -xe /tmp/jenkins7394965872088757086.sh
++ /var/jenkins_home/workspace/javastartup.sh
+/var/jenkins_home/workspace/javastartup.sh: 3: disown: not found
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

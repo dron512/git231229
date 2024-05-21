@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='javadoc' version='243.vb_b_503b_b_45537'><l:dependency name='Javadoc Plugin' groupId='org.jenkins-ci.plugins' artifactId='javadoc' version='243.vb_b_503b_b_45537' url='https://github.com/jenkinsci/javadoc-plugin'><l:description>The Jenkins Plugins Parent POM Project</l:description><l:license name='The MIT license' url='https://opensource.org/licenses/MIT'/></l:dependency></l:dependencies>

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: alexc
+Build-Jdk: 1.8.0_151
+Extension-Name: publish-over
+Specification-Title: Send build artifacts somewhere.
+Implementation-Title: publish-over
+Implementation-Version: 0.22
+Group-Id: org.jenkins-ci.plugins
+Short-Name: publish-over
+Long-Name: Infrastructure plugin for Publish Over X
+Plugin-Version: 0.22
+Hudson-Version: 1.625.3
+Jenkins-Version: 1.625.3
+Plugin-Developers: Bap:bap:bap-jenkins@BapIT.co.uk
+Support-Dynamic-Loading: true
+

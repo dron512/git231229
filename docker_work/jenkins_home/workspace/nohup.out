@@ -1,0 +1,363 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2024-03-12T05:24:47.736Z  INFO 1382 --- [           main] com.mh.ex05.Ex05Application              : Starting Ex05Application v0.0.1-SNAPSHOT using Java 17.0.10 with PID 1382 (/var/jenkins_home/workspace/sample/target/app.jar started by root in /var/jenkins_home/workspace)
+2024-03-12T05:24:47.742Z  INFO 1382 --- [           main] com.mh.ex05.Ex05Application              : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T05:24:50.161Z  INFO 1382 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-12T05:24:50.371Z  INFO 1382 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192 ms. Found 3 JPA repository interfaces.
+2024-03-12T05:24:52.018Z  INFO 1382 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2024-03-12T05:24:52.037Z  INFO 1382 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T05:24:52.038Z  INFO 1382 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-12T05:24:52.187Z  INFO 1382 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-12T05:24:52.189Z  INFO 1382 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4284 ms
+2024-03-12T05:24:52.558Z  INFO 1382 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T05:24:53.213Z  INFO 1382 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:8d20a6f0-4b4e-473e-bc0c-066140c97996 user=SA
+2024-03-12T05:24:53.217Z  INFO 1382 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T05:24:53.325Z  INFO 1382 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-12T05:24:53.527Z  INFO 1382 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-12T05:24:53.532Z  INFO 1382 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-12T05:24:54.415Z  INFO 1382 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-12T05:24:57.315Z  INFO 1382 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-12T05:24:57.430Z  INFO 1382 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:24:58.468Z  WARN 1382 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-12T05:24:59.831Z  INFO 1382 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T05:25:00.262Z  INFO 1382 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f677247, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43f03c23, org.springframework.security.web.context.SecurityContextHolderFilter@3bc69ce9, org.springframework.security.web.header.HeaderWriterFilter@5d7d8613, org.springframework.web.filter.CorsFilter@7a1b8a46, org.springframework.security.web.authentication.logout.LogoutFilter@7fda2001, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1775c4e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@602f8f94, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42507640, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2921199d, org.springframework.security.web.access.ExceptionTranslationFilter@61ffd148, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3bfae028]
+2024-03-12T05:25:00.977Z  INFO 1382 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2024-03-12T05:25:00.995Z  INFO 1382 --- [           main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-12T05:25:01.024Z  INFO 1382 --- [           main] com.mh.ex05.Ex05Application              : Started Ex05Application in 14.329 seconds (process running for 15.409)
+2024-03-12T05:25:01.036Z  INFO 1382 --- [cTaskExecutor-1] com.tngtech.archunit.core.PluginLoader   : Detected Java version 17.0.10
+2024-03-12T05:25:11.053Z  INFO 1382 --- [nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T05:25:11.054Z  INFO 1382 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T05:25:11.056Z  INFO 1382 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[]
+2024-03-12T05:26:52.261Z  INFO 1382 --- [ionShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2024-03-12T05:26:52.263Z  INFO 1382 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:26:52.283Z  INFO 1382 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T05:26:52.286Z  INFO 1382 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2024-03-12T05:26:53.920Z  INFO 1462 --- [           main] com.mh.ex05.Ex05Application              : Starting Ex05Application v0.0.1-SNAPSHOT using Java 17.0.10 with PID 1462 (/var/jenkins_home/workspace/sample/target/app.jar started by root in /var/jenkins_home/workspace)
+2024-03-12T05:26:53.926Z  INFO 1462 --- [           main] com.mh.ex05.Ex05Application              : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T05:26:56.216Z  INFO 1462 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-12T05:26:56.426Z  INFO 1462 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 186 ms. Found 3 JPA repository interfaces.
+2024-03-12T05:26:57.827Z  INFO 1462 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2024-03-12T05:26:57.846Z  INFO 1462 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T05:26:57.847Z  INFO 1462 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-12T05:26:57.989Z  INFO 1462 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-12T05:26:57.991Z  INFO 1462 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3928 ms
+2024-03-12T05:26:58.341Z  INFO 1462 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T05:26:59.021Z  INFO 1462 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:7ea7940d-9de1-473b-9c0c-1d40a145dcf6 user=SA
+2024-03-12T05:26:59.027Z  INFO 1462 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T05:26:59.148Z  INFO 1462 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-12T05:26:59.355Z  INFO 1462 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-12T05:26:59.359Z  INFO 1462 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-12T05:27:00.245Z  INFO 1462 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-12T05:27:03.167Z  INFO 1462 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-12T05:27:03.287Z  INFO 1462 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:27:04.373Z  WARN 1462 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-12T05:27:05.704Z  INFO 1462 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T05:27:06.085Z  INFO 1462 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1775c4e7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47829d6d, org.springframework.security.web.context.SecurityContextHolderFilter@6eb089e6, org.springframework.security.web.header.HeaderWriterFilter@61ffd148, org.springframework.web.filter.CorsFilter@2f677247, org.springframework.security.web.authentication.logout.LogoutFilter@5fcd1f0a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b5c6a30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3bc69ce9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@abad89c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43f03c23, org.springframework.security.web.access.ExceptionTranslationFilter@35d60381, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49433c98]
+2024-03-12T05:27:06.742Z  INFO 1462 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2024-03-12T05:27:06.755Z  INFO 1462 --- [           main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-12T05:27:06.779Z  INFO 1462 --- [           main] com.mh.ex05.Ex05Application              : Started Ex05Application in 13.955 seconds (process running for 15.086)
+2024-03-12T05:27:06.789Z  INFO 1462 --- [cTaskExecutor-1] com.tngtech.archunit.core.PluginLoader   : Detected Java version 17.0.10
+2024-03-12T05:27:13.276Z  INFO 1462 --- [nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T05:27:13.276Z  INFO 1462 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T05:27:13.281Z  INFO 1462 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+[]
+2024-03-12T05:29:02.995Z  INFO 1462 --- [ionShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2024-03-12T05:29:02.997Z  INFO 1462 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:29:03.009Z  INFO 1462 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T05:29:03.013Z  INFO 1462 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2024-03-12T05:29:04.685Z  INFO 1548 --- [           main] com.mh.ex05.Ex05Application              : Starting Ex05Application v0.0.1-SNAPSHOT using Java 17.0.10 with PID 1548 (/var/jenkins_home/workspace/sample/target/app.jar started by root in /var/jenkins_home/workspace)
+2024-03-12T05:29:04.692Z  INFO 1548 --- [           main] com.mh.ex05.Ex05Application              : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T05:29:06.940Z  INFO 1548 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-12T05:29:07.127Z  INFO 1548 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169 ms. Found 3 JPA repository interfaces.
+2024-03-12T05:29:08.548Z  INFO 1548 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2024-03-12T05:29:08.573Z  INFO 1548 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T05:29:08.573Z  INFO 1548 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-12T05:29:08.745Z  INFO 1548 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-12T05:29:08.746Z  INFO 1548 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3876 ms
+2024-03-12T05:29:09.118Z  INFO 1548 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T05:29:09.831Z  INFO 1548 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a2f1eaab-7ee6-46dc-8818-40d071d9332d user=SA
+2024-03-12T05:29:09.837Z  INFO 1548 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T05:29:09.943Z  INFO 1548 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-12T05:29:10.164Z  INFO 1548 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-12T05:29:10.170Z  INFO 1548 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-12T05:29:11.069Z  INFO 1548 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-12T05:29:14.165Z  INFO 1548 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-12T05:29:14.278Z  INFO 1548 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:29:15.463Z  WARN 1548 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-12T05:29:16.997Z  INFO 1548 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T05:29:17.642Z  INFO 1548 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f677247, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43f03c23, org.springframework.security.web.context.SecurityContextHolderFilter@3bc69ce9, org.springframework.security.web.header.HeaderWriterFilter@5d7d8613, org.springframework.web.filter.CorsFilter@7a1b8a46, org.springframework.security.web.authentication.logout.LogoutFilter@7fda2001, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1775c4e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@602f8f94, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42507640, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2921199d, org.springframework.security.web.access.ExceptionTranslationFilter@61ffd148, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3bfae028]
+2024-03-12T05:29:18.568Z  INFO 1548 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2024-03-12T05:29:18.584Z  INFO 1548 --- [           main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-12T05:29:18.616Z  INFO 1548 --- [           main] com.mh.ex05.Ex05Application              : Started Ex05Application in 15.091 seconds (process running for 16.252)
+2024-03-12T05:29:18.636Z  INFO 1548 --- [cTaskExecutor-1] com.tngtech.archunit.core.PluginLoader   : Detected Java version 17.0.10
+2024-03-12T05:29:31.193Z  INFO 1548 --- [ionShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2024-03-12T05:29:31.196Z  INFO 1548 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:29:31.231Z  INFO 1548 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T05:29:31.238Z  INFO 1548 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2024-03-12T05:32:08.494Z  INFO 1670 --- [           main] com.mh.ex05.Ex05Application              : Starting Ex05Application v0.0.1-SNAPSHOT using Java 17.0.10 with PID 1670 (/var/jenkins_home/workspace/sample/target/app.jar started by root in /var/jenkins_home/workspace)
+2024-03-12T05:32:08.500Z  INFO 1670 --- [           main] com.mh.ex05.Ex05Application              : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T05:32:10.793Z  INFO 1670 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-12T05:32:10.986Z  INFO 1670 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172 ms. Found 3 JPA repository interfaces.
+2024-03-12T05:32:12.514Z  INFO 1670 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2024-03-12T05:32:12.537Z  INFO 1670 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T05:32:12.538Z  INFO 1670 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-12T05:32:12.732Z  INFO 1670 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-12T05:32:12.733Z  INFO 1670 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4084 ms
+2024-03-12T05:32:13.356Z  INFO 1670 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T05:32:14.147Z  INFO 1670 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:27d7082f-ae8a-434a-be6e-f601541305bc user=SA
+2024-03-12T05:32:14.151Z  INFO 1670 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T05:32:14.265Z  INFO 1670 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-12T05:32:14.477Z  INFO 1670 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-12T05:32:14.481Z  INFO 1670 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-12T05:32:15.448Z  INFO 1670 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-12T05:32:18.582Z  INFO 1670 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-12T05:32:18.694Z  INFO 1670 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:32:19.726Z  WARN 1670 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-12T05:32:21.037Z  INFO 1670 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T05:32:21.461Z  INFO 1670 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49433c98, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b5c6a30, org.springframework.security.web.context.SecurityContextHolderFilter@61ffd148, org.springframework.security.web.header.HeaderWriterFilter@79980d8d, org.springframework.web.filter.CorsFilter@3bfae028, org.springframework.security.web.authentication.logout.LogoutFilter@2a47597, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7f79edee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d7d8613, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6eb089e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1775c4e7, org.springframework.security.web.access.ExceptionTranslationFilter@2e5e6fc4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ac91282]
+2024-03-12T05:32:22.145Z  INFO 1670 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2024-03-12T05:32:22.158Z  INFO 1670 --- [           main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-12T05:32:22.188Z  INFO 1670 --- [           main] com.mh.ex05.Ex05Application              : Started Ex05Application in 14.693 seconds (process running for 15.786)
+2024-03-12T05:32:22.206Z  INFO 1670 --- [cTaskExecutor-1] com.tngtech.archunit.core.PluginLoader   : Detected Java version 17.0.10
+2024-03-12T05:32:23.138Z  INFO 1670 --- [ionShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2024-03-12T05:32:23.140Z  INFO 1670 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:32:23.148Z  INFO 1670 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T05:32:23.150Z  INFO 1670 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2024-03-12T05:35:51.610Z  INFO 1830 --- [           main] com.mh.ex05.Ex05Application              : Starting Ex05Application v0.0.1-SNAPSHOT using Java 17.0.10 with PID 1830 (/var/jenkins_home/workspace/sample/target/app.jar started by root in /var/jenkins_home/workspace)
+2024-03-12T05:35:51.617Z  INFO 1830 --- [           main] com.mh.ex05.Ex05Application              : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T05:35:54.017Z  INFO 1830 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-12T05:35:54.221Z  INFO 1830 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 184 ms. Found 3 JPA repository interfaces.
+2024-03-12T05:35:55.694Z  INFO 1830 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2024-03-12T05:35:55.718Z  INFO 1830 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T05:35:55.719Z  INFO 1830 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-12T05:35:55.889Z  INFO 1830 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-12T05:35:55.891Z  INFO 1830 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4128 ms
+2024-03-12T05:35:56.223Z  INFO 1830 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T05:35:56.935Z  INFO 1830 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:070bba60-c0a3-476c-8584-e59ba068577b user=SA
+2024-03-12T05:35:56.941Z  INFO 1830 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T05:35:57.041Z  INFO 1830 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-12T05:35:57.236Z  INFO 1830 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-12T05:35:57.240Z  INFO 1830 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-12T05:35:58.118Z  INFO 1830 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-12T05:36:01.057Z  INFO 1830 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-12T05:36:01.171Z  INFO 1830 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:36:02.241Z  WARN 1830 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-12T05:36:03.515Z  INFO 1830 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T05:36:03.947Z  INFO 1830 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2921199d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d40a3b4, org.springframework.security.web.context.SecurityContextHolderFilter@42507640, org.springframework.security.web.header.HeaderWriterFilter@3bc69ce9, org.springframework.web.filter.CorsFilter@7f13811b, org.springframework.security.web.authentication.logout.LogoutFilter@799f916e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@43f03c23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11dcd42c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d13baac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59fc6d05, org.springframework.security.web.access.ExceptionTranslationFilter@6eb089e6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f677247]
+2024-03-12T05:36:04.636Z  INFO 1830 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2024-03-12T05:36:04.652Z  INFO 1830 --- [           main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-12T05:36:04.681Z  INFO 1830 --- [           main] com.mh.ex05.Ex05Application              : Started Ex05Application in 14.093 seconds (process running for 15.164)
+2024-03-12T05:36:04.699Z  INFO 1830 --- [cTaskExecutor-1] com.tngtech.archunit.core.PluginLoader   : Detected Java version 17.0.10
+2024-03-12T05:36:09.140Z  INFO 1830 --- [ionShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2024-03-12T05:36:09.145Z  INFO 1830 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:36:09.155Z  INFO 1830 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T05:36:09.158Z  INFO 1830 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2024-03-12T05:36:10.533Z  INFO 1890 --- [           main] com.mh.ex05.Ex05Application              : Starting Ex05Application v0.0.1-SNAPSHOT using Java 17.0.10 with PID 1890 (/var/jenkins_home/workspace/sample/target/app.jar started by root in /var/jenkins_home/workspace)
+2024-03-12T05:36:10.542Z  INFO 1890 --- [           main] com.mh.ex05.Ex05Application              : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T05:36:13.052Z  INFO 1890 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-12T05:36:13.234Z  INFO 1890 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164 ms. Found 3 JPA repository interfaces.
+2024-03-12T05:36:14.638Z  INFO 1890 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2024-03-12T05:36:14.659Z  INFO 1890 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T05:36:14.660Z  INFO 1890 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-12T05:36:14.852Z  INFO 1890 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-12T05:36:14.854Z  INFO 1890 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4165 ms
+2024-03-12T05:36:15.170Z  INFO 1890 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T05:36:15.844Z  INFO 1890 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d6f9918e-77be-453f-895c-f14f4485b5f8 user=SA
+2024-03-12T05:36:15.850Z  INFO 1890 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T05:36:15.954Z  INFO 1890 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-12T05:36:16.147Z  INFO 1890 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-12T05:36:16.152Z  INFO 1890 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-12T05:36:17.020Z  INFO 1890 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-12T05:36:19.836Z  INFO 1890 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-12T05:36:19.941Z  INFO 1890 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:36:20.996Z  WARN 1890 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-12T05:36:22.388Z  INFO 1890 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T05:36:22.784Z  INFO 1890 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2921199d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d40a3b4, org.springframework.security.web.context.SecurityContextHolderFilter@42507640, org.springframework.security.web.header.HeaderWriterFilter@3bc69ce9, org.springframework.web.filter.CorsFilter@7f13811b, org.springframework.security.web.authentication.logout.LogoutFilter@799f916e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@43f03c23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11dcd42c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d13baac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59fc6d05, org.springframework.security.web.access.ExceptionTranslationFilter@6eb089e6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f677247]
+2024-03-12T05:36:23.475Z  INFO 1890 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2024-03-12T05:36:23.488Z  INFO 1890 --- [           main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-12T05:36:23.522Z  INFO 1890 --- [           main] com.mh.ex05.Ex05Application              : Started Ex05Application in 14.092 seconds (process running for 15.447)
+2024-03-12T05:36:23.542Z  INFO 1890 --- [cTaskExecutor-1] com.tngtech.archunit.core.PluginLoader   : Detected Java version 17.0.10
+2024-03-12T05:36:27.912Z  INFO 1890 --- [nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T05:36:27.912Z  INFO 1890 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T05:36:27.914Z  INFO 1890 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[]
+[]
+2024-03-12T05:39:58.978Z  INFO 1890 --- [ionShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2024-03-12T05:39:58.983Z  INFO 1890 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:39:58.994Z  INFO 1890 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T05:39:58.997Z  INFO 1890 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2024-03-12T05:40:00.539Z  INFO 1969 --- [           main] com.mh.ex05.Ex05Application              : Starting Ex05Application v0.0.1-SNAPSHOT using Java 17.0.10 with PID 1969 (/var/jenkins_home/workspace/sample/target/app.jar started by root in /var/jenkins_home/workspace)
+2024-03-12T05:40:00.545Z  INFO 1969 --- [           main] com.mh.ex05.Ex05Application              : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T05:40:02.884Z  INFO 1969 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-12T05:40:03.078Z  INFO 1969 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 3 JPA repository interfaces.
+2024-03-12T05:40:04.487Z  INFO 1969 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2024-03-12T05:40:04.507Z  INFO 1969 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T05:40:04.508Z  INFO 1969 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-12T05:40:04.653Z  INFO 1969 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-12T05:40:04.654Z  INFO 1969 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3951 ms
+2024-03-12T05:40:04.954Z  INFO 1969 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T05:40:05.593Z  INFO 1969 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ec40f830-b7da-40cc-8ecc-85ac2c64ee7e user=SA
+2024-03-12T05:40:05.597Z  INFO 1969 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T05:40:05.693Z  INFO 1969 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-12T05:40:05.869Z  INFO 1969 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-12T05:40:05.873Z  INFO 1969 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-12T05:40:06.721Z  INFO 1969 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-12T05:40:09.753Z  INFO 1969 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-12T05:40:09.863Z  INFO 1969 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:40:10.924Z  WARN 1969 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-12T05:40:12.298Z  INFO 1969 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T05:40:12.701Z  INFO 1969 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d40a3b4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f13811b, org.springframework.security.web.context.SecurityContextHolderFilter@4dfe8b37, org.springframework.security.web.header.HeaderWriterFilter@abad89c, org.springframework.web.filter.CorsFilter@59fc6d05, org.springframework.security.web.authentication.logout.LogoutFilter@576b7c74, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7a1b8a46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d13baac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c302f38, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78307a56, org.springframework.security.web.access.ExceptionTranslationFilter@715a70e9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43f03c23]
+2024-03-12T05:40:13.356Z  INFO 1969 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2024-03-12T05:40:13.373Z  INFO 1969 --- [           main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-12T05:40:13.398Z  INFO 1969 --- [           main] com.mh.ex05.Ex05Application              : Started Ex05Application in 13.893 seconds (process running for 15.101)
+2024-03-12T05:40:13.413Z  INFO 1969 --- [cTaskExecutor-1] com.tngtech.archunit.core.PluginLoader   : Detected Java version 17.0.10
+2024-03-12T05:40:16.582Z  INFO 1969 --- [nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T05:40:16.582Z  INFO 1969 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T05:40:16.584Z  INFO 1969 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[]
+2024-03-12T05:41:29.324Z  INFO 1969 --- [ionShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2024-03-12T05:41:29.326Z  INFO 1969 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:41:29.338Z  INFO 1969 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T05:41:29.341Z  INFO 1969 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2024-03-12T05:49:55.175Z  INFO 2259 --- [           main] com.mh.ex05.Ex05Application              : Starting Ex05Application v0.0.1-SNAPSHOT using Java 17.0.10 with PID 2259 (/var/jenkins_home/workspace/sample/target/app.jar started by root in /var/jenkins_home/workspace)
+2024-03-12T05:49:55.182Z  INFO 2259 --- [           main] com.mh.ex05.Ex05Application              : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T05:49:57.484Z  INFO 2259 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-12T05:49:57.675Z  INFO 2259 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 3 JPA repository interfaces.
+2024-03-12T05:49:59.023Z  INFO 2259 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2024-03-12T05:49:59.045Z  INFO 2259 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T05:49:59.046Z  INFO 2259 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-12T05:49:59.186Z  INFO 2259 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-12T05:49:59.187Z  INFO 2259 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3828 ms
+2024-03-12T05:49:59.524Z  INFO 2259 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T05:50:00.206Z  INFO 2259 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:f4a1cbe9-f346-42d1-9887-c396536594ef user=SA
+2024-03-12T05:50:00.211Z  INFO 2259 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T05:50:00.308Z  INFO 2259 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-12T05:50:00.514Z  INFO 2259 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-12T05:50:00.519Z  INFO 2259 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-12T05:50:01.427Z  INFO 2259 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-12T05:50:04.378Z  INFO 2259 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-12T05:50:04.486Z  INFO 2259 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:50:05.626Z  WARN 2259 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-12T05:50:07.109Z  INFO 2259 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T05:50:07.489Z  INFO 2259 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43f03c23, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a1b8a46, org.springframework.security.web.context.SecurityContextHolderFilter@abad89c, org.springframework.security.web.header.HeaderWriterFilter@6eb089e6, org.springframework.web.filter.CorsFilter@2921199d, org.springframework.security.web.authentication.logout.LogoutFilter@162c1dfb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47829d6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42507640, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4dfe8b37, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d40a3b4, org.springframework.security.web.access.ExceptionTranslationFilter@58324c9f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1775c4e7]
+2024-03-12T05:50:08.177Z  INFO 2259 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2024-03-12T05:50:08.190Z  INFO 2259 --- [           main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-12T05:50:08.220Z  INFO 2259 --- [           main] com.mh.ex05.Ex05Application              : Started Ex05Application in 14.073 seconds (process running for 15.119)
+2024-03-12T05:50:08.236Z  INFO 2259 --- [cTaskExecutor-1] com.tngtech.archunit.core.PluginLoader   : Detected Java version 17.0.10
+2024-03-12T05:50:13.965Z  INFO 2259 --- [ionShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2024-03-12T05:50:13.970Z  INFO 2259 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:50:13.978Z  INFO 2259 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T05:50:13.982Z  INFO 2259 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2024-03-12T05:50:15.326Z  INFO 2318 --- [           main] com.mh.ex05.Ex05Application              : Starting Ex05Application v0.0.1-SNAPSHOT using Java 17.0.10 with PID 2318 (/var/jenkins_home/workspace/sample/target/app.jar started by root in /var/jenkins_home/workspace)
+2024-03-12T05:50:15.335Z  INFO 2318 --- [           main] com.mh.ex05.Ex05Application              : No active profile set, falling back to 1 default profile: "default"
+2024-03-12T05:50:17.992Z  INFO 2318 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-12T05:50:18.182Z  INFO 2318 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 3 JPA repository interfaces.
+2024-03-12T05:50:19.636Z  INFO 2318 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2024-03-12T05:50:19.659Z  INFO 2318 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-12T05:50:19.659Z  INFO 2318 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-03-12T05:50:19.877Z  INFO 2318 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-12T05:50:19.879Z  INFO 2318 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4294 ms
+2024-03-12T05:50:20.268Z  INFO 2318 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-12T05:50:20.940Z  INFO 2318 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cfd94cb1-c34e-496f-aa6a-11aa23278133 user=SA
+2024-03-12T05:50:20.945Z  INFO 2318 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-12T05:50:21.052Z  INFO 2318 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-12T05:50:21.260Z  INFO 2318 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-03-12T05:50:21.264Z  INFO 2318 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-03-12T05:50:22.166Z  INFO 2318 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-12T05:50:25.154Z  INFO 2318 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-12T05:50:25.265Z  INFO 2318 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:50:26.384Z  WARN 2318 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-12T05:50:27.646Z  INFO 2318 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-12T05:50:28.065Z  INFO 2318 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a1b8a46, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2921199d, org.springframework.security.web.context.SecurityContextHolderFilter@602f8f94, org.springframework.security.web.header.HeaderWriterFilter@715a70e9, org.springframework.web.filter.CorsFilter@3d40a3b4, org.springframework.security.web.authentication.logout.LogoutFilter@21ae657b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f677247, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4dfe8b37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11dcd42c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f13811b, org.springframework.security.web.access.ExceptionTranslationFilter@5d7d8613, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47829d6d]
+2024-03-12T05:50:28.812Z  INFO 2318 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2024-03-12T05:50:28.824Z  INFO 2318 --- [           main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2024-03-12T05:50:28.850Z  INFO 2318 --- [           main] com.mh.ex05.Ex05Application              : Started Ex05Application in 14.549 seconds (process running for 16.24)
+2024-03-12T05:50:28.862Z  INFO 2318 --- [cTaskExecutor-1] com.tngtech.archunit.core.PluginLoader   : Detected Java version 17.0.10
+2024-03-12T05:50:35.665Z  INFO 2318 --- [nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-12T05:50:35.665Z  INFO 2318 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-12T05:50:35.666Z  INFO 2318 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+[]
+2024-03-12T05:50:43.118Z  INFO 2318 --- [ionShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2024-03-12T05:50:43.124Z  INFO 2318 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-12T05:50:43.134Z  INFO 2318 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-12T05:50:43.139Z  INFO 2318 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

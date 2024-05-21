@@ -1,0 +1,2 @@
+2024/04/04 03:54:46 [error] 250#250: *961 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: one.hellomh.site, request: "GET / HTTP/1.1", upstream: "http://112.218.211.194:20003/", host: "one.hellomh.site"
+2024/04/04 03:55:07 [error] 250#250: *961 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: one.hellomh.site, request: "GET /favicon.ico HTTP/1.1", upstream: "http://112.218.211.194:20003/favicon.ico", host: "one.hellomh.site", referrer: "http://one.hellomh.site/"

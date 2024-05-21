@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='publish-over' version='0.22'><l:dependency name='Infrastructure plugin for Publish Over X' groupId='org.jenkins-ci.plugins' artifactId='publish-over' version='0.22' url=''><l:description>Send build artifacts somewhere.</l:description><l:license name='The MIT license' url=''/></l:dependency></l:dependencies>
