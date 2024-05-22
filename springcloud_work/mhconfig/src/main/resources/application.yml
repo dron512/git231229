@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: mhconfig
+
+  cloud:
+    config:
+      server:
+        #        native:
+        #          search-locations: file:///C://work//git-local-repo
+        git: #default
+          uri: https://github.com/dron512/spring-cloud-config
+          default-label: main
+        bootstrap: true

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pmh.mhconfig.user.UserRepository">
+    <insert id="save" parameterType="com.pmh.mhconfig.user.User">
+        insert into users
+        (user_email,user_name,user_password)
+        values
+        (#{user_email},#{user_name},#{user_password})
+    </insert>
+</mapper>

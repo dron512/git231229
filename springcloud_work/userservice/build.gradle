@@ -1,0 +1,88 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.5'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.pmh'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+ext {
+	set('springCloudVersion', "2023.0.1")
+}
+
+dependencies {
+	// 스프링부트 3.2.5 버전은 mybatis 더이상 지원 안되서 3.0.3으로 ㅅ사용해야함
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc:3.0.3'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+
+	// 프론트에 url 보내는거
+	implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+	// severside 프론트
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	// 유효성
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	// web restapi
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// test
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// dao -> entity -> dao
+	implementation 'org.modelmapper:modelmapper:3.2.0'
+	// 카카오 api 호출 서버간통신
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
+	// 유레카만 주석처림
+//	implementation 'org.springframework.boot:spring-boot-starter-security'
+//	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+
+	// config 에 내용을 client
+	implementation 'org.springframework.cloud:spring-cloud-starter-config'
+	// user-service
+	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+
+	// configserver -> yml 변경 confingclent 새로고침
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	runtimeOnly 'com.mysql:mysql-connector-j'
+
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+	//querydsl start
+//    implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+//    annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
+//    annotationProcessor "jakarta.annotation:jakarta.annotation-api"
+//    annotationProcessor "jakarta.persistence:jakarta.persistence-api"
+	//querydsl end
+
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
