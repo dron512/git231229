@@ -22,3 +22,9 @@ https://github.com/soyeon0504/onezo
 백엔드 5명
 http://threeback.hellomh.site/swagger-ui/index.html
 https://github.com/joungyw/alcoholshopping
+
+
+쿠버네티스 설정 경로
+mysql
+springboot
+(docker_work/httpk8s)

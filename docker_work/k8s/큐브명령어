@@ -1,9 +1,9 @@
 
-kubectl apply -f storageClass-local-storage.yaml
-kubectl apply -f pv-mysql.yaml
-kubectl apply -f pvc-mysql.yaml
-kubectl apply -f deployment-mysql.yaml
-kubectl apply -f service-mysql.yaml
+sudo kubectl apply -f storageClass-local-storage.yaml
+sudo kubectl apply -f pv-mysql.yaml
+sudo kubectl apply -f pvc-mysql.yaml
+sudo kubectl apply -f deployment-mysql.yaml
+sudo kubectl apply -f service-mysql.yaml
 
 
 kubectl create configmap configmap-mysql --from-literal MYSQL_USER=truelifer --from-literal MYSQL_ROOT_HOST=%
