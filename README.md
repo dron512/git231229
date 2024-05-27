@@ -24,6 +24,7 @@ http://threeback.hellomh.site/swagger-ui/index.html
 https://github.com/joungyw/alcoholshopping
 
 
+<<<<<<< HEAD
 maven 
 
 FROM openjdk:17-jdk-slim AS build
@@ -39,3 +40,9 @@ FROM openjdk:17-jdk-slim
 WORKDIR demo
 COPY --from=build target/*.jar demo.jar
 ENTRYPOINT ["java", "-jar", "demo.jar"]
+=======
+쿠버네티스 설정 경로
+mysql
+springboot
+(docker_work/httpk8s)
+>>>>>>> 7844182b37f9d8660cfac9882e8ea6e6a515a179

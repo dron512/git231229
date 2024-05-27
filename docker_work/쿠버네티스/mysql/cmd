@@ -1,0 +1,2 @@
+kubectl create configmap configmap-mysql --from-literal MYSQL_USER=truelifer --from-literal MYSQL_ROOT_HOST=%
+kubectl create secret generic mysql-pass --from-literal MYSQL_PASSWORD=1234 --from-literal MYSQL_ROOT_PASSWORD=1234

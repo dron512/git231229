@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: springboot
+spec:
+  ports:
+  - port: 8888
+    targetPort: 8888
+  selector:
+    app: springboot
+  # clusterIP: None
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot
+spec:
+  selector:
+    matchLabels:
+      app: springboot
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: springboot
+    spec:
+      containers:
+      - image: parkmyounghoi/myconfig:1.0
+        name: springboot
+        ports:
+        - containerPort: 8888
+          name: springboot
+        volumeMounts:
+        - name: springboot-persistent-storage
+          mountPath: /var/lib/springboot
+      volumes:
+      - name: springboot-persistent-storage
+        persistentVolumeClaim:
+          claimName: springboot-pv-claim

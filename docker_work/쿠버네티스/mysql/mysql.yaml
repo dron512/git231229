@@ -1,4 +1,3 @@
----
 apiVersion: v1
 kind: Service
 metadata:
@@ -10,10 +9,10 @@ spec:
   selector:
     app: mysql
   ports:
-    - protocol: TCP
-      port: 3306
-      # nodePort: 30000
-      targetPort: 3306
+  - protocol: TCP
+    port: 3306
+    # nodePort: 30000
+    targetPort: 3306
   type: LoadBalancer
 ---
 apiVersion: v1
@@ -24,7 +23,7 @@ metadata:
   name: mysql-lv-claim
 spec:
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteOnce
   resources:
     requests:
       storage: 2Gi
@@ -48,24 +47,25 @@ spec:
         app: mysql
     spec:
       containers:
-        - name: mysql
-          image: mysql:8.4
-          env:
-            - name: MYSQL_ROOT_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: mysql-pass
-                  key: password.txt
-          ports:
-            - containerPort: 3306
-              name: mysql
-          resources:
-            requests:
-              cpu: 50m
-          volumeMounts:
-            - mountPath: /var/lib/mysql
-              name: mysql-local-storage
+      - name: mysql
+        image: mysql:8.4 # 수정된 이미지 버전
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-pass
+              key: password.txt
+        ports:
+        - containerPort: 3306
+          name: mysql
+        resources:
+          requests:
+            cpu: 500m # 수정된 자원 요청
+        volumeMounts:
+        - mountPath: /var/lib/mysql
+          name: mysql-local-storage
       volumes:
-        - name: mysql-local-storage
-          persistentVolumeClaim:
-            claimName: mysql-lv-claim
+      - name: mysql-local-storage
+        persistentVolumeClaim:
+          claimName: mysql-lv-claim
+

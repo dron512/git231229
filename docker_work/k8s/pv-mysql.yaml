@@ -4,13 +4,13 @@ metadata:
   name: pv-mysql
 spec:
   capacity:
-    storage: 10Gi
+    storage: 2Gi
   accessModes:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   storageClassName: local-storage
   local:
-    path: /workspace/data/kubernetes/pv/mysql
+    path: /Users/myounghoipark/work/git231229/docker_work/k8s/mysql
   nodeAffinity:
     required:
       nodeSelectorTerms:
