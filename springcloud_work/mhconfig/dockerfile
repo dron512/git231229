@@ -1,6 +1,6 @@
 FROM bellsoft/liberica-openjdk-alpine:17
 
-# CMD ["./gradlew", "clean", "build"]
+CMD ["./gradlew", "clean", "build"]
 
 VOLUME /tmp
 

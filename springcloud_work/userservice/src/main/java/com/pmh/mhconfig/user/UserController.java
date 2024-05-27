@@ -16,8 +16,8 @@ public class UserController {
     private final UserRepository userRepository;
 
     @PostMapping("add-user")
-    public String addUser(@Valid @RequestBody UserDao userDao){
-        User user = new ModelMapper().map(userDao,User.class);
+    public String addUser(@Valid @RequestBody UserDto userDto){
+        User user = new ModelMapper().map(userDto,User.class);
         /*
         User user = User.builder()
                         .user_email("bbb@naver.com")

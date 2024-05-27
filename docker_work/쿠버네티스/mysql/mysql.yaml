@@ -6,7 +6,7 @@ metadata:
     app: mysql
   name: mysql
 spec:
-  type: NodePort
+  # type: NodePort
   selector:
     app: mysql
   ports:
