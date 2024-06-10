@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.onezogreen.onezo3.order.OrderMapper">
+
+    <resultMap id="OrderResultMap" type="com.onezogreen.onezo3.order.OrderVo">
+        <id property="orderId" column="order_id" />
+        <result property="storeId" column="store_id" />
+        <result property="memberId" column="member_id" />
+        <result property="status" column="status" />
+        <result property="orderDate" column="order_date" />
+        <result property="takeInOut" column="take_in_out" />
+        <result property="totalPrice" column="total_price" javaType="int" />
+    </resultMap>
+
+    <resultMap id="OrderItemResultMap" type="com.onezogreen.onezo3.order.OrderItemVo">
+        <id property="orderItemId" column="order_item_id" />
+        <result property="orderId" column="order_id" />
+        <result property="menuId" column="menu_id" />
+        <result property="quantity" column="quantity" />
+        <result property="price" column="price" javaType="int" />
+        <result property="menuName" column="menu_name" />
+    </resultMap>
+
+    <select id="getOrdersByStore" resultMap="OrderResultMap">
+        SELECT o.order_id, o.store_id, o.member_id, o.status, o.take_in_out, o.order_date, o.total_price
+        FROM orders o
+        WHERE o.store_id = #{storeId}
+    </select>
+
+    <select id="getOrdersByStatus" resultMap="OrderResultMap">
+        SELECT o.order_id, o.store_id, o.member_id, o.status, o.take_in_out, o.order_date, o.total_price
+        FROM orders o
+        WHERE o.store_id = #{storeId} AND o.status = #{status}
+    </select>
+
+    <update id="updateOrderStatus">
+        UPDATE orders
+        SET status = #{status}
+        WHERE store_id = #{storeId} AND order_id = #{orderId}
+    </update>
+
+    <insert id="insertOrder" parameterType="com.onezogreen.onezo3.order.OrderVo">
+        INSERT INTO orders (store_id, member_id, status, order_date, take_in_out, total_price)
+        VALUES (#{storeId}, #{memberId}, #{status}, #{orderDate}, #{takeInOut}, #{totalPrice})
+    </insert>
+
+    <insert id="insertOrderItem" parameterType="com.onezogreen.onezo3.order.OrderItemVo">
+        INSERT INTO order_item (order_id, menu_id, quantity, price, menu_name)
+        VALUES (#{orderId}, #{menuId}, #{quantity}, #{price}, #{menuName})
+    </insert>
+
+    <select id="getOrderItemsByOrderId" resultMap="OrderItemResultMap">
+        SELECT oi.order_item_id, oi.order_id, oi.menu_id, oi.quantity, oi.price, m.menu_name
+        FROM order_item oi
+        JOIN menu m ON oi.menu_id = m.menu_id
+        WHERE oi.order_id = #{orderId}
+    </select>
+
+    <select id="getOrderItemsWithMenuNamesByOrderId" resultMap="OrderItemResultMap">
+        SELECT oi.order_item_id, oi.order_id, oi.menu_id, oi.quantity, oi.price, m.menu_name
+        FROM order_item oi
+        JOIN menu m ON oi.menu_id = m.menu_id
+        WHERE oi.order_id = #{orderId}
+    </select>
+
+</mapper>

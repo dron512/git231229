@@ -1,0 +1,13 @@
+spring :
+  datasource:
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: ENC(KIs7XCFqrSgh/yLqxcLgCczO0xaOAdMJzr0ShITr6MDzqfLMSrY8vJZvuRTW1RLm9FIcSppinXeGcm0OhlSbKP9KQfQTEWrW2IJ3FwH/ENBq7O7RgocMEWPIRy9K/LpkEKQpo96eKMs5wdhRqz4Rvo9Y4mdA8z3N3lk8vJaA3tk=)
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: none
+    generate-ddl: true
+    show-sql: true

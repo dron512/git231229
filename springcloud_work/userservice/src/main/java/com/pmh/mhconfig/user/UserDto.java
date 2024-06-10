@@ -15,9 +15,14 @@ import lombok.NoArgsConstructor;
 @JsonInclude(JsonInclude.Include.NON_NULL)// NULL인거 안나오게 하는거
 public class UserDto {
 
+    @Schema(hidden = true)
     private long user_idx;
+
     @NotBlank
+    @Schema(example = "qwer@naver.com")
     private String user_email;
+
+    @Schema(example = "홍길동")
     private String user_name;
 
     @Schema(hidden = true)

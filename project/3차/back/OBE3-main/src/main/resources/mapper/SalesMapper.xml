@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.onezogreen.onezo3.sales.SalesMapper">
+
+    <resultMap id="SaleResultMap" type="com.onezogreen.onezo3.sales.SaleVo">
+        <id property="saleId" column="sale_id" />
+        <result property="storeId" column="store_id" />
+        <result property="orderId" column="order_id" />
+        <result property="menuId" column="menu_id" />
+        <result property="amount" column="amount" javaType="int" />
+        <result property="saleDate" column="sale_date" />
+        <result property="takeInOut" column="take_in_out"
+                javaType="com.onezogreen.onezo3.sales.TakeInOut" />
+    </resultMap>
+
+    <select id="getSalesByStore" resultMap="SaleResultMap">
+        SELECT sale_id, store_id, order_id, menu_id, amount, sale_date, take_in_out
+        FROM sales
+        WHERE store_id = #{storeId}
+    </select>
+
+    <select id="getSalesByMenu" resultMap="SaleResultMap">
+        SELECT sale_id, store_id, order_id, menu_id, amount, sale_date, take_in_out
+        FROM sales
+        WHERE store_id = #{storeId} AND menu_id = #{menuId}
+    </select>
+
+    <select id="getSalesByType" resultMap="SaleResultMap">
+        SELECT sale_id, store_id, order_id, menu_id, amount, sale_date, take_in_out
+        FROM sales
+        WHERE store_id = #{storeId} AND take_in_out = #{takeInOut}
+    </select>
+
+    <select id="getSalesByMonth" resultMap="SaleResultMap">
+        SELECT sale_id, store_id, order_id, menu_id, amount, sale_date, take_in_out
+        FROM sales
+        WHERE store_id = #{storeId} AND DATE_FORMAT(sale_date, '%Y-%m') = #{month}
+    </select>
+
+    <select id="getDailySales" resultMap="SaleResultMap">
+        SELECT sale_id, store_id, order_id, menu_id, amount, sale_date, take_in_out
+        FROM sales
+        WHERE store_id = #{storeId}
+    </select>
+
+</mapper>

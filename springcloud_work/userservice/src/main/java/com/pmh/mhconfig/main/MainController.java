@@ -15,13 +15,13 @@ public class MainController {
     private final Environment env;
 
     @Value("${mh.value}")
-    private String mhValue;
+    private String lombokMhValue;
 
     @GetMapping("info")
     public String info(){
-        String url = env.getProperty("spring.datasource.url");
+        String port = env.getProperty("server.port");
         String mhvalue = env.getProperty("mh.value");
-        return url+"\n"+mhvalue;
+        return port+"\n lombokValue : "+lombokMhValue+"\n 환경설정 : "+mhvalue;
     }
 
 }

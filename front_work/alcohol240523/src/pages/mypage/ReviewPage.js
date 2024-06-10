@@ -14,7 +14,6 @@ const ReviewPage = () => {
   const [activeNavBt, setActiveNavBt] = useState(1);
   const handleBtClick = reBtId => {
     setActiveNavBt(reBtId);
-    console.log("선택된 리뷰버튼", reBtId);
   };
 
   const InfoWrap = styled.div`

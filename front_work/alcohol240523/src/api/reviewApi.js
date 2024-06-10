@@ -10,6 +10,7 @@ export const getReviewList = async ({ successFn, failFn, errorFn }) => {
 
     const status = res.status.toString();
     if (status.charAt(0) === "2") {
+      console.log("리뷰데이터", res.data);
       successFn(res.data);
     } else {
       failFn("메인 리뷰 데이터 불러오기 실패");

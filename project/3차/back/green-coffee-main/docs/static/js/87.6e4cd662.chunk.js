@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpwa=self.webpackChunkpwa||[]).push([[87],{9087:(e,s,a)=>{a.r(s),a.d(s,{default:()=>c});a(9950);var u=a(4414);const c=()=>(0,u.jsx)("div",{children:"NotFound"})}}]);

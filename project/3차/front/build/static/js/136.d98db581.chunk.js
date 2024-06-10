@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkrv18_basic=self.webpackChunkrv18_basic||[]).push([[136],{9136:(e,t,a)=>{a.r(t),a.d(t,{default:()=>r});var o=a(184);localStorage.removeItem("access_token"),localStorage.removeItem("refresh_token"),window.location.href="http://localhost:3000/";const r=()=>(0,o.jsx)(o.Fragment,{})}}]);
+//# sourceMappingURL=136.d98db581.chunk.js.map

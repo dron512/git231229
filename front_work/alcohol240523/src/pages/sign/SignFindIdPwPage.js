@@ -71,7 +71,7 @@ const SignFindIdPwPage = () => {
           <p className="logo">ALCHOHOL HOLIC</p>
           <div className="email-line">
             <div className="line"></div>
-            <p>이메일 로그인</p>
+            <p>아이디 찾기</p>
             <div className="line"></div>
           </div>
         </LoginTitle>
@@ -106,57 +106,7 @@ const SignFindIdPwPage = () => {
               }}
             />
           </Form.Item>
-          <Form.Item
-            name="password"
-            rules={[
-              {
-                required: true,
-                message: "비밀번호를 입력해 주세요!",
-              },
-            ]}
-          >
-            <Input.Password
-              style={{
-                width: "100%",
-                height: "60px",
-                fontSize: "20px",
-              }}
-              prefix={<LockOutlined className="site-form-item-icon" />}
-              type="password"
-              placeholder="비밀번호"
-              name="password"
-              onChange={handleChange}
-            />
-          </Form.Item>
-
-          <Form.Item>
-            <div
-              style={{
-                position: "relative",
-                display: "flex",
-                justifyContent: "space-between",
-                width: "100%",
-              }}
-            >
-              <Form.Item name="remember" valuePropName="checked" noStyle>
-                <Checkbox>이메일 저장하기</Checkbox>
-              </Form.Item>
-              <a className="login-form-forgot" href="/sign/FindIdPw">
-                아이디/ 비밀번호 찾기
-              </a>
-            </div>
-          </Form.Item>
-
-          {/* <Form.Item>
-            <Button
-              type="primary"
-              htmlType="submit"
-              className="login-form-button"
-            >
-              Log in
-            </Button>
-            Or <a href="">register now!</a>
-          </Form.Item> */}
+          
           <Form.Item>
             {/* 버튼 style */}
             <Button
@@ -176,23 +126,65 @@ const SignFindIdPwPage = () => {
         <LoginTitle>
           <div className="login-line">
             <div className="line"></div>
-            <p>간편 로그인/회원가입</p>
+            <p>비밀번호찾기</p>
             <div className="line"></div>
           </div>
         </LoginTitle>
-        <LoginBt
-          onClick={handleClick}
-          style={{ background: `${Common.color.y900}`, border: "none" }}
-        >
-          <img
-            src={process.env.PUBLIC_URL + "/images/kakao.png"} // 수정된 부분
-            alt="heart"
-          />
-          카카오 3초만에 시작하기
-        </LoginBt>
-        <LoginBt
-        onClick={()=>navigate('/sign/up')}
-        >회원가입</LoginBt>
+        <Form.Item
+            name="email"
+            rules={[
+              {
+                required: true,
+                message: "이메일을 입력해 주세요!",
+              },
+            ]}
+          >
+            <Input
+              prefix={<UserOutlined className="site-form-item-icon" />}
+              placeholder="이메일"
+              name="email"
+              onChange={handleChange}
+              style={{
+                width: "100%",
+                height: "60px",
+                fontSize: "20px",
+              }}
+            />
+          </Form.Item>
+          <Form.Item
+            name="phone"
+            rules={[
+              {
+                required: true,
+                message: "핸드폰번호를 입력해주세요",
+              },
+            ]}
+          >
+            <Input.Password
+              style={{
+                width: "100%",
+                height: "60px",
+                fontSize: "20px",
+              }}
+              prefix={<UserOutlined className="site-form-item-icon" />}
+              type="text"
+              placeholder="핸드폰번호"
+              name="phone"
+              onChange={handleChange}
+            />
+          </Form.Item>
+        <Button
+            type="primary"
+            htmlType="submit"
+            style={{
+              width: "100%",
+              height: "60px",
+              background: `${Common.color.f900}`,
+              fontSize: "20px",
+            }}
+          >
+            비밀번호 찾기
+          </Button>
       </LoginWrap>
     </div>
   );

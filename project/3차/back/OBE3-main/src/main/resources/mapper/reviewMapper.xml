@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.onezogreen.onezo3.review.ReviewMapper">
+    <update id="updateReply"
+            parameterType="ReviewVo">
+        update review
+        set reply          = #{reply},
+            replyDelete_yn = 'N'
+        where review_id = #{review_id}
+    </update>
+
+    <update id="deleteReply"
+            parameterType="ReviewVo">
+        update review
+        set replyDelete_yn = 'Y'
+        where review_id = #{review_id}
+    </update>
+
+    <update id="deleteReview"
+            parameterType="ReviewVo">
+        update review
+        set reviewDelete_yn = 'Y'
+        where review_id = #{review_id}
+    </update>
+
+    <select id="selectReviewReply"
+            parameterType="ReviewVo">
+        select r.reply, r.comment, r.star, r.review_id, m.nickname, r.reviewDelete_yn
+        from review r
+        join member m on r.member_id = m.member_id
+        where r.store_id = #{store_id}
+    </select>
+
+</mapper>

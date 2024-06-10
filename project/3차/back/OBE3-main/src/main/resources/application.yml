@@ -1,0 +1,56 @@
+spring:
+  messages:
+    basename: messages
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    url: jdbc:mysql://192.168.0.154:3306/onezo?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=UTC
+
+    username: root
+    password: 1234
+
+mybatis:
+  mapper-locations: classpath:mapper/**Mapper.xml
+  type-aliases-package: com.onezogreen.onezo3
+  configuration:
+    cache-enabled: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+
+p3:
+  jwt:
+    secret: 3onezoproject3onezoproject3onezoproject3onezoproject3onezoproject3onezoproject3onezoproject3onezoproject
+
+
+  springdoc:
+    swagger-ui:
+      path: /swagger-ui/index.html
+    openapi-ui:
+      path: /v3/api-docs
+
+  openapi: "3.0.0"
+  info:
+    title: onezo3
+    version: 1.0.0
+  paths:
+    /auth/**:
+      get:
+        description: 인증이 필요 없는 공개 정보를 검색합니다.
+        responses:
+          '200':
+            description: ok
+      post:
+        description: 인증이 필요 없는 데이터를 제출합니다.
+        responses:
+          '200':
+            description: ok
+      put:
+        description: 인증이 필요 없는 데이터를 제출합니다.
+        responses:
+          '200':
+            description: ok
+      delete:
+        description: 인증이 필요 없는 데이터를 제출합니다.
+        responses:
+          '200':
+            description: ok

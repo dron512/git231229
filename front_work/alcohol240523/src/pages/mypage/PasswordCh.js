@@ -6,8 +6,11 @@ import { buttonPrimaryStyle } from "../../styles/sign/signArea";
 import Address from "../../components/singup/Address";
 import { Button, Form, Input, Select } from "antd";
 import { Common } from "../../styles/CommonCss";
-
-
+import { json, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import { atomSignState } from "../../atom/loginState";
+import { removeCookie } from "../../util/cookieUtil";
+import { useResetRecoilState } from "recoil";
 const columns = [
   {
     title: "이미지",
@@ -45,25 +48,51 @@ const columns = [
   },
 ];
 
-const doSubmit = () => {
-  jwtAxios.put(`${SERVER_URL}/user/update`, {
-    "nickname": "dfff",
-    "password": "a123456!",
-    "phone": "01056215621",
-    "address": "주소",
-    "address2": "상세주소"
-  }).then(data => {
-    console.log(data);
-  }).catch(e => {
-    console.log(e);
-  });
-}
-
 const MyMainPage = () => {
 
-  const [oldPw, setOldPw] = useState();
-  const [newPw, setNewPw] = useState();
-  const [newPwCon, setNewPwCon] = useState();
+  const [password, setPassword] = useState();
+  const [newPassword, setNewPassword] = useState();
+  const [passwordch, setPasswordch] = useState();
+
+  const navigate = useNavigate();
+  const resetSignState = useResetRecoilState(atomSignState);
+
+
+  const doSubmit = () => {
+    console.log('통신시작');
+    jwtAxios.put(`${SERVER_URL}/user/updatePw`, {
+      password,
+      newPassword,
+      passwordch
+    }).then(data => {
+      if (data.data === '비밀번호 수정이 완료되었습니다.') {
+        Swal.fire(
+          {
+          title:"<p style='font-size:4rem;margin:1rem;'>비밀번호 변경되었습니다.</p>",
+          icon: "info",
+          width: 600,
+          confirmButtonText: `<span style="display:bolck;font-size:4rem;width:200px;padding:1rem;">확인</span>`,
+          confirmButtonColor: `${Common.color.f900}`,
+        });
+        removeCookie("member");
+        resetSignState();
+        navigate('/sign/in');
+      }
+    }).catch(e => {
+      Swal.fire(
+        {
+        title:`<p style='font-size:4rem;margin:1rem;'>
+        비밀번호 변경실패!!
+        <br>
+        ${e.response.data}
+        </p>`,
+        icon: "warning",
+        width: 600,
+        confirmButtonText: `<span style="display:bolck;font-size:4rem;width:200px;padding:1rem;">확인</span>`,
+        confirmButtonColor: `${Common.color.f900}`,
+      });
+    });
+  }
 
   return (
     <div style={{ width: '100%' }}>
@@ -76,30 +105,33 @@ const MyMainPage = () => {
             <div style={{ width: '100%' }}>
               <Form.Item>
                 <Input placeholder='현재비밀번호'
+                // type="password"
                   style={{
                     width: '40%', fontSize: '2rem',
                     padding: '1rem', margin: '0.5rem'
-                  }} value={oldPw} onChange={(e) => setOldPw(e.target.value)} />
+                  }} value={password} onChange={(e) => setPassword(e.target.value)} />
               </Form.Item>
               <Form.Item>
                 <Input placeholder='새로운비밀번호'
+                // type="password"
                   style={{
                     width: '40%', fontSize: '2rem',
                     padding: '1rem', margin: '0.5rem'
                   }}
-                  value={newPw}
-                  onChange={(e) => setNewPw(e.target.value)} />
+                  value={newPassword}
+                  onChange={(e) => setNewPassword(e.target.value)} />
               </Form.Item>
             </div>
             <div style={{ flexGrow: 1 }}>
               <Form.Item>
                 <Input placeholder='새로운비밀번호확인'
+                // type="password"
                   style={{
                     width: '40%', fontSize: '2rem',
                     padding: '1rem', margin: '0.5rem'
                   }}
-                  value={newPwCon}
-                  onChange={(e) => setNewPwCon(e.target.value)} />
+                  value={passwordch}
+                  onChange={(e) => setPasswordch(e.target.value)} />
               </Form.Item>
             </div>
           </div>

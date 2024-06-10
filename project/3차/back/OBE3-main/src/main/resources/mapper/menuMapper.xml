@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.onezogreen.onezo3.menu.MenuMapper">
+    <select id="menuSelect" parameterType="menuVo" resultType="MenuVo">
+        SELECT menu_id
+             , store_id
+             , menu_name
+             , menu_image
+             , sold_out_yn
+          FROM menu
+         WHERE store_id = #{store_id}
+        <if test="menu_category != null and menu_category != '' and menu_category != 'ALL'">
+           AND menu_category = #{menu_category}
+        </if>
+    </select>
+
+    <update id="soldOutChange" parameterType="MenuVo">
+        UPDATE menu SET sold_out_yn = #{sold_out_yn} WHERE store_id = #{store_id} AND menu_id = #{menu_id}
+    </update>
+</mapper>

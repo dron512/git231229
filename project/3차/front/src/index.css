@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+html {
+  font-size: 10px;
+  /* max-width: 1300px; */
+  /* margin: 0 auto; */
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: -0.23px;
+  word-break: keep-all;
+  color: #000000;
+  min-width: 1300px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.pay{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.payline1{
+  border-top: 2px solid black;
+}
+.payline2{
+  border-top: 1px solid black;
+}
+
+.pay .buyinfo > *{
+  display: inline-block;
+}
+.userinfo{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.product-info{
+  margin-right: 10%;
+}
+.product-name{
+  margin-right: 10%;
+}
+.product-count{
+  margin-right: 5%;
+}
+.product-price{
+  margin-right: 7%;
+}
+.product-market{
+  margin-right: 8%;
+}
+
+.info{
+  width: 100%;
+  display: flex;
+}
+
+.user{
+  display: inline-block;
+  width: 25%;
+  border-right: 1px solid black;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.product{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: inline-block;
+  width: 75%;
+  height: 220px;
+  overflow-y: scroll;
+}
+
+.product-map{
+  margin-bottom: 10px;
+}
+
+.product-map > *{
+  display: inline-block;
+}
+
+.product .product-info{
+  margin-right: 11.5%;
+}
+.product .product-name{
+  margin-right: 13%;
+}
+.product .product-count{
+  margin-right: 7%;
+}
+.product .product-price{
+  margin-right: 9%;
+}
+.product .product-market{
+  margin-right: 11%;
+}
+
+.user h2{
+  margin-bottom: 10px;
+}
+
+.total {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.total h2{
+  display: inline-block;
+  margin-right: 13%;
+  margin-left: 13%;
+}
+
+.total h1{
+  display: inline-block;
+  margin-right: 13.1%;
+  margin-left: 13.2%;
+}
+
+.paybtndiv{
+  text-align: center;
+}
+.paybtn{
+  margin-top: 50px;
+  width: 30%;
+  height: 50px;
+  font-size: 2rem;
+}

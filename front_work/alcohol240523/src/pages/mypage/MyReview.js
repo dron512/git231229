@@ -14,12 +14,14 @@ const onChange = (pagination, filters, sorter, extra) => {
 
 const initState = [
   {
+    alcoholcode:1, 
     name: "더 페이머스 그라우스 700ml",
     writing: "져라ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ",
     grade: 4,
     picture: "",
   },
 ];
+
 const MyReview = () => {
   const [myReviewData, setmyReviewData] = useState(initState);
 
@@ -34,6 +36,7 @@ const MyReview = () => {
     setModalKey(index);
     console.log("모달로 전달되는 코드 값:", index);
   };
+  
   useEffect(() => {
     getReviewList({
       successFn: data => {
@@ -115,9 +118,9 @@ const MyReview = () => {
     {
       title: "리뷰삭제",
       button: <button>ddldldd</button>,
-      render: (text, record, index) => (
-        <BasicBtR onClick={() => handleShowModal(index)}>리뷰 삭제</BasicBtR>
-      ),
+      render: (text, record, index) => {
+        return (<BasicBtR onClick={() => handleShowModal(record.alcoholcode )}>리뷰 삭제</BasicBtR>);
+      },
     },
   ];
   return (

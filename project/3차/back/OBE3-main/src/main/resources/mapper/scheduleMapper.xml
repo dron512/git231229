@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.onezogreen.onezo3.schedule.ScheduleMapper">
+    <select id="scheduleSelect" resultType="ScheduleVo">
+        SELECT schedule_id
+             , store_id
+             , start_date
+             , end_date
+             , content
+             , delete_yn
+          FROM schedule
+         WHERE store_id = #{store_id}
+    </select>
+
+    <insert id="scheduleInsert" parameterType="ScheduleVo">
+        INSERT INTO schedule (store_id, start_date, end_date, content, delete_yn) VALUES (#{store_id}, #{start_date}, #{end_date}, #{content}, 'N')
+    </insert>
+
+    <update id="scheduleUpdate" parameterType="ScheduleVo">
+        UPDATE schedule SET start_date = #{start_date}, end_date = #{end_date}, content = #{content} WHERE schedule_id = #{schedule_id}
+    </update>
+
+    <update id="scheduleDelete" parameterType="Long">
+        UPDATE schedule SET delete_yn = 'Y' WHERE schedule_id = #{schedule_id}
+    </update>
+
+    <insert id="regularHolidayInsert" parameterType="RegularHolidayVo">
+        INSERT INTO regularHoliday
+        (store_id,week)
+        VALUES
+        (#{store_id}, #{week})
+    </insert>
+</mapper>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpwa=self.webpackChunkpwa||[]).push([[636],{8636:(e,s,a)=>{a.r(s),a.d(s,{default:()=>t});a(9950);var r=a(4414);const t=()=>(0,r.jsx)("div",{children:"OrderStatus"})}}]);

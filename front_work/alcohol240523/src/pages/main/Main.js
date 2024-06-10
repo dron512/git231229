@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router";
 import {
   getMostProduct,
@@ -21,6 +21,7 @@ import { useMutation } from "react-query";
 import { GridContainer } from "../../styles/product/proWrapCss";
 import ProductCard from "../../components/product/ProductCard";
 import ProductPage from '../product/ProductListPage';
+import RecentSearches from "./RecentSearches";
 
 const initState = [
   {
@@ -55,9 +56,11 @@ const Main = () => {
   const [newdata, setNewData] = useState([]);
   const [randdata, setRandData] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const [display,setDisplay] = useState('none');
   const searchInitState = {
     searchcontents: "",
   };
+  const searchInput = useRef();
 
   useEffect(() => {
     getRandProduct({
@@ -98,6 +101,13 @@ const Main = () => {
       errorFn: data => {
         alert("서버상태 불안정 다음에 most 시도");
       },
+    });
+    document.addEventListener("click", (event)=>{ 
+      if (
+        document.activeElement !== searchInput.current
+      ) {
+        setDisplay('none')
+      }
     });
   }, []);
 
@@ -168,20 +178,27 @@ const Main = () => {
           >
             <div className="search-wrap">
               <input
+                ref={searchInput}
                 id="search"
                 type="text"
                 placeholder="검색어를 입력해주세요"
                 className="search-word"
                 onChange={searchWord}
+                onFocus={()=>{ 
+                  setDisplay('block');
+                } }
               ></input>
               <button className="search-bt" onClick={handleClickSearch}>
                 <img src="./images/search.png" />
               </button>
             </div>
           </div>
+          <RecentSearches display={display}/>
           {/* <input type="button" className="search-bt" /> */}
         </div>
-        <img src="./images/banner.svg"></img>
+        <div style={{paddingTop:"300px"}}>
+          <img src="./images/banner.svg"></img>
+        </div>
         <PickUpCard>
           <a
             className="pickCard2"
@@ -208,7 +225,6 @@ const Main = () => {
               if (isLogin) {
                 navigate(`pick/pick`);
                 window.scroll(0,0);
-
               }else{
                 alert('로그인 후 가능한 서비스입니다.')
                 navigate(`sign/in`);
