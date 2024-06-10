@@ -1,3 +1,5 @@
-sudo docker run -e ACCEPT_EULA=Y -e MSSQL_SA_PASSWORD=1234 -p 1433:1433 --name sql1 --hostname sql1 -d mcr.microsoft.com/mssql/server:2022-latest
+컨테이너 생성 및 실행 
+docker run -e ACCEPT_EULA=Y -e MSSQL_SA_PASSWORD=a123456! -p 1433:1433 --name sql1 --hostname sql1 -d mcr.microsoft.com/mssql/server:2022-latest
 
-sudo docker pull mcr.microsoft.com/mssql/server:2022-latest
+이미지 파일 가져오기
+docker pull mcr.microsoft.com/mssql/server:2022-latest

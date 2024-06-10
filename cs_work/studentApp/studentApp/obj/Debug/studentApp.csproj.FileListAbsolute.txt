@@ -1,0 +1,10 @@
+D:\sourcesgit\git231229\cs_work\studentApp\studentApp\bin\Debug\studentApp.exe.config
+D:\sourcesgit\git231229\cs_work\studentApp\studentApp\bin\Debug\studentApp.exe
+D:\sourcesgit\git231229\cs_work\studentApp\studentApp\bin\Debug\studentApp.pdb
+D:\sourcesgit\git231229\cs_work\studentApp\studentApp\obj\Debug\studentApp.csproj.AssemblyReference.cache
+D:\sourcesgit\git231229\cs_work\studentApp\studentApp\obj\Debug\studentApp.Properties.Resources.resources
+D:\sourcesgit\git231229\cs_work\studentApp\studentApp\obj\Debug\studentApp.csproj.GenerateResource.cache
+D:\sourcesgit\git231229\cs_work\studentApp\studentApp\obj\Debug\studentApp.csproj.CoreCompileInputs.cache
+D:\sourcesgit\git231229\cs_work\studentApp\studentApp\obj\Debug\studentApp.exe
+D:\sourcesgit\git231229\cs_work\studentApp\studentApp\obj\Debug\studentApp.pdb
+D:\sourcesgit\git231229\cs_work\studentApp\studentApp\obj\Debug\studentApp.Form1.resources

@@ -1,0 +1,300 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\dbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:dbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\wordsearchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:word\\wordsearchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\wordsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:word\\wordsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\wordmeandb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:word\\wordmeandb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\worddb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:word\\worddb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:word\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\formadminword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:word\\formadminword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\adminwordmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:word\\adminwordmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\request\\formedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:request\\formedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\request\\formadminupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:request\\formadminupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\request\\formadmindelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:request\\formadmindelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\member\\formsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:member\\formsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\member\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:member\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\main\\maindb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:main\\maindb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|c:\\users\\user\\desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 c#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\member\\memberdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA38E42-A76A-4DE2-BCC2-A59AE5344357}|project_nanibono.csproj|solutionrelative:member\\memberdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:44:54.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBINFO.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\DBINFO.cs",
+              "RelativeDocumentMoniker": "DBINFO.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\DBINFO.cs",
+              "RelativeToolTip": "DBINFO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:44:46.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WordSearchResult.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\WordSearchResult.cs",
+              "RelativeDocumentMoniker": "word\\WordSearchResult.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\WordSearchResult.cs",
+              "RelativeToolTip": "word\\WordSearchResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:44:38.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WordSearch.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\WordSearch.cs",
+              "RelativeDocumentMoniker": "word\\WordSearch.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\WordSearch.cs",
+              "RelativeToolTip": "word\\WordSearch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:44:34.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WordMeanDB.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\WordMeanDB.cs",
+              "RelativeDocumentMoniker": "word\\WordMeanDB.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\WordMeanDB.cs",
+              "RelativeToolTip": "word\\WordMeanDB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:44:18.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WordDB.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\WordDB.cs",
+              "RelativeDocumentMoniker": "word\\WordDB.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\WordDB.cs",
+              "RelativeToolTip": "word\\WordDB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:44:09.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Word.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\Word.cs",
+              "RelativeDocumentMoniker": "word\\Word.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\Word.cs",
+              "RelativeToolTip": "word\\Word.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:44:08.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormAdminWord.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\FormAdminWord.cs",
+              "RelativeDocumentMoniker": "word\\FormAdminWord.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\FormAdminWord.cs",
+              "RelativeToolTip": "word\\FormAdminWord.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:44:04.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminWordManagement.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\AdminWordManagement.cs",
+              "RelativeDocumentMoniker": "word\\AdminWordManagement.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\word\\AdminWordManagement.cs",
+              "RelativeToolTip": "word\\AdminWordManagement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:43:59.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormEdit.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\request\\FormEdit.cs",
+              "RelativeDocumentMoniker": "request\\FormEdit.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\request\\FormEdit.cs",
+              "RelativeToolTip": "request\\FormEdit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:43:55.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormAdminUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\request\\FormAdminUpdate.cs",
+              "RelativeDocumentMoniker": "request\\FormAdminUpdate.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\request\\FormAdminUpdate.cs",
+              "RelativeToolTip": "request\\FormAdminUpdate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:43:52.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormAdminDelete.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\request\\FormAdminDelete.cs",
+              "RelativeDocumentMoniker": "request\\FormAdminDelete.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\request\\FormAdminDelete.cs",
+              "RelativeToolTip": "request\\FormAdminDelete.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:43:49.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormSignUp.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\member\\FormSignUp.cs",
+              "RelativeDocumentMoniker": "member\\FormSignUp.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\member\\FormSignUp.cs",
+              "RelativeToolTip": "member\\FormSignUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:43:44.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\member\\FormLogin.cs",
+              "RelativeDocumentMoniker": "member\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\member\\FormLogin.cs",
+              "RelativeToolTip": "member\\FormLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:43:32.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "mainDB.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\main\\mainDB.cs",
+              "RelativeDocumentMoniker": "main\\mainDB.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\main\\mainDB.cs",
+              "RelativeToolTip": "main\\mainDB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:43:27.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MemberDB.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\member\\MemberDB.cs",
+              "RelativeDocumentMoniker": "member\\MemberDB.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD300\uD504\uB85C\uC81D\uD2B8\\240314 C#\\1\uC870 \uC815\uCC98\uAE30\\project_nanibono\\member\\MemberDB.cs",
+              "RelativeToolTip": "member\\MemberDB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T08:38:18.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

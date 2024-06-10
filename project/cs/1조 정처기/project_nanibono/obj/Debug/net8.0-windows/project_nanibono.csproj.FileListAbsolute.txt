@@ -1,0 +1,175 @@
+D:\Project_bonobono\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.exe
+D:\Project_bonobono\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.deps.json
+D:\Project_bonobono\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.runtimeconfig.json
+D:\Project_bonobono\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.dll
+D:\Project_bonobono\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.pdb
+D:\Project_bonobono\project_nanibono\bin\Debug\net8.0-windows\Oracle.ManagedDataAccess.dll
+D:\Project_bonobono\project_nanibono\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
+D:\Project_bonobono\project_nanibono\bin\Debug\net8.0-windows\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Project_bonobono\project_nanibono\bin\Debug\net8.0-windows\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Project_bonobono\project_nanibono\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.AssemblyReference.cache
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.Properties.Resources.resources
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.GenerateResource.cache
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.AssemblyInfoInputs.cache
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.AssemblyInfo.cs
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.CoreCompileInputs.cache
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.CopyComplete
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.dll
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\refint\project_nanibono.dll
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.pdb
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.genruntimeconfig.cache
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\ref\project_nanibono.dll
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormEdit.resources
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormLogin.resources
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormMain.resources
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormSignUp.resources
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormElfUser.resources
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormResult.resources
+D:\Project_bonobono\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormSdUser.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.AssemblyReference.cache
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.dll
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\refint\project_nanibono.dll
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.pdb
+E:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.exe
+E:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.deps.json
+E:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.runtimeconfig.json
+E:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.dll
+E:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.pdb
+E:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\Oracle.ManagedDataAccess.dll
+E:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
+E:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+E:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+E:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.AssemblyReference.cache
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormEdit.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormLogin.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormSignUp.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.Properties.Resources.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.GenerateResource.cache
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.GeneratedMSBuildEditorConfig.editorconfig
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.AssemblyInfoInputs.cache
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.AssemblyInfo.cs
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.CoreCompileInputs.cache
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.CopyComplete
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.dll
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\refint\project_nanibono.dll
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.pdb
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.genruntimeconfig.cache
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\ref\project_nanibono.dll
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.WordSearch.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.WordSearchResult.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormMain.resources
+D:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.exe
+D:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.deps.json
+D:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.runtimeconfig.json
+D:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.dll
+D:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.pdb
+D:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\Oracle.ManagedDataAccess.dll
+D:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
+D:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\은애\Green\cs_work\project_nanibono\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.AssemblyReference.cache
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormSignUp.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormMain.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormLogin.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.Properties.Resources.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormEdit.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.WordSearch.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.WordSearchResult.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.GenerateResource.cache
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.GeneratedMSBuildEditorConfig.editorconfig
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.AssemblyInfoInputs.cache
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.AssemblyInfo.cs
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.CoreCompileInputs.cache
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.CopyComplete
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.dll
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\refint\project_nanibono.dll
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.pdb
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.genruntimeconfig.cache
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\ref\project_nanibono.dll
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.main.FormAdminMain.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.AdminRequestManagement.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.AdminMemberManagement.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.AdminWordManagement.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.FormAdminDelete.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.FormAdminUpdate.resources
+D:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.FormAdminWord.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.main.FormAdminMain.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.AdminMemberManagement.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.AdminRequestManagement.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.FormAdminDelete.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.FormAdminUpdate.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.AdminWordManagement.resources
+E:\은애\Green\cs_work\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.FormAdminWord.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.exe
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.deps.json
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.runtimeconfig.json
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.dll
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.pdb
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\bin\Debug\net8.0-windows\Oracle.ManagedDataAccess.dll
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\bin\Debug\net8.0-windows\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\bin\Debug\net8.0-windows\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.main.FormAdminMain.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormMain.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.AdminMemberManagement.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormLogin.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormSignUp.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.Properties.Resources.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.AdminRequestManagement.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.FormAdminDelete.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.FormAdminUpdate.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormEdit.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.AdminWordManagement.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.FormAdminWord.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.WordSearch.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.WordSearchResult.resources
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.GenerateResource.cache
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.GeneratedMSBuildEditorConfig.editorconfig
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.AssemblyInfoInputs.cache
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.AssemblyInfo.cs
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.CoreCompileInputs.cache
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.CopyComplete
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.genruntimeconfig.cache
+\\192.168.0.38\공유\미니프로젝트\C#\가영,수민,은애,은재\project_nanibono\obj\Debug\net8.0-windows\ref\project_nanibono.dll
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.exe
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.deps.json
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.runtimeconfig.json
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.dll
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\bin\Debug\net8.0-windows\project_nanibono.pdb
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\bin\Debug\net8.0-windows\Oracle.ManagedDataAccess.dll
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\bin\Debug\net8.0-windows\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\bin\Debug\net8.0-windows\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.main.FormAdminMain.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormMain.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.AdminMemberManagement.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormLogin.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormSignUp.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.Properties.Resources.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.AdminRequestManagement.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.FormAdminDelete.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.request.FormAdminUpdate.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.FormEdit.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.AdminWordManagement.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.FormAdminWord.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.WordSearch.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.word.WordSearchResult.resources
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.GenerateResource.cache
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.AssemblyInfo.cs
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.sourcelink.json
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_.7CEAAFFB.Up2Date
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.dll
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\refint\project_nanibono.dll
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.pdb
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\project_nanibono.genruntimeconfig.cache
+C:\Users\user\Desktop\팀프로젝트\240314 C#\1조 정처기\project_nanibono\obj\Debug\net8.0-windows\ref\project_nanibono.dll

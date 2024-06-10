@@ -1,0 +1,343 @@
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\c#project.exe.config
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\c#project.exe
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\c#project.pdb
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c#project.csproj.AssemblyReference.cache
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.Main.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.Properties.Resources.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c#project.csproj.GenerateResource.cache
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c#project.csproj.CoreCompileInputs.cache
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c#project.exe
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c#project.pdb
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.Ticketing.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.Ticketing1.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.Select.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.Ticketing1_1.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\Interop.WMPLib.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\Interop.WMPLib.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c#project.csproj.ResolveComReference.cache
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.seat.MovieSeat1.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.seat.MovieSeat2.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.seat.MovieSeat3.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.seat.MovieSeat4.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.seat.MovieSeat5.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Buffers.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Formats.Asn1.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Memory.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Text.Json.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.ValueTuple.dll
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Buffers.xml
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Formats.Asn1.xml
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Memory.xml
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Text.Json.xml
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\bin\Debug\System.ValueTuple.xml
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c#project.csproj.Up2Date
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.select.PersonSelect.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.seatselect.SeatSelect.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.movie.Movie.resources
+C:\Users\qhtjd\OneDrive\문서\pingping-study\CS-STUDY\c#project\c#project\c#project\obj\Debug\c_project.final.Final.resources
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\c#project.exe.config
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\c#project.exe
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\c#project.pdb
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Buffers.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Formats.Asn1.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Memory.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Text.Json.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.ValueTuple.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Buffers.xml
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Formats.Asn1.xml
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Memory.xml
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Text.Json.xml
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\System.ValueTuple.xml
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\Interop.WMPLib.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c#project.csproj.AssemblyReference.cache
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\Interop.WMPLib.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c#project.csproj.ResolveComReference.cache
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c_project.final.Final.resources
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c_project.movie.Movie.resources
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c_project.seatselect.SeatSelect.resources
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c_project.seat.MovieSeat1.resources
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c_project.Select.resources
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c_project.Ticketing1_1.resources
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c_project.Ticketing1.resources
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c_project.Main.resources
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c_project.Properties.Resources.resources
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c_project.Ticketing.resources
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c#project.csproj.GenerateResource.cache
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c#project.csproj.CoreCompileInputs.cache
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c#project.csproj.Up2Date
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c#project.exe
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c#project.pdb
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\c#project.exe.config
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\c#project.exe
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\c#project.pdb
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Buffers.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Formats.Asn1.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Memory.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Text.Json.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.ValueTuple.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Buffers.xml
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Formats.Asn1.xml
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Memory.xml
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Text.Json.xml
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\System.ValueTuple.xml
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\Interop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c#project.csproj.AssemblyReference.cache
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\Interop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c#project.csproj.ResolveComReference.cache
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c_project.final.Final.resources
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c_project.movie.Movie.resources
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c_project.seatselect.SeatSelect.resources
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c_project.seat.MovieSeat1.resources
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c_project.Select.resources
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c_project.Ticketing1_1.resources
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c_project.Ticketing1.resources
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c_project.Main.resources
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c_project.Properties.Resources.resources
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c_project.Ticketing.resources
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c#project.csproj.GenerateResource.cache
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c#project.csproj.CoreCompileInputs.cache
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c#project.csproj.Up2Date
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c#project.exe
+C:\Users\hyoun\Downloads\c#project\c#project\c#project\obj\Debug\c#project.pdb
+C:\Users\qhtjd\OneDrive\바탕 화면\c#project\c#project\c#project\obj\Debug\c_project.select_delete.Delete.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\c#project.exe.config
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\c#project.exe
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\c#project.pdb
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Buffers.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Formats.Asn1.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Memory.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Numerics.Vectors.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Text.Encodings.Web.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Text.Json.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.ValueTuple.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Buffers.xml
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Formats.Asn1.xml
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Memory.xml
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Numerics.Vectors.xml
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Text.Encodings.Web.xml
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Text.Json.xml
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\System.ValueTuple.xml
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\Interop.WMPLib.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\bin\Debug\AxInterop.WMPLib.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c#project.csproj.AssemblyReference.cache
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\Interop.WMPLib.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\AxInterop.WMPLib.dll
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c#project.csproj.ResolveComReference.cache
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c_project.final.Final.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c_project.movie.Movie.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c_project.select_delete.Delete.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c_project.seatselect.SeatSelect.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c_project.seat.MovieSeat1.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c_project.Select.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing1_1.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing1.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c_project.Main.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c_project.Properties.Resources.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing.resources
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c#project.csproj.GenerateResource.cache
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c#project.csproj.CoreCompileInputs.cache
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c#project.csproj.Up2Date
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c#project.exe
+D:\Harinbo\Back\c#work\c#project3\c#project\c#project\obj\Debug\c#project.pdb
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\c#project.exe.config
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\c#project.exe
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\c#project.pdb
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Buffers.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Formats.Asn1.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Memory.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Text.Json.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.ValueTuple.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Buffers.xml
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Formats.Asn1.xml
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Memory.xml
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Text.Json.xml
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\System.ValueTuple.xml
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\Interop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c#project.csproj.AssemblyReference.cache
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\Interop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c#project.csproj.ResolveComReference.cache
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c_project.final.Final.resources
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c_project.movie.Movie.resources
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c_project.select_delete.Delete.resources
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c_project.seatselect.SeatSelect.resources
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c_project.seat.MovieSeat1.resources
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c_project.Select.resources
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing1_1.resources
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing1.resources
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c_project.Main.resources
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c_project.Properties.Resources.resources
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing.resources
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c#project.csproj.GenerateResource.cache
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c#project.csproj.CoreCompileInputs.cache
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c#project.csproj.Up2Date
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c#project.exe
+C:\Users\hyoun\Downloads\c#project3 복사본\c#project3\c#project\c#project\obj\Debug\c#project.pdb
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\c#project.exe.config
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\c#project.exe
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\c#project.pdb
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Buffers.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Formats.Asn1.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Memory.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Text.Json.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.ValueTuple.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Buffers.xml
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Formats.Asn1.xml
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Memory.xml
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Text.Json.xml
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.ValueTuple.xml
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\Interop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.AssemblyReference.cache
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\Interop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.ResolveComReference.cache
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.final.Final.resources
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.movie.Movie.resources
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.select_delete.Delete.resources
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.seatselect.SeatSelect.resources
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.seat.MovieSeat1.resources
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Select.resources
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing1_1.resources
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing1.resources
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Main.resources
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Properties.Resources.resources
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing.resources
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.GenerateResource.cache
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.CoreCompileInputs.cache
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.Up2Date
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.exe
+C:\Users\hyoun\Downloads\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.pdb
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\c#project.exe.config
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\c#project.exe
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\c#project.pdb
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Buffers.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Formats.Asn1.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Memory.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Numerics.Vectors.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Text.Encodings.Web.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Text.Json.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.ValueTuple.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Buffers.xml
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Formats.Asn1.xml
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Memory.xml
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Numerics.Vectors.xml
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Text.Encodings.Web.xml
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Text.Json.xml
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\System.ValueTuple.xml
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\Interop.WMPLib.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\bin\Debug\AxInterop.WMPLib.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.AssemblyReference.cache
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\Interop.WMPLib.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\AxInterop.WMPLib.dll
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.ResolveComReference.cache
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.final.Final.resources
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.movie.Movie.resources
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.select_delete.Delete.resources
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.seatselect.SeatSelect.resources
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.seat.MovieSeat1.resources
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Select.resources
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing1_1.resources
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing1.resources
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Main.resources
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Properties.Resources.resources
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing.resources
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.GenerateResource.cache
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.CoreCompileInputs.cache
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.Up2Date
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.exe
+D:\공유\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.pdb
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.ResolveComReference.cache
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.final.Final.resources
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.movie.Movie.resources
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.select_delete.Delete.resources
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.seatselect.SeatSelect.resources
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.seat.MovieSeat1.resources
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Select.resources
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing1_1.resources
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing1.resources
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Main.resources
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Properties.Resources.resources
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c_project.Ticketing.resources
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.GenerateResource.cache
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.exe
+C:\Users\user\Desktop\미니프로젝트\C#\3조\c#project 3조 최종\c#project3\c#project\c#project\obj\Debug\c#project.pdb
