@@ -17,7 +17,7 @@ namespace studentApplication.conn
 
         public static SqlConnection getConn()
         {
-            string connStr = $"SERVER = {server}; DATABASE = {database}; UID = {uid}; PASSWORD = {password};";
+            string connStr = $"SERVER={server};DATABASE={database};UID={uid}; PASSWORD={password};";
 
             conn = new SqlConnection(connStr);
             return conn;
